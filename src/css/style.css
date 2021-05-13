@@ -14,6 +14,10 @@
     background: #000000;
 }
 
+.navbar {
+    bottom: 0;
+}
+
 .navbar-brand {
     font-size: 0.8rem;
 }
