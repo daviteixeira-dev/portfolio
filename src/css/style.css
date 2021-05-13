@@ -4,3 +4,20 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+#particles-js {
+    position:fixed;
+    background: #000000;
+}
+
+#container-cards {
+    background: #000000;
+}
+
+.navbar-brand {
+    font-size: 0.8rem;
+}
+
+.navbar-brand span{
+    font-size: 0.8rem;
+}
