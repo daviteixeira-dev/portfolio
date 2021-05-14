@@ -42,3 +42,64 @@
     box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
     transition: background-color .3s, opacity .5s, visibility .5s;
 }
+
+/*Modal Card 01 --------------------------------------------------------------------*/
+
+.modal-header {
+    border-bottom: none;
+}
+
+#card01 .modal-body .container-fluid .row .col-md-4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+#card01 .modal-body .container-fluid .row .col-md-4 #tecnologias {
+    height: 10rem;
+    display: flex;
+    margin: 0.1rem;
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px solid black;*/
+    justify-content:space-evenly;
+}
+
+#card01 .modal-body .container-fluid .row .col-md-4 #tecnologias #tec-img {
+    padding: 0;
+    width: 6rem;
+    margin: 0rem;
+    height: 2rem;
+    border: none;
+    display: flex;
+    border-radius: 0%;
+    /*border: 1px solid black;*/
+}
+
+#card01 .modal-body .container-fluid .row .col-md-4 img {
+    margin: 1rem;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    border: 5px solid gray;
+}
+
+#card01 .modal-body .container-fluid .row .col-md-4 h4 {
+    /*border: 1px solid black;*/
+}
+
+#card01 .modal-body .container-fluid .row .col-md-6 {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content:space-evenly;
+    /*border: 1px solid black;*/
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/*End Modal Card 01 ----------------------------------------------------------------*/
