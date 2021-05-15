@@ -108,3 +108,19 @@
 }
 
 /*End Modal Card 01 ----------------------------------------------------------------*/
+
+/*Modal Card 02 --------------------------------------------------------------------*/
+
+#card02 .modal-dialog .modal-content .modal-body .container-fluid .album .container .row .col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+#card02 .modal-dialog .modal-content .modal-body .container-fluid .album .container .row .col .card img {
+    
+    border: 1px solid black;
+}
+
+/*End Modal Card 02 ----------------------------------------------------------------*/
