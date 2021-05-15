@@ -111,16 +111,16 @@
 
 /*Modal Card 02 --------------------------------------------------------------------*/
 
-#card02 .modal-dialog .modal-content .modal-body .container-fluid .album .container .row .col{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px solid black;
+#card02 .modal-dialog .modal-content .modal-body .row .card .card-body #album-card-text {
+    height: 6rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align:start;
 }
 
-#card02 .modal-dialog .modal-content .modal-body .container-fluid .album .container .row .col .card img {
-    
-    border: 1px solid black;
+#card02 .modal-dialog .modal-content .modal-body .row .card .card-body #album-card-text span {
+    font-weight: 500;
+    font-size: 0.7rem;
 }
 
 /*End Modal Card 02 ----------------------------------------------------------------*/
