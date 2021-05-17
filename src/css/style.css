@@ -6,18 +6,20 @@
 }
 
 :root{
+    --Preto: #000;
     --Quantum: #111111;
+    --Cinzento: #323232;
     --AzulCiano: #0d6efd;
     --BrancoFumaca: #f5f5f5;
 }
 
 #particles-js {
     position:fixed;
-    background: #000000;
+    background: var(--Preto);
 }
 
 #container-cards {
-    background: #000000;
+    background: var(--Preto);
 }
 
 .card {
@@ -58,8 +60,10 @@
 #card01 .modal-body .container-fluid .row .col-md-4 {
     display: flex;
     align-items: center;
+    border-radius: 0.5rem;
     flex-direction: column;
     justify-content: center;
+    background: var(--Quantum);
     /*border: 1px solid black;*/
 }
 
@@ -88,8 +92,10 @@
     margin: 1rem;
     width: 12rem;
     height: 12rem;
+    padding: 0.2rem;
+    cursor: pointer;
     border-radius: 50%;
-    border: 4px solid var(--Quantum);
+    border: 4px solid var(--Cinzento);
 }
 
 #card01 .modal-body .container-fluid .row .col-md-4 h4 {
@@ -98,7 +104,9 @@
 
 #card01 .modal-body .container-fluid .row .col-md-6 {
     display: flex;
+    border-radius: 0.5rem;
     flex-direction: column;
+    background: var(--Cinzento);
     justify-content:space-evenly;
     /*border: 1px solid black;*/
 }
