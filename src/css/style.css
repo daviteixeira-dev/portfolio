@@ -139,7 +139,7 @@
 
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-logo {
@@ -156,6 +156,7 @@
 
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text {
     display: flex;
+    padding: 0 0.5rem;
     flex-direction: column;
     justify-content: space-between;
     /*border: 1px solid black;*/
@@ -178,7 +179,7 @@
 }
 
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body .visitar-site{
-    width: 5rem;
+    width: 3.5rem;
     display: flex;
     align-items:flex-end;
     justify-content: center;
