@@ -222,4 +222,14 @@
     color: var(--AzulCiano);
 }
 
+#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card img {
+    height: 15rem;
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /*End Modal Card 03 --------------------------------------------------------------------*/
