@@ -98,10 +98,6 @@
     border: 4px solid var(--Cinzento);
 }
 
-#card01 .modal-body .container-fluid .row .col-md-4 h4 {
-    /*border: 1px solid black;*/
-}
-
 #card01 .modal-body .container-fluid .row .col-md-6 {
     display: flex;
     border-radius: 0.5rem;
@@ -115,9 +111,9 @@
     border-top: none;
 }
 
-/*End Modal Card 01 ----------------------------------------------------------------*/
+/*End Modal Card 01 --------------------------------------------------------------------*/
 
-/*Modal Card 02 --------------------------------------------------------------------*/
+/*Modal Card 02 ------------------------------------------------------------------------*/
 
 #card02 .modal-dialog .modal-content .modal-body .row .card .card-body #album-card-text {
     height: 6rem;
@@ -131,4 +127,67 @@
     font-size: 0.7rem;
 }
 
-/*End Modal Card 02 ----------------------------------------------------------------*/
+/*End Modal Card 02 --------------------------------------------------------------------*/
+
+/*Modal Card 03 ------------------------------------------------------------------------*/
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col {
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-logo {
+    display: flex;
+    align-items: flex-start;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-logo img{
+    width: 4rem;
+    height: 4rem;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text h5 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text p {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text spam {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--Preto);
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body .visitar-site{
+    width: 5rem;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body .visitar-site a{
+    font-size: 0.8rem;
+    /*border: 1px solid black;*/
+}
+
+/*End Modal Card 03 --------------------------------------------------------------------*/
