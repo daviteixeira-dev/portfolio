@@ -172,7 +172,7 @@
     margin-bottom: 0.3rem;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text spam {
+#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text span {
     font-weight: 500;
     font-size: 0.8rem;
     color: var(--Preto);
@@ -189,6 +189,37 @@
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body .visitar-site a{
     font-size: 0.8rem;
     /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body{
+    font-size: 0.8rem;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates {
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body span {
+    height: 3rem;
+    display: flex;
+    margin: 0 0.5rem;
+    text-align: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body span img {
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body span a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--AzulCiano);
 }
 
 /*End Modal Card 03 --------------------------------------------------------------------*/
