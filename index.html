@@ -524,7 +524,7 @@
                         <!--End Licenses and certificates-->
                         <div class="row" id="conquistas">
                             <h3 class="text-light">Conquistas</h3>
-                            
+
                             <!--Firts Achievements-->
                             <div class="col col-md-6 my-2">
                                 <div class="card w-100 border-0">
@@ -636,7 +636,8 @@
             <div class="modal-content">
                 <!--Modal Header-->
                 <div class="modal-header bg-primary">
-
+                    <h5 class="modal-title text-light">Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!--End Modal Header-->
                 <!--Modal Body-->
@@ -644,10 +645,35 @@
                     <!--Modal Container Fluid-->
                     <div class="container-fluid">
                         <!--Modal Row-->
-                        <div class="row justify-content-around">
+                        <div class="row">
                             <!--Modal First Column-->
-                            <div class="col-md-10 mt-3">
-                                <h3 class="text-light">Desculpe, ainda estou trabalhando neste conteúdo :(</h3>
+                            <div class="col">
+                                <div class="card w-100">
+                                    <div class="card-body">
+                                        <form action="">
+                                            <div class="mb-2">
+                                                <label for="assunto" class="form-label">Assunto</label>
+                                                <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Assunto desse e-mail">
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="nome" class="form-label">Nome</label>
+                                                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="email" class="form-label">E-mail</label>
+                                                <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="mensagem" class="form-label">Mensagem</label>
+                                                <textarea class="form-control" name="mensagem" id="mensagem" cols="10" rows="5" placeholder="Mensagem"></textarea>
+                                            </div>
+                                            <div class="mb-1">
+                                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                         <!--End Modal Row-->
