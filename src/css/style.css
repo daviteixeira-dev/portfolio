@@ -233,3 +233,16 @@
 }
 
 /*End Modal Card 03 --------------------------------------------------------------------*/
+
+/*Modal Card 03 ------------------------------------------------------------------------*/
+
+#card05 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body form textarea {
+    resize: none;
+}
+
+#card05 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body iframe {
+    width: 100%;
+    height: 15rem;
+}
+
+/*End Modal Card 05 ------------------------------------------------------------------------*/
