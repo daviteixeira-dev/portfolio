@@ -648,9 +648,13 @@
                         <div class="row">
                             <!--Modal First Column-->
                             <div class="col mb-4">
+                                <!--Modal Apresentation Form-->
+                                <h3 class="text-light">Se interessou pelo meu trabalho?</h3>
+                                <p class="text-light">Entre em contato, vamos discutir um projeto e tirar qualquer dúvida, minha caixa de mensagens está aberta a todos!</p>
+                                <!--End Modal Apresentation Form-->
                                 <div class="card w-100">
                                     <div class="card-body">
-                                        <form action="">
+                                        <form action="" id="form-contact">
                                             <div class="mb-2">
                                                 <label for="assunto" class="form-label">Assunto</label>
                                                 <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Assunto desse e-mail">
@@ -667,18 +671,21 @@
                                                 <label for="mensagem" class="form-label">Mensagem</label>
                                                 <textarea class="form-control" name="mensagem" id="mensagem" cols="10" rows="5" placeholder="Mensagem"></textarea>
                                             </div>
+                                            <div class="alert alert-danger mt-1 d-none" role="alert">
+                                                Por favor, preencha o campo <span id="erro-field"></span>!
+                                            </div>
                                             <div class="mb-1">
                                                 <button type="submit" class="btn btn-primary">Enviar</button>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                         <!--End Modal Form Row-->
                         <div class="row">
                             <div class="col mb-4">
+                                <h3 class="text-light">Encontre-me</h3>
                                 <div class="card w-100">
                                     <div class="card-body">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.232325620365!2d-39.46578928572817!3d-6.099381095583359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a2d18c323fb353%3A0x60fd031f1b26abb1!2sAv.%20de%20Morais%20Pinho%20-%20Vila%20Esperan%C3%A7a%2C%20Acopiara%20-%20CE%2C%2063560-000!5e0!3m2!1spt-BR!2sbr!4v1621553287257!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -718,6 +725,7 @@
 
     <!--Project Scripts-->
     <script src="src/js/main.js"></script>
+    <script src="src/js/form.js"></script>
     <!--End Project Scripts-->
 </body>
 
