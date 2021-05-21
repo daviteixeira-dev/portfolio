@@ -655,7 +655,6 @@
                                 <div class="card w-100">
                                     <div class="card-body">
                                         <form action="https://formsubmit.co/eacf758cacab49089089bbe41d726b0f" id="form-contact" method="POST">
-                                            <input type="hidden" name="_next" value="https://daviteixeira-btm.github.io/pages/thanks.html">
                                             <div class="mb-2">
                                                 <label for="assunto" class="form-label">Assunto</label>
                                                 <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Assunto desse e-mail">
@@ -675,6 +674,8 @@
                                             <div class="alert alert-danger mt-1 d-none" role="alert">
                                                 Por favor, preencha o campo <span id="erro-field"></span>!
                                             </div>
+                                            <input type="hidden" name="_captcha" value="false">
+                                            <input type="hidden" name="_next" value="https://daviteixeira-btm.github.io/pages/thanks.html">
                                             <div class="mb-1">
                                                 <button type="submit" class="btn btn-primary">Enviar</button>
                                             </div>
