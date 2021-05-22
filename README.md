@@ -28,8 +28,6 @@
   <a href="#-license">License</a>
 </p>
 
-![Printsreen](/src/img/img-index-project.png)
-
 ## 👨🏻‍💻 About the project
 ```👨🏻‍💻 Sobre o projeto```
 <p>In this project I develop my personal project portfolio.</p>
