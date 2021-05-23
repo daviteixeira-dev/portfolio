@@ -18,6 +18,14 @@
     --ToyoInkDarker: #1a1d1f;
 }
 
+body .container-fluid .navbar .container-fluid .navbar-brand h1 {
+    font-family: 'Alice', serif;
+}
+
+body .container-fluid .row .card .card-body .card-text {
+    height: 6rem;
+}
+
 #particles-js {
     position:fixed;
     background: var(--Preto);
