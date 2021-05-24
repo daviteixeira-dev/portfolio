@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="src/img/logo-min.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Web aplication DOE">
+  <img src="src/img/logos-and-profile/logo.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Personal Portfolio">
 </h1>
 
 <h1 align="center">
