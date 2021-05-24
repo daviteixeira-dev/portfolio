@@ -275,16 +275,16 @@ body .container-fluid .row .card .card-body .card-text {
 }
 
 #card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body .card-title {
-    height: 4rem;
+    height: 3.5rem;
     display: flex;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
     align-items: center;
     /*border: 1px solid black;*/
 }
 
 #card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body .card-text {
-    height: 16rem;
+    height: 14rem;
     font-size: 0.9rem;
     /*border: 1px solid black;*/
 }
