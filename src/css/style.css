@@ -152,7 +152,7 @@ body .container-fluid .row .card .card-body .card-text {
 
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-logo {
@@ -168,6 +168,7 @@ body .container-fluid .row .card .card-body .card-text {
 }
 
 #card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text {
+    width: 10rem;
     display: flex;
     padding: 0 0.5rem;
     flex-direction: column;
@@ -211,38 +212,91 @@ body .container-fluid .row .card .card-body .card-text {
 
 #card03 .modal-dialog .modal-content .modal-body .container #certificates {
     display: flex;
-    justify-content: space-between;
     /*border: 1px solid black;*/
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body span {
-    height: 3rem;
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body {
     display: flex;
-    margin: 0 0.5rem;
+    justify-content: space-evenly;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-img {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-img img {
+    height: 3rem;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-text {
+    display: flex;
+    padding: 0 0.5rem;
     text-align: center;
     align-items: center;
+    justify-content: center;
     /*border: 1px solid black;*/
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body span img {
-    height: 2rem;
-    margin: 0 1rem;
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-text p {
+    font-size: 0.6rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+    /*border: 1px solid black;*/
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body span a {
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-link {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-link a {
     font-weight: 500;
     text-decoration: none;
-    color: var(--AzulCiano);
+    /*border: 1px solid black;*/
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card img {
-    height: 15rem;
+#card03 .modal-dialog .modal-content .modal-body .container #conquistas {
+    display: flex;
 }
 
 #card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body .card-title {
+    height: 4rem;
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body .card-text {
+    height: 16rem;
+    font-size: 0.9rem;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body span {
+    display: flex;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card img {
+    height: 15rem;
 }
 
 /*End Modal Card 03 --------------------------------------------------------------------*/
