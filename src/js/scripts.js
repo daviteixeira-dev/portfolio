@@ -1,11 +1,40 @@
-$('#form-contact').submit(function(){
+$(document).ready(function(){
 
-    var assunto = $('#assunto');
-    var nome = $('#nome');
-    var email = $('#email');
-    var mensagem = $('#mensagem');
+    // Parallax
+    setTimeout(function(){
+        $('#banner').parallax({imageSrc: '../src/img/services-banner.jpg'});
+        $('#thanks-banner').parallax({imageSrc: '../src/img/services-banner.jpg'});
+        
+    }, 250);
+
+    // Button back to the top
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+	});
+	
+    // scroll body to 0px on click
+	$('#back-to-top').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 400);
+        return false;
+	});
+
+});
+
+// Form Action
+$('#formAction').submit(function(){
+
+    var nome = $('#nome'); 
     var erro = $('.alert');
+    var email = $('#email');
+    var assunto = $('#assunto');
     var field = $('#erro-field');
+    var mensagem = $('#mensagem');
 
     // removes the element from the screen whenever an attempt is made to submit the form
     erro.addClass('d-none');

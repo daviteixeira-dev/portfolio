@@ -1,319 +1,789 @@
-*{
+/* Gerais */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
     margin: 0;
+}
+
+.container {
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.container-fluid {
     padding: 0;
+}
+
+.more-btn {
+    color: #f2f2f2;
+    width: 12rem;
+    height: 3.75rem;
+    transition: .5s;
+    cursor: pointer;
+    font-size: .7rem;
+    padding: .6rem 1rem;
+    border-radius: 1.8rem;
     text-decoration: none;
-    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: #195466;
+    border: 3px solid transparent;
 }
 
-:root{
-    --Preto: #000;
-    --Quantum: #111111;
-    --DarkCharcoal: #323232;
-    --AzulCiano: #0d6efd;
-    --BrancoFumaca: #f5f5f5;
-
-    --ToyoInkSaturated: #202428;
-    --ToyoInkLighter: #292d31;
-    --ToyoInk: #212427;
-    --ToyoInkDarker: #1a1d1f;
-}
-
-body .container-fluid .navbar .container-fluid .navbar-brand h1 {
-    font-family: 'Alice', serif;
-}
-
-body .container-fluid .row .card .card-body .card-text {
-    height: 6rem;
-}
-
-#particles-js {
-    position:fixed;
-    background: var(--Preto);
-}
-
-#container-cards {
-    background: var(--Preto);
-}
-
-.card {
-    width: 16rem;
-}
-
-.navbar {
-    bottom: 0;
-}
-
-.navbar-brand {
-    font-size: 0.8rem;
-}
-
-.navbar-brand span{
-    font-size: 0.8rem;
+.principal-title-card, .principal-text-card {
+    font-weight: 500;
+    color: #121212;
 }
 
 #back-to-top {
-    right: 1rem;
+    z-index: 1;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
     bottom: 4rem;
-    z-index: 1000;
     position: fixed;
+    color: #f2f2f2;
+    padding-top: .5rem;
     border-radius: 50%;
-    color: var(--BrancoFumaca);
-    background: var(--Quantum);
-    border: 2px solid var(--AzulCiano);
+    text-align: center;
+    background-color: #195466;
+    border: 2px solid #33859E;
     box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
     transition: background-color .3s, opacity .5s, visibility .5s;
 }
 
-/*Modal Card 01 --------------------------------------------------------------------*/
-
-.modal-header {
-    border-bottom: none;
+#back-to-top:hover {
+    border-color: #195466;
+    background-color: #33859E;
 }
 
-#card01 .modal-body .container-fluid .row .col-md-4 {
-    display: flex;
-    align-items: center;
-    border-radius: 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--Quantum);
-    /*border: 1px solid black;*/
-}
-
-#card01 .modal-body .container-fluid .row .col-md-4 #tecnologias {
-    height: 10rem;
-    display: flex;
-    margin: 0.1rem;
-    flex-direction: row;
-    align-items: center;
-    /*border: 1px solid black;*/
-    justify-content:space-evenly;
-}
-
-#card01 .modal-body .container-fluid .row .col-md-4 #tecnologias #tec-img {
-    padding: 0;
-    width: 6rem;
-    margin: 0rem;
-    height: 2rem;
-    border: none;
-    display: flex;
-    border-radius: 0%;
-    /*border: 1px solid black;*/
-}
-
-#card01 .modal-body .container-fluid .row .col-md-4 img {
-    margin: 1rem;
-    width: 12rem;
-    height: 12rem;
-    padding: 0.2rem;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 4px solid var(--DarkCharcoal);
-}
-
-#card01 .modal-body .container-fluid .row .col-md-6 {
-    display: flex;
-    border-radius: 0.5rem;
-    flex-direction: column;
-    justify-content:space-evenly;
-    background: var(--DarkCharcoal);
-    /*border: 1px solid black;*/
-}
-
-.modal-footer {
-    border-top: none;
-}
-
-/*End Modal Card 01 --------------------------------------------------------------------*/
-
-/*Modal Card 02 ------------------------------------------------------------------------*/
-
-#card02 .modal-dialog .modal-content .modal-body .row .card .card-body #album-card-text {
-    height: 6rem;
-    font-weight: 500;
-    font-size: 0.8rem;
-    text-align:start;
-}
-
-#card02 .modal-dialog .modal-content .modal-body .row .card .card-body #album-card-text span {
-    font-weight: 500;
-    font-size: 0.7rem;
-}
-
-/*End Modal Card 02 --------------------------------------------------------------------*/
-
-/*Modal Card 03 ------------------------------------------------------------------------*/
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col {
-    display: flex;
-    justify-content: center;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body {
-    display: flex;
-    justify-content: space-around;
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-logo {
-    display: flex;
-    align-items: flex-start;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-logo img{
-    width: 4rem;
-    height: 4rem;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text {
-    width: 10rem;
-    display: flex;
-    padding: 0 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text h5 {
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text p {
-    font-size: 0.8rem;
-    margin-bottom: 0.3rem;
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body #card-body-text span {
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--Preto);
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body .visitar-site{
-    width: 3.5rem;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body .visitar-site a{
-    font-size: 0.8rem;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body{
-    font-size: 0.8rem;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container #certificates {
-    display: flex;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body {
-    display: flex;
-    justify-content: space-evenly;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-img {
+#whatsapp-button {
+    z-index: 1;
+    right: 2rem;
     width: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-img img {
     height: 3rem;
-    /*border: 1px solid black;*/
-}
-
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-text {
-    display: flex;
-    padding: 0 0.5rem;
+    bottom: 8.5rem;
+    position: fixed;
+    color: #f2f2f2;
+    font-size: 1.7rem;
+    padding-top: .2rem;
+    border-radius: 50%;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    /*border: 1px solid black;*/
+    background-color: green;
+    border: 1px solid #f2f2f2;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    transition: background-color .3s, opacity .5s, visibility .5s;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-text p {
-    font-size: 0.6rem;
-    font-weight: 500;
-    margin-bottom: 0rem;
-    /*border: 1px solid black;*/
+#whatsapp-button:hover {
+    background-color: rgb(1, 153, 1);
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-link {
-    display: flex;
+/* Barra de Navegação */
+
+header, .navbar {
+    background-color: #121212;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 3.5rem;
+    transition: .5s;
+    margin-left: 1rem;
+}
+
+#logo:hover {
+    width: 4rem;
+}
+
+/* Main Banner */
+
+#main-banner {
+    height: 70vh;
+    margin-top: 5rem;
+    position: relative;
+    background-size: cover;
+    background-position: 0 55%;
+    box-shadow: .5px .5px #000;
+    background-repeat: no-repeat;
+    background-image: url('../img/main-banner.jpg');
+}
+
+#main-banner #apresentation {
+    margin-top: 13%;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    /*border: 1px solid black;*/
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #certificates .col .card .card-body .card-link a {
-    font-weight: 500;
+#main-banner #apresentation h1, h2 {
+    color: #f2f2f2;
+    text-shadow: .5px .5px #000;
+}
+
+#main-banner #apresentation h2 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+#main-banner #apresentation .more-btn:hover {
+    color: #f2f2f2;
     text-decoration: none;
-    /*border: 1px solid black;*/
+    border-color: #33859E;
+    background-color: transparent;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #conquistas {
-    display: flex;
+/* Serviços do Site */
+
+#services-container #first-line .card, #second-line .card {
+    border: none;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body{
+#first-line .card .card-body .card-body-top, #second-line .card .card-body .card-body-top {
+    height: 12rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+#first-line .card .card-body .card-body-bottom, #second-line .card .card-body .card-body-bottom {
+    padding: 1.5rem 0;
+}
+
+#first-line .card .card-body .card-body-bottom .more-btn:hover, #second-line .card .card-body .card-body-bottom .more-btn:hover {
+    color: #f2f2f2;
+    text-decoration: none;
+    background-color: #33859E;
+}
+
+/* Footer */
+
+footer {
+    background-color: #121212;
+}
+
+footer .container-fluid .row #footer-menu ul li h6 {
+    font-size: .8rem;
+    color: #f2f2f2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer .container-fluid .row #footer-menu ul li a i {
+    color: #f2f2f2;
+    transition: .5s;
+    font-size: 2rem;
+}
+
+footer .container-fluid .row #footer-menu ul li a i:hover {
+    color: #195466;
+}
+
+/* Modal 01 - About-me */
+
+#modal-card-01 .modal-header {
+    border: none;
+    background-color: #195466;
+}
+
+#modal-card-01 .modal-body {
+    background-color: #121212;
+}
+
+#modal-card-01 #coluna-esquerda, #modal-card-01 #coluna-direita {
+    text-align: center;
+}
+
+#modal-card-01 #coluna-esquerda #img-profile {
+    padding: .3rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border: .3rem solid #195466;
+}
+
+#modal-card-01 #coluna-esquerda h4 {
+    margin-top: 1rem;
+    text-align: left;
+    color: #195466;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#modal-card-01 #coluna-esquerda h5 {
+    margin-top: 1rem;
+    text-align: left;
+    color: #f2f2f2;
+    line-height: 1.5rem;
+}
+
+#modal-card-01 #coluna-esquerda #frase-autor {
+    margin-top: 1rem;
+    color: #195466;
+    font-size: .8rem;
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#modal-card-01 #coluna-esquerda h5 span {
+    font-size: 2rem;
+    color: #195466;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium';
+}
+
+#modal-card-01 #coluna-esquerda table {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+}
+
+#modal-card-01 #coluna-esquerda table thead tr th {
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+#modal-card-01 #coluna-esquerda table tr td{
+    width: 6rem;
+    text-align: center;
+    border: 1px solid #121212;
+}
+
+#modal-card-01 #coluna-esquerda table tr td:hover{
+    border-radius: 1rem;
+    background-color: #e9e9e9;
+}
+
+#modal-card-01 #coluna-esquerda table tr td a img{
+    width: 2.5rem;
+    margin: .3rem;
+    height: 2.5rem;
+}
+
+#modal-card-01 #coluna-esquerda table tr td p{
+    color: #121212;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+#modal-card-01 #coluna-direita h4 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    color: #195466;
+    font-weight: bold;
+}
+
+#modal-card-01 #coluna-direita p {
+    font-size: 1rem;
+    text-align: left;
+    color: #f2f2f2;
+}
+
+#modal-card-01 #coluna-direita .more-btn:hover {
+    color: #f2f2f2;
+    border: 4px solid #195466;
+    background-color: transparent;
+}
+
+#modal-card-01 #coluna-direita table {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+}
+
+#modal-card-01 #coluna-direita table thead tr th {
+    padding: 1rem;
+    font-size: .8rem;
+    border-bottom: 1px solid #121212;
+}
+
+#modal-card-01 #coluna-direita table tr td{
+    width: 4rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+#modal-card-01 #coluna-direita table tr td a i {
+    font-size: 2rem;
+}
+
+#modal-card-01 .modal-footer {
+    border: none;
+    background-color: #195466;
+}
+
+/* Modal 02 - Projects */
+
+#modal-card-02 .modal-header {
+    border: none;
+    background-color: #195466;
+}
+
+#modal-card-02 .modal-body {
+    background-color: #121212;
+}
+
+#modal-card-02 .modal-body #presentation{
+    text-align: center;
+}
+
+#modal-card-02 .modal-body #presentation .row .col h4{
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+#modal-card-02 .modal-body #presentation .row .col h4 span {
+    color: #195466;
+    font-weight: bold;
+}
+
+#modal-card-02 .modal-body #presentation .row .col p {
+    color: #f2f2f2;
+}
+
+#modal-card-02 .modal-body #presentation .row .col .more-btn:hover {
+    color: #f2f2f2;
+    border: 4px solid #195466;
+    background-color: transparent;
+}
+
+#modal-card-02 .modal-body #projects {
+    margin-top: 1rem;
+}
+
+#modal-card-02 .modal-body .card {
+    padding: 0;
+    border: none;
+    width: 16rem;
+    margin: .5rem;
+}
+
+#modal-card-02 .modal-body .card .card-body {
+    padding: 0;
+    border-top: 1px solid #999;
+}
+
+#modal-card-02 .modal-body .card .card-body .card-top {
+    padding: 1rem;
+    height: 14rem;
+}
+
+#modal-card-02 .modal-body .card .card-body .card-top h5, p {
+    text-align: center;
+}
+
+#modal-card-02 .modal-body .card .card-body .card-top h5 {
+    color: #121212;
+}
+
+#modal-card-02 .modal-body .card .card-body .card-top p {
+    font-size: .9rem;
+}
+
+#modal-card-02 .modal-body .card .card-body .card-bottom {
+    height: 4rem;
+    padding: 1rem;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#modal-card-02 .modal-body .card .card-body .card-bottom .more-btn:hover {
+    color: #f2f2f2;
+    background-color: #33859E;
+}
+
+#modal-card-02 .modal-body .card .card-body .card-bottom #github-commits {
+    width: 45%;
+}
+
+#modal-card-02 #modal-pagination {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#modal-card-02 #modal-pagination .page-item a {
+    color: #195466;
+}
+
+#modal-card-02 .modal-footer {
+    border: none;
+    background-color: #195466;
+}
+
+/* Modal 03  - Estudies */
+
+#modal-card-03 .modal-header {
+    border: none;
+    background-color: #195466;
+}
+
+#modal-card-03 .modal-body {
+    background-color: #121212;
+}
+
+#modal-card-03 .modal-body .container #academic-formation {
+    margin: 1rem;
+    text-align: center;
+}
+
+#modal-card-03 .modal-body .container #academic-formation h4 {
+    margin: 1rem 0;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+#modal-card-03 .modal-body .container #academic-formation h4 span {
+    color: #195466;
+    font-weight: bold;
+}
+
+#modal-card-03 .modal-body .container #academic-formation .academic-card {
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+}
+
+#modal-card-03 .modal-body .container #academic-formation .academic-card .card-top {
+    height: 20rem;
+}
+
+#modal-card-03 .modal-body .container #academic-formation .academic-card .card-top h5 {
+    color: #121212;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#modal-card-03 .modal-body .container #academic-formation .academic-card .card-top p {
+    font-size: 1rem;
+    color: #121212;
+    text-align: center;
+}
+
+#modal-card-03 .modal-body .container #academic-formation .academic-card .card-bottom {
+    height: 5rem;
+    padding: 1.5rem;
+}
+
+#modal-card-03 .modal-body .container #certificates {
+    margin: 1rem;
+    text-align: center;
+}
+
+#modal-card-03 .modal-body .container #certificates h4 {
+    margin: 1rem 0;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+#modal-card-03 .modal-body .container #certificates h4 span {
+    color: #195466;
+    font-weight: bold;
+}
+
+#modal-card-03 .modal-body .container  #certificates .certificate-card {
+    margin: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+}
+
+#modal-card-03 .modal-body .container #certificates .certificate-card p {
+    margin: 1rem 0;
+    color: #121212;
+}
+
+#modal-card-03 .modal-body .container #certificates .certificate-card a img {
+    width: 3rem;
+    margin-top: 2rem;
+}
+
+#modal-card-03 .modal-body .container .conquistas {
+    margin: 1rem;
+    text-align: center;
+}
+
+#modal-card-03 .modal-body .container .conquistas h4 {
+    margin: 1rem 0;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+#modal-card-03 .modal-body .container .conquistas h4 span {
+    color: #195466;
+    font-weight: bold;
+}
+
+#modal-card-03 .modal-body .container .conquistas .conquistas-card {
+    margin-top: .5rem;
+    align-items: center;
+    display: inline-flex;
     justify-content: space-between;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body .card-title {
-    height: 3.5rem;
-    display: flex;
-    font-size: 0.9rem;
+@media screen and (max-width: 768px) {
+
+    #modal-card-03 .modal-body .container .conquistas .conquistas-card {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+#modal-card-03 .modal-body .container .conquistas .card-imagem {
+    width: 18rem;
+    padding: .5rem;
+}
+
+#modal-card-03 .modal-body .container .conquistas .card-details {
+    width: 18rem;
+    padding: 2rem;
+}
+
+#modal-card-03 .modal-body .container .conquistas .card-details .card-text-details {
+    color: #f2f2f2;
+}
+
+#modal-card-03 .modal-body .container .conquistas .card-details p {
+    font-size: .8rem;
+}
+
+#modal-card-03 .modal-body .container .conquistas .card-buttons {
+    width: 18rem;
+    padding: 1rem;
+    margin-top: auto;
+    position: relative;
+    margin-bottom: auto;
+}
+
+#modal-card-03 .modal-body .container .conquistas .card-buttons .card-btn-top,
+#modal-card-03 .modal-body .container .conquistas .card-buttons .card-btn-botton {
+    padding: 1rem;
+    margin: .5rem 0rem;
+}
+
+#modal-card-03 .modal-body .container .conquistas .card-buttons .card-btn-top .certificate-buttons:hover,
+#modal-card-03 .modal-body .container .conquistas .card-buttons .card-btn-botton .certificate-buttons:hover {
+    color: #f2f2f2;
+    background-color: #33859E;
+}
+
+#modal-card-03 .modal-footer {
+    border: none;
+    background-color: #195466;
+}
+
+/* Modal 04 - Blog */
+
+#modal-card-04 .modal-header {
+    border: none;
+    background-color: #195466;
+}
+
+#modal-card-04 .modal-body {
+    background-color: #121212;
+}
+
+#modal-card-04 .modal-footer {
+    border: none;
+    background-color: #195466;
+}
+
+/* Modal 05 */
+
+#modal-card-05 .modal-header {
+    border: none;
+    background-color: #195466;
+}
+
+#modal-card-05 .modal-body {
+    background-color: #121212;
+}
+
+#modal-card-05 .modal-body .container #apresentation-contact {
+    padding: 1rem;
     text-align: center;
-    align-items: center;
-    /*border: 1px solid black;*/
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: #f2f2f2;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body .card-text {
-    height: 14rem;
-    font-size: 0.9rem;
-    /*border: 1px solid black;*/
+#modal-card-05 .modal-body .container #apresentation-contact h3, p {
+    color: #121212;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card .card-body span {
-    display: flex;
-    align-items: center;
-    /*border: 1px solid black;*/
+#modal-card-05 .modal-body .container #form-contact {
+    margin-bottom: 1rem;
 }
 
-#card03 .modal-dialog .modal-content .modal-body .container #conquistas .col .card img {
-    height: 15rem;
+#modal-card-05 .modal-body .container #form-contact form .form-label {
+    color: #f2f2f2;
+    font-size: 1.3rem;
 }
 
-/*End Modal Card 03 --------------------------------------------------------------------*/
-
-/*Modal Card 03 ------------------------------------------------------------------------*/
-
-#card05 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body form textarea {
-    resize: none;
+#modal-card-05 .modal-body .container #form-contact form #row-form-submit {
+    text-align: center;
 }
 
-#card05 .modal-dialog .modal-content .modal-body .container .row .col .card .card-body iframe {
+#modal-card-05 .modal-body .container #form-contact form .form-submit {
+    width: 8rem;
+    height: 3rem;
+    font-size: .8rem;
+}
+
+#modal-card-05 .modal-body .container #form-contact form .form-submit:hover {
+    transition: .5s;
+    background-color: #33859E;
+}
+
+#modal-card-05 .modal-body .container #find-me {
+    text-align: center;
+}
+
+#modal-card-05 .modal-body .container #find-me .col h4 {
+    color: #f2f2f2;
+}
+
+#modal-card-05 .modal-body .container #find-me .col iframe {
     width: 100%;
-    height: 15rem;
+    border-radius: .5rem;
 }
 
-/*End Modal Card 05 ------------------------------------------------------------------------*/
+#modal-card-05 .modal-footer {
+    border: none;
+    background-color: #195466;
+}
 
-.ColorWebsiteTheme {
-    background: linear-gradient(-45deg, var(--ToyoInkSaturated), var(--ToyoInkLighter), var(--ToyoInk), var(--ToyoInkDarker));
+/* Modal 06 - Services */
+
+#modal-card-06 .modal-header {
+    border: none;
+    background-color: #195466;
+}
+
+#modal-card-06 .modal-body {
+    background-color: #121212;
+}
+
+#modal-card-06 .modal-body .container-fluid {
+    padding: 1rem;
+}
+
+#modal-card-06 .modal-body .container-fluid .row {
+    padding: 1rem;
+    text-align: center;
+}
+
+#modal-card-06 .modal-body .container-fluid .row h4 {
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+#modal-card-06 .modal-body .container-fluid .row h4 span {
+    color: #33859E;
+    font-weight: bold;
+}
+
+#modal-card-06 .modal-body .container-fluid .row .col .service-card {
+    height: 20rem;
+    padding: 1rem;
+    transition: .5s;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: #f2f2f2;
+    border: 4px solid #f2f2f2;
+}
+
+#modal-card-06 .modal-body .container-fluid .row .col .service-card:hover {
+    border: 4px solid #33859E;
+}
+
+#modal-card-06 .modal-body .container-fluid .row .col .service-card p {
+    height: 6rem;
+}
+
+#modal-card-06 .modal-body .container-fluid .row .col .service-card h5 {
+    height: 3rem;
+}
+
+#modal-card-06 .modal-body .container-fluid .row .col .service-card i {
+    font-size: 3rem;
+    color: #33859E;
+}
+
+#modal-card-06 .modal-body .container-fluid .row .col .service-card h5, p {
+    color: #121212;
+}
+
+#modal-card-06 .modal-footer {
+    border: none;
+    background-color: #195466;
+}
+
+/* Thank you Page */
+
+#thanks-banner .container-fluid {
+    height: 45rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: transparent;
+}
+
+#thanks-banner .container-fluid .row {
+    padding: 1rem;
+    margin: 8rem 0;
+    border-radius: .5rem;
+    background-color:#121212;
+}
+
+#thanks-banner .container-fluid .row #thank-you-card {
+    padding: 1rem;
+    background-color:#121212;
+}
+
+#thanks-banner .container-fluid .row #thank-you-card #thank-you-card-top h1, h2, h3, h4, h5 {
+    color: #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+#thanks-banner .container-fluid .row #thank-you-card #thank-you-card-top h2 {
+    font-size: 1.3rem;
+}
+
+#thanks-banner .container-fluid .row #thank-you-card #thank-you-card-bottom {
+    height: 4rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+#thanks-banner .container-fluid .row #thank-you-card #thank-you-card-bottom .thanks-btn:hover { 
+    transition: .5s;
+    color: #f2f2f2;
+    border: 4px solid #195466;
+    background-color: transparent;
 }

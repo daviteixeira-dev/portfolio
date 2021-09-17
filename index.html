@@ -1,270 +1,423 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Desenvolvedor Front-End graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.">
+    <title>Davi Teixeira - Front-End Web Developer</title>
+    <!--Bootstrap 5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!--Style CSS-->
-    <link rel="stylesheet" href="src/css/style.css">
-    <!--Icon-->
-    <link rel="shortcut icon" href="src/img/logos-and-profile/logo.svg" type="image/x-icon">
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet"> 
-
-    <title>&lt;Davi Teixeira /&gt; - Desenvolvedor Front-End</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Fav Icon-->
+    <link rel="icon" href="src/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="src/img/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="canonical" href="https://www.daviteixeira.dev.br/" />
 </head>
-
-<body>
-    <!--Container Home-->
-    <div class="container-fluid bg-dark">
-
-        <!--Title-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <h1><img src="src/img/logos-and-profile/logo.png" alt="" width="60" height="60" class="d-inline-block align-text-center"> Davi Teixeira</h1>
-                </a>
-                <span class="text-light">&lt;Front-end Web Developer/&gt;</span>
-            </div>
-        </nav>
-        <!--End Title-->
-        
-        <!--Container Cards-->
-        <div class="row justify-content-evenly pb-4" id="container-cards">
-            <!--Paticles-->
-            <div id="particles-js"></div>
-
-            <!--Card 01-->
-            <div class="card text-center mx-1 ColorWebsiteTheme mt-3">
-                <img class="card-img-top mt-2" src="src/img/home-page/about-me.png" alt="Imagem de capa do card da seção de sobre o autor.">
-                <div class="card-body">
-                    <h5 class="card-title text-light">Sobre mim</h5>
-                    <p class="card-text text-light">
-                        Aqui você poderá saber um pouco mais sobre mim, bem como com quais tecnologias trabalho.
-                    </p>
-                    <a class="btn btn-primary w-75 card-link" data-bs-toggle="modal" data-bs-target="#card01"><i class="bi bi-file-earmark-person"></i> Sobre mim</a>
-                </div>
-            </div>
-            <!--End Card 01-->
-
-            <!--Card 02-->
-            <div class="card text-center mx-1 ColorWebsiteTheme mt-3">
-                <img class="card-img-top mt-2" src="src/img/home-page/projects.png" alt="Imagem de capa do card da seção de projetos.">
-                <div class="card-body">
-                    <h5 class="card-title text-light">Projetos</h5>
-                    <p class="card-text text-light">
-                        Nessa seção você poderá encontrar informações sobre os projetos nos quais trabalhei.
-                    </p>
-                    <a class="btn btn-primary w-75" data-bs-toggle="modal" data-bs-target="#card02"><i class="bi bi-terminal-fill"></i> Projetos</a>
-                </div>
-            </div>
-            <!--End Card 02-->
-
-            <!--Card 03-->
-            <div class="card text-center mx-1 ColorWebsiteTheme mt-3">
-                <img class="card-img-top mt-2" src="src/img/home-page/studies.png" alt="Imagem de capa do card da seção de estudos.">
-                <div class="card-body">
-                    <h5 class="card-title text-light">Estudos</h5>
-                    <p class="card-text text-light">
-                        Confira algumas das minhas conquistas, certificações, premiações e artigos publicados.
-                    </p>
-                    <a class="btn btn-primary w-75" data-bs-toggle="modal" data-bs-target="#card03"><i class="bi bi-book-half"></i> Estudos</a>
-                </div>
-            </div>
-            <!--End Card 03-->
-
-            <!--Card 04-->
-            <div class="card text-center mx-1 ColorWebsiteTheme mt-3">
-                <img class="card-img-top mt-2" src="src/img/home-page/my-blog.png" alt="Imagem de capa do card da seção de blog.">
-                <div class="card-body">
-                    <h5 class="card-title text-light">Blog</h5>
-                    <p class="card-text text-light">
-                        Amo compartilhar conhecimento, assim, aqui você pode ler alguns dos materiais que já escrevi.
-                    </p>
-                    <a class="btn btn-primary w-75" data-bs-toggle="modal" data-bs-target="#card04"><i class="bi bi-globe"></i> Blog</a>
-                </div>
-            </div>
-            <!--End Card 04-->
-
-            <!--Card 05-->
-            <div class="card text-center mx-1 ColorWebsiteTheme mt-3">
-                <img class="card-img-top mt-2" src="src/img/home-page/contact.png" alt="Imagem de capa do card da seção de contate-me.">
-                <div class="card-body">
-                    <h5 class="card-title text-light">Contate-me</h5>
-                    <p class="card-text text-light">
-                        Vamos criar um projeto ou apenas dizer um oi? Minha caixa de mensagens está aberta para você.
-                    </p>
-                    <a class="btn btn-primary w-75" data-bs-toggle="modal" data-bs-target="#card05"><i class="bi bi-envelope-fill"></i> Contato</a>
-                </div>
-            </div>
-            <!--End Card 05-->
-        </div>
-        <!--End Container Cards-->
-
-        <!--Button back to the top-->
-        <a id="back-to-top" class="btn btn-light back-to-top" role="button">
-            <i class="bi bi-chevron-up"></i>
-        </a>
-        <!--End Button back to the top-->
-
-        <!--Footer-->
-        <div class="row pt-5">
-            <!--Lower Main Menu-->
-            <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark ColorWebsiteTheme">
+<body> 
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/daviteixeira-btm" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                            </li>
-                            <li class="nav-item dropup">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Social</a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown10">
-                                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/daviteixeira-me/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
-                                    <li><a class="dropdown-item" href="https://www.instagram.com/daviteixeira.dev/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
-                                    <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC3EWiQHzZw8n_jo4nvMGCog" target="_blank"><i class="bi bi-youtube"></i> Youtube</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="navbar-brand">&copy; 2021 Davi Teixeira</a>
+                    <a class="navbar-brand" href="#main-banner">
+                        <img id="logo" src="src/img/logo.svg" alt="Logomarca" class="d-inline-block align-text-top">
+                    </a>
                 </div>
             </nav>
-            <!--End Lower Main Menu-->
         </div>
-        <!--End Footer-->
-    </div>
-    <!--End Container Home-->
+    </header>
+    <!-- id banner for Parallax -->
+    <main id="banner">
+        <!-- Banner Principal -->
+        <section class="container-fluid">
+            <div class="row" id="main-banner">
+                <div class="col-12" id="apresentation">
+                    <h1>Davi Teixeira</h1>
+                    <h2>&lt; Front-End Developer /&gt;</h2>
+                    <a class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-05">Entre em contato</a>
+                </div>
+            </div>
+        </section>
+        <!-- Serviços do site -->
+        <section class="container" id="services-container">
+            <!-- Primeira Linha -->
+            <div class="row" id="first-line">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="src/img/imagens-svg/about-me.svg" alt="Sobre mim">
+                        <div class="card-body">
+                            <div class="card-body-top">
+                                <h3 class="principal-title-card">Sobre Mim</h3>
+                                <p class="principal-text-card">
+                                    Aqui você poderá saber um pouco mais sobre mim, bem como com quais tecnologias trabalho.
+                                </p>
+                            </div>
+                            <div class="card-body-bottom">
+                                <a class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-01">
+                                    <i class="bi bi-folder"></i> Ver mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="src/img/imagens-svg/projects.svg" alt="Projetos">
+                        <div class="card-body">
+                            <div class="card-body-top">
+                                <h3 class="principal-title-card">Projetos</h3>
+                                <p class="principal-text-card">
+                                    Nessa seção você poderá encontrar informações sobre os projetos nos quais trabalhei.
+                                </p>
+                            </div>
+                            <div class="card-body-bottom">
+                                <a class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-02">
+                                    <i class="bi bi-folder"></i> Ver mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="src/img/imagens-svg/services.svg" alt="Serviços">
+                        <div class="card-body">
+                            <div class="card-body-top">
+                                <h3 class="principal-title-card">Serviços</h3>
+                                <p class="principal-text-card">
+                                    Nessa sessão você vai poder ver detalhes sobre os tipos de serviços prestados.
+                                </p>
+                            </div>
+                            <div class="card-body-bottom">
+                                <a class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-06">
+                                    <i class="bi bi-folder"></i> Ver mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda Linha -->
+            <div class="row" id="second-line">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="src/img/imagens-svg/my-blog.svg" alt="Blog">
+                        <div class="card-body">
+                            <div class="card-body-top">
+                                <h3 class="principal-title-card">Blog</h3>
+                                <p class="principal-text-card">
+                                    Amo compartilhar conhecimento, assim, aqui você pode ler alguns dos materiais que já escrevi.
+                                </p>
+                            </div>
+                            <div class="card-body-bottom">
+                                <a class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-04">
+                                    <i class="bi bi-folder"></i> Ver mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="src/img/imagens-svg/contact.svg" alt="Contate-me">
+                        <div class="card-body">
+                            <div class="card-body-top">
+                                <h3 class="principal-title-card">Contate-me</h3>
+                                <p class="principal-text-card">
+                                    Vamos criar um projeto ou apenas dizer um oi? Minha caixa de mensagens está aberta para você.
+                                </p>
+                            </div>
+                            <div class="card-body-bottom">
+                                <a class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-05">
+                                    <i class="bi bi-telephone-fill"></i> Entre em contato
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="src/img/imagens-svg/studies.svg" alt="Estudos">
+                        <div class="card-body">
+                            <div class="card-body-top">
+                                <h3 class="principal-title-card">Estudos</h3>
+                                <p class="principal-text-card">
+                                    Confira algumas das minhas conquistas, certificações, premiações e artigos publicados.
+                                </p>
+                            </div>
+                            <div class="card-body-bottom">
+                                <a class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-03">
+                                    <i class="bi bi-folder"></i> Ver mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--WhatsApp Button-->
+        <a href="https://wa.me/message/Y5CDIZP3JEK3M1" target="_blank" id="whatsapp-button" role="button">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <!--End WhatsApp Button-->
 
-    <!--Modal Card 01-->
-    <div class="modal fade" id="card01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!--Modal Dialog-->
+        <!--Button back to the top-->
+        <a id="back-to-top" role="button"><i class="bi bi-chevron-up"></i></a>
+        <!--End Button back to the top-->
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" id="footer-menu">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/daviteixeira-btm">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/daviteixeira-me/">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/dt.webites/">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/channel/UC3EWiQHzZw8n_jo4nvMGCog">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <h6>&copy 2021 Davi Teixeira</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Card 01 - About-me -->
+    <div class="modal fade" id="modal-card-01" tabindex="-1" aria-labelledby="modalsecaosobre" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <!--Modal Content-->
             <div class="modal-content">
                 <!--Modal Header-->
-                <div class="modal-header bg-primary">
-                    <h5 class="modal-title text-light">Sobre mim</h5>
+                <div class="modal-header">
+                    <h6 class="modal-title text-light">Sobre Mim</h6>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!--End Modal Header-->
                 <!--Modal Body-->
-                <div class="modal-body ColorWebsiteTheme">
-                    <!--Modal Container Fluid-->
+                <div class="modal-body">
                     <div class="container-fluid">
-                        <!--Modal Row-->
                         <div class="row justify-content-around">
-                            <!--Modal First Column-->
-                            <div class="col-md-4 py-3 my-2">
-                                <img src="src/img/logos-and-profile/Davi-09-05-2020.jpg" alt="Este sou eu, Davi Teixeira.">
-                                <h4 class="text-light text-center">Tecnologias com as quais, trabalho.</h4>
-                                <!--Modal Row Technologies-->
-                                <div class="row" id="tecnologias">
-                                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" id="tec-img"/>
-                                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" id="tec-img"/>
-                                    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" id="tec-img"/>
-                                    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" id="tec-img"/>
-                                    <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" id="tec-img"/>
-                                    <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white" id="tec-img"/>
-                                    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" id="tec-img"/>
-                                    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" id="tec-img"/>
-                                </div>
-                                <!--End Modal Row Technologies-->
+                            <!--Modal right column-->
+                            <div class="col-md-6" id="coluna-esquerda">
+                                <img src="src/img/Davi-09-05-2020.jpg" alt="Este sou eu, Davi Teixeira." id="img-profile">
+                                <h4>Citação</h4>
+                                <h5><span>" </span>Nunca deixe que mentes pequenas lhe convençam de que seus sonhos são muito grandes.<span> "</span></h5>
+                                <p id="frase-autor">- Autor Desconhecido</p>
+                                <!--Modal Technologies-->
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4">Ferramentas, idiomas e outras coisas com as quais gosto de trabalhar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                                                    <img src="src/img/pasta-logos/Html5-logo.png" alt="HTML5" />
+                                                </a>
+                                                <p>HTML5</p>
+                                            </td>
+                                            <td>
+                                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                                                    <img src="src/img/pasta-logos/Css3-logo.png" alt="CSS 3" />
+                                                </a>
+                                                <p>CSS3</p>
+                                            </td>
+                                            <td>
+                                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                                                    <img src="src/img/pasta-logos/JavaScript-logo.png" alt="JavaScript" />
+                                                </a>
+                                                <p>JavaScript</p>
+                                            </td>
+                                            <td>
+                                                <a href="https://sass-lang.com/" target="_blank">
+                                                    <img src="src/img/pasta-logos/Sass-logo.png" alt="Sass" />
+                                                </a>
+                                                <p>Sass</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://getbootstrap.com/" target="_blank">
+                                                    <img src="src/img/pasta-logos/Bootstrap-logo.png" alt="Bootstrap" />
+                                                </a>
+                                                <p>Bootstrap</p>
+                                            </td>
+                                            <td>
+                                                <a href="https://nodejs.org/en/" target="_blank">
+                                                    <img src="src/img/pasta-logos/Nodejs-logo.png" alt="Node JS" />
+                                                </a>
+                                                <p>NodeJS</p>
+                                            </td>
+                                            <td>
+                                                <a href="https://jquery.com/" target="_blank">
+                                                    <img src="src/img/pasta-logos/jQuery-logo.png" alt="jQuery" />
+                                                </a>
+                                                <p>jQuery</p>
+                                            </td>
+                                            <td>
+                                                <a href="https://gulpjs.com/" target="_blank">
+                                                    <img src="src/img/pasta-logos/Gulp-logo.png" alt="Gulp" />
+                                                </a>
+                                                <p>Gulp</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://ejs.co/" target="_blank">
+                                                    <img src="src/img/pasta-logos/EJS-logo.png" alt="EJS" />
+                                                </a>
+                                                <p>EJS</p>
+                                            </td>
+                                            <td>
+                                                <a href="https://sites.google.com" target="_blank">
+                                                    <img src="src/img/pasta-logos/google-sites-logo.png" alt="Google Sites" />
+                                                </a>
+                                                <p>G. Sites</p>
+                                            </td>
+                                            <td colspan="2">
+                                                <a href="https://wordpress.com" target="_blank">
+                                                    <img src="src/img/pasta-logos/wordpress-logo.png" alt="Wordpress" />
+                                                </a>
+                                                <p>Wordpress</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--End Modal Technologies-->
                             </div>
-                            <!--End Modal First Column-->
-                            <!--Second Modal Column-->
-                            <div class="col-md-6 py-3 my-2">
-                                <h4 class="text-light">Autobiografia</h4>
-                                <p class="text-light">
-                                    Olá, meu nome é Davi Teixeira, sou desenvolvedor front-end apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.
+                            <!--End Modal right column-->
+                            <!--Modal left column-->
+                            <div class="col-md-6" id="coluna-direita">
+                                <h4>Olá,</h4>
+                                <p>
+                                    meu nome é Davi Teixeira, sou desenvolvedor front-end apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.
                                 </p>
-                                <p class="text-light">
+                                <p>
                                     Graduando em Sistemas de Informação pela Universidade Federal do Ceará. Tenho experiência na criação e desenvolvimento de páginas Web utilizando tecnologias como HTML5, CSS3, SASS, JavaScript, Bootstrap, NodeJs e algumas outras bibliotecas bem legais.
                                 </p>
-                                <p class="text-light">
+                                <p>
                                     Estou em busca de experiências que me levem a uma formação profissional como desenvolvedor e informações mais detalhadas você pode encontrar no meu currículo.
                                 </p>
-                        
-                                <a href="https://drive.google.com/file/d/1hDCHFEoSaREo4myJc05hWyuDLB9yMTA2/view?usp=sharing" target="_blank" class="btn btn-primary w-75">
+                                <a href="https://drive.google.com/file/d/1hDCHFEoSaREo4myJc05hWyuDLB9yMTA2/view?usp=sharing" target="_blank" class="more-btn" id="curriculo">
                                     <i class="bi bi-cloud-arrow-down-fill"></i> Currículo
                                 </a>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4">Social Network</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://github.com/daviteixeira-btm">
+                                                    <i class="bi bi-github"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://www.linkedin.com/in/daviteixeira-me/">
+                                                    <i class="bi bi-linkedin"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://www.instagram.com/daviteixeira.dev/">
+                                                    <i class="bi bi-instagram"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://www.youtube.com/channel/UC3EWiQHzZw8n_jo4nvMGCog">
+                                                    <i class="bi bi-youtube"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <!--End Second Modal Column-->
+                            <!--End modal left column-->
                         </div>
-                        <!--End Modal Row-->
                     </div>
-                    <!--End Modal Container Fluid-->
                 </div>
                 <!--End Modal Body-->
                 <!--Modal Footer-->
-                <div class="modal-footer bg-primary">
+                <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
                 <!--End Modal Footer-->
             </div>
             <!--End Modal Content-->
         </div>
-        <!--End Modal Dialog-->
     </div>
-    <!--End Modal Card 01-->
+    <!-- End Modal Card 01 - About-me -->
 
-    <!--Modal Card 02-->
-    <div class="modal fade" id="card02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!--Modal Dialog-->
+    <!-- Modal Card 02 - Projects -->
+    <div class="modal fade" id="modal-card-02" tabindex="-1" aria-labelledby="modalsecaoprojetos" aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <!--Modal Content-->
             <div class="modal-content">
                 <!--Modal Header-->
-                <div class="modal-header bg-primary">
-                    <h5 class="modal-title text-light">Projetos</h5>
+                <div class="modal-header">
+                    <h6 class="modal-title text-light">Projetos</h6>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!--End Modal Header-->
-
                 <!--Modal Body-->
-                <div class="modal-body ColorWebsiteTheme">
+                <div class="modal-body">
                     <!--Presentation of projects-->
-                    <div class="m-auto py-3 text-center container bg-light">
-                        <div class="row m-auto">
+                    <div class="container" id="presentation">
+                        <div class="row">
                             <div class="col">
-                                <h3 class="fw-light">&lt; Projetos /&gt;</h3>
-                                <p class="lead text-muted">Aqui você pode conferir alguns projetos que desenvolvi, desde projetos pessoais, clones de interfaces de grandes marcas, jogos, projetos desenvolvidos em workshops, entre outros.</p>
-                                <p>                                    
-                                    <a href="https://github.com/daviteixeira-btm" target="_blank" class="btn btn-secondary my-1"><i class="bi bi-github"></i> Ir ao GitHub</a>
-                                </p>
+                                <h4><span>&lt;</span> Portfólio <span>/&gt;</span></h4>
+                                <p>
+                                    Aqui você pode conferir alguns projetos que desenvolvi, desde projetos pessoais, clones de interfaces de grandes marcas, jogos, projetos desenvolvidos em workshops, entre outros.
+                                </p>                                  
+                                <a href="https://github.com/daviteixeira-btm" target="_blank" class="more-btn">
+                                    <i class="bi bi-github"></i> Ir ao GitHub
+                                </a>
                             </div>
                         </div>
                     </div>
                     <!--End Presentation of projects-->
+
                     <!--Modal Album Row-->
-                    <div class="row justify-content-evenly py-2">
-
+                    <div class="row justify-content-around" id="projects">
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/denmark-apparel.png">
+                        <div class="card">
+                            <img src="src/img/projetos/denmark-apparel.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Denmark Apparel - é uma landing page de moda para vareijo com um estilo vintage.  
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="http://www.daviteixeira.dev.br/Dennmark-Apparel/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Denmark Apparel</h5>
+                                    <p>É uma landing page de moda para vareijo com um estilo vintage.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="http://www.daviteixeira.dev.br/Dennmark-Apparel/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/Dennmark-Apparel/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Dennmark-Apparel?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Dennmark-Apparel?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -272,37 +425,35 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/alurakut.png">
+                        <div class="card">
+                            <img src="src/img/projetos/alurakut.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Letmeask - é uma Projeto realizado pela Alura na 3º edição da Imersão React   
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://alurakut-daviteixeira-btm.vercel.app/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Alurakut</h5>
+                                    <p>Projeto realizado pela Alura na 3º edição da Imersão React.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://alurakut-daviteixeira-btm.vercel.app/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/Alurakut/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Alurakut?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Alurakut?style=flat-square" id="github-commits">
                                     </a>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/letmeask.png">
+                        <div class="card">
+                            <img src="src/img/projetos/letmeask.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Letmeask - é uma forma de você dono de live poder abrir salas para seus usuários poderem tirar duvidas.  
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://letmeask-b629a.web.app/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Letmeask</h5>
+                                    <p>Letmeask - é uma forma de você dono de live poder abrir salas para seus usuários poderem tirar duvidas.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://letmeask-b629a.web.app/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/LetMeAsk/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/LetMeAsk?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/LetMeAsk?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -310,34 +461,32 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/batfamily.png">
+                        <div class="card">
+                            <img src="src/img/projetos/batfamily.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Um pequeno blog usando o Google Sites, trazendo diferentes tópicos sobre o universo do Cavaleiro das Trevas, passando por curiosidades, sagas, histórias e muito mais!  
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://www.batfamily.com.br/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Bat Family</h5>
+                                    <p>Um pequeno blog usando o Google Sites, trazendo diferentes tópicos sobre o universo do Cavaleiro das Trevas, passando por curiosidades, sagas, histórias e muito mais!</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://www.batfamily.com.br/" target="_blank" class="more-btn">Mostrar</a>
                                 </div>
                             </div>
                         </div>
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/netflix-interface.png">
+                        <div class="card">
+                            <img src="src/img/projetos/netflix-interface.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Participando do Bootcamp de HTML Web Developer da Digital Innovation One, neste projeto tive o desafio de reconstruir a página inicial da Netflix.  
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://daviteixeira-btm.github.io/interface-netflix/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Clone Netflix Interface</h5>
+                                    <p>Participando do Bootcamp de HTML Web Developer da Digital Innovation One, neste projeto tive o desafio de reconstruir a página inicial da Netflix.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://daviteixeira-btm.github.io/interface-netflix/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/interface-netflix/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/interface-netflix?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/interface-netflix?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -345,18 +494,17 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/instagram-interface.png">
+                        <div class="card">
+                            <img src="src/img/projetos/instagram-interface.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Neste projeto tive o desafio de reconstruir a página inicial de login do Instagram.  
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://daviteixeira-btm.github.io/login-do-Instagram/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Clone Instagram Interface</h5>
+                                    <p>Neste projeto tive o desafio de reconstruir a página inicial de login do Instagram.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://daviteixeira-btm.github.io/login-do-Instagram/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/login-do-Instagram/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/login-do-Instagram?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/login-do-Instagram?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -364,19 +512,19 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/snake-game.png">
+                        <div class="card">
+                            <img src="src/img/projetos/snake-game.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Criação do zero do clássico jogo da cobrinha utilizando HTML, CSS e JavaScript.
-                                    <span> Obs: Visualização disponível apenas para computadores.</span>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://daviteixeira-btm.github.io/snake-game/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Snake Game</h5>
+                                    <p>Criação do zero do clássico jogo da cobrinha utilizando HTML, CSS e JavaScript.
+                                        <span> Obs: Visualização disponível apenas para computadores.</span>
+                                    </p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://daviteixeira-btm.github.io/snake-game/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/snake-game/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/snake-game?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/snake-game?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -384,18 +532,17 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/dev-finance.png">
+                        <div class="card">
+                            <img src="src/img/projetos/dev-finance.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Uma aplicação financeira utilizando HTML, CSS e JavaScript realizada durante a Maratona Discover da Rocketseat.  
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://daviteixeira-btm.github.io/Maratona-Discover-dev.finance/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Dev Finance</h5>
+                                    <p>Uma aplicação financeira utilizando HTML, CSS e JavaScript realizada durante a Maratona Discover da Rocketseat.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://daviteixeira-btm.github.io/Maratona-Discover-dev.finance/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/Maratona-Discover-dev.finance/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Maratona-Discover-dev.finance?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Maratona-Discover-dev.finance?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -403,18 +550,17 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/link-dev.png">
+                        <div class="card">
+                            <img src="src/img/projetos/link-dev.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Esse é o meu Link Dev, um página de destino personalizada de referência para mídias sociais, vamos fazer a sua também?
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://daviteixeira-btm.github.io/link_dev/" class="btn btn-sm btn-outline-primary" target="_blank">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Link Dev</h5>
+                                    <p>Esse é o meu Link Dev, um página de destino personalizada de referência para mídias sociais, vamos fazer a sua também?</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://daviteixeira-btm.github.io/link_dev/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/link_dev/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/link_dev?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/link_dev?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -422,18 +568,17 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/DOE.png">
+                        <div class="card">
+                            <img src="src/img/projetos/DOE.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Um sistema de cadastro de doadores de sangue. Aplicação web criada a partir da 3ª MaratonaDev da Rocketseat. 
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://daviteixeira-btm.github.io/DOE/" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>DOE</h5>
+                                    <p>Um sistema de cadastro de doadores de sangue. Aplicação web criada a partir da 3ª MaratonaDev da Rocketseat.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://daviteixeira-btm.github.io/DOE/" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/DOE/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/DOE?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/DOE?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -441,18 +586,17 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/dev-radar.png">
+                        <div class="card">
+                            <img src="src/img/projetos/dev-radar.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Projeto que visa conectar desenvolvedores próximos a você. Aplicação web criada a partir da 10º Semana OmniStack da Rocketseat.
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://github.com/daviteixeira-btm/DevRadar" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Dev Radar</h5>
+                                    <p>Projeto que visa conectar desenvolvedores próximos a você. Aplicação web criada a partir da 10º Semana OmniStack da Rocketseat.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://github.com/daviteixeira-btm/DevRadar" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/DevRadar/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/DevRadar?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/DevRadar?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -460,18 +604,17 @@
                         <!--End Album card-->
 
                         <!--Album card-->
-                        <div class="card col-md-8 col-lg-2 px-0 my-2 border-0">
-                            <img class="card-img-top" src="src/img/projects/be-the-hero.png">
+                        <div class="card">
+                            <img src="src/img/projetos/be-the-hero.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text" id="album-card-text">
-                                    Aplicação criada a partir da 11º Semana OmniStack da Rocketseat para conectar ONGs e outras instituições a pessoas que tem disponibilidade para ajudar.
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://github.com/daviteixeira-btm/Be-The-Hero" target="_blank" class="btn btn-sm btn-outline-primary">Mostrar</a>
-                                    </div>
+                                <div class="card-top">
+                                    <h5>Be The Hero</h5>
+                                    <p>Aplicação criada a partir da 11º Semana OmniStack da Rocketseat para conectar ONGs e outras instituições a pessoas que tem disponibilidade para ajudar.</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://github.com/daviteixeira-btm/Be-The-Hero" target="_blank" class="more-btn">Mostrar</a>
                                     <a href="https://github.com/daviteixeira-btm/Be-The-Hero/commits">
-                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Be-The-Hero?style=flat-square">
+                                        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/daviteixeira-btm/Be-The-Hero?style=flat-square" id="github-commits">
                                     </a>
                                 </div>
                             </div>
@@ -482,361 +625,383 @@
                 </div>
                 <!--End Modal Body-->
                 <!--Modal Footer-->
-                <div class="modal-footer bg-primary">
+                <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
                 <!--End Modal Footer-->
             </div>
-            <!--End Modal Content-->
         </div>
-        <!--End Modal Dialog-->
     </div>
-    <!--End Modal Card 02-->
+    <!--End Modal Card 02 - Projects -->
 
-    <!--Modal Card 03-->
-    <div class="modal fade" id="card03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!--Modal Dialog-->
+    <!--Modal Card 03 - Estudies -->
+    <div class="modal fade" id="modal-card-03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <!--Modal Content-->
             <div class="modal-content">
                 <!--Modal Header-->
-                <div class="modal-header bg-primary">
-                    <h5 class="modal-title text-light">Estudos</h5>
+                <div class="modal-header">
+                    <h6 class="modal-title text-light">Estudos</h6>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!--End Modal Header-->
                 <!--Modal Body-->
-                <div class="modal-body ColorWebsiteTheme">
-                    <!--Modal Container Fluid-->
+                <div class="modal-body">
+                    <!--Estudies-->
                     <div class="container">
-                        <!--Modal Row-->
-                        <div class="row">
-                            <h3 class="text-light">Formação acadêmica</h3>
+                        <!-- Academic Formation -->
+                        <div class="row" id="academic-formation">
+                            <h4><span>&lt;</span> Formação Acadêmica <span>/&gt;</span></h4>
                             <!--Card Studies 01-->
-                            <div class="col my-2">
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <div id="card-logo">
-                                            <img src="src/img/studies/logo-ufc.jpg" alt="Logo da Universidade Federal do Ceará.">
-                                        </div>
-                                        <div id="card-body-text">
-                                            <h5 class="card-title">Universidade Federal do Ceará</h5>
-                                            <p class="card-text text-md-start">Bacharelando em Sistemas de Informação</p>
-                                            <span>2019 - 2024</span>
-                                        </div>
-                                        <div class="visitar-site">
-                                            <a href="https://www.quixada.ufc.br/" target="_blank" class="btn btn-primary">Site</a>
-                                        </div>
-                                    </div>
+                            <div class="academic-card col">
+                                <div class="card-top">
+                                    <img src="src/img/studies/logo-ufc.png" alt="Logo da Universidade Federal do Ceará.">
+                                    <h5>Universidade Federal do Ceará</h5>
+                                    <p>Bacharelando em Sistemas de Informação</p>
+                                    <p>2019 - 2024</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://www.quixada.ufc.br/" target="_blank" class="more-btn">Site</a>
                                 </div>
                             </div>
                             <!--End Card Studies 01-->
+
                             <!--Card Studies 02-->
-                            <div class="col my-2">
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <div id="card-logo">
-                                            <img src="src/img/studies/logo-alfredo-nunes.jpg" alt="Logo da E.E.E.P Alfredo Nunes de Melo.">
-                                        </div>
-                                        <div id="card-body-text">
-                                            <h5 class="card-title">E.E.E.P Alfredo Nunes de Melo</h5>
-                                            <p class="card-text text-md-start">Técnico em Informática</p>
-                                            <span>2013 - 2015</span>
-                                        </div>
-                                        <div class="visitar-site">
-                                            <a href="https://www.facebook.com/eeep.alfredonunesdemelo" target="_blank" class="btn btn-primary">Site</a>
-                                        </div>
-                                    </div>
+                            <div class="academic-card col">
+                                <div class="card-top">
+                                    <img src="src/img/studies/logo-alfredo-nunes.png" alt="Logo da E.E.E.P Alfredo Nunes de Melo.">
+                                    <h5>E.E.E.P Alfredo Nunes de Melo</h5>
+                                    <p>Técnico em Informática</p>
+                                    <p>2013 - 2015</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a href="https://www.facebook.com/eeep.alfredonunesdemelo" target="_blank" class="more-btn">Site</a>
                                 </div>
                             </div>
                             <!--End Card Studies 02-->
                         </div>
-                        <!--End Modal Row-->
+                        <!-- Academic Formation -->
 
                         <!--Licenses and certificates-->
                         <div class="row" id="certificates">
-                            <h3 class="text-light">Licenças e certificados</h3>
+                            <h4><span>&lt;</span> Licenças e certificados <span>/&gt;</span></h4>
                             <!--Certificate One-->
-                            <div class="col col-sm-6 my-2">
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <div class="card-img">
-                                            <a href="https://certificates.digitalinnovation.one/8FF40D4B" target="_blank"><img src="src/img/studies/certificado.svg" alt=""></a>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>HTML Web Developer</p>
-                                        </div>
-                                        <div class="card-link">
-                                            <a href="https://digitalinnovation.one/sign-up?ref=K8VWP5V08J" target="_blank">Digital Innovation One Inc.</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="certificate-card col-md-5">
+                                <a href="https://certificates.digitalinnovation.one/8FF40D4B" target="_blank">
+                                    <img src="src/img/studies/certificado.svg" alt="">
+                                </a>
+                                <p>HTML Web Developer</p>
                             </div>
                             <!--End Certificate One-->
 
                             <!--Certificate Two-->
-                            <div class="col col-sm-6 my-2">
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <div class="card-img">
-                                            <a href="https://www.udemy.com/certificate/UC-2GRZRY6C/" target="_blank"><img src="src/img/studies/certificado.svg" alt=""></a>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>Bootstrap 4: Completo e Direto ao Ponto</p>
-                                        </div>
-                                        <div class="card-link">
-                                            <a href="https://www.udemy.com/share/100F3uAkoZd11UTXw=/?xref=E0ASc1hRQ3QBSWUuAAcqP1kSWSRM" target="_blank">Udemy</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="certificate-card col-md-5">
+                                <a href="https://www.udemy.com/certificate/UC-2GRZRY6C/" target="_blank">
+                                    <img src="src/img/studies/certificado.svg" alt="">
+                                </a>
+                                <p>Bootstrap 4: Completo e Direto ao Ponto</p>
                             </div>
                             <!--End Certificate Two-->
 
                             <!--Certificate Three-->
-                            <div class="col col-sm-6 my-2">
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <div class="card-img">
-                                            <a href="https://ead.escoladotrabalhador.gov.br/mod/simplecertificate/verify.php" data-bs-toggle="tooltip" title="Nº Credencial: 4E42243D264EB7F19EC9C17A4B33586250F8" target="_blank"><img src="src/img/studies/certificado.svg" alt=""></a>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>Inglês aplicado ao trabalho</p>
-                                        </div>
-                                        <div class="card-link">
-                                            <a href="https://ead.escoladotrabalhador.gov.br/mod/simplecertificate/verify.php" target="_blank">Universidade de Brasília</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="certificate-card col-md-5">
+                                <a href="https://ead.escoladotrabalhador.gov.br/mod/simplecertificate/verify.php" data-bs-toggle="tooltip" title="Nº Credencial: 4E42243D264EB7F19EC9C17A4B33586250F8" target="_blank">
+                                    <img src="src/img/studies/certificado.svg" alt="">
+                                </a>
+                                <p>Inglês aplicado ao trabalho</p>
                             </div>
                             <!--End Certificate Three-->
 
                             <!--Certificate Four-->
-                            <div class="col col-sm-6 my-2">
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <div class="card-img">
-                                            <a href="https://academy.club.hotmart.com/public/certificate?code=2b30ade6-ab08-45c0-9545-e49d0ea950fa" target="_blank"><img src="src/img/studies/certificado.svg" alt=""></a>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>Marketing e Empreend. Digital</p>
-                                        </div>
-                                        <div class="card-link">
-                                            <a href="https://www.hotmart.com/pt/academy" target="_blank">Hotmart Academy</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="certificate-card col-md-5">
+                                <a href="https://academy.club.hotmart.com/public/certificate?code=2b30ade6-ab08-45c0-9545-e49d0ea950fa" target="_blank">
+                                    <img src="src/img/studies/certificado.svg" alt="">
+                                </a>
+                                <p>Marketing e Empreend. Digital</p>
                             </div>
                             <!--End Certificate Four-->
-                            
                         </div>
                         <!--End Licenses and certificates-->
-                        <div class="row" id="conquistas">
-                            <h3 class="text-light">Conquistas</h3>
 
-                            <!--Firts Achievements-->
-                            <div class="col mx-1 my-2">
-                                <div class="card border-0 w-100">
-                                    <img src="src/img/studies/mocica.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">1º Lugar na área de exatas, nível superior</h5>
-                                        <p class="card-text">O evento reúne estudantes de todo o Brasil e de alguns países da América Latina com o objetivo de apresentar os projetos desenvolvidos na faculdade e concorrer a prêmios, meu projeto conquistou o 1º lugar na categoria exatas do ensino superior.</p>
-                                        <span>
-                                            <a href="https://drive.google.com/file/d/1OIsw4KaEqbL8BFzsZqqW_DTmb_vfiEir/view?usp=sharing" target="_blank" class="btn btn-primary">Certificação</a>
-                                            <a href="https://mocica.webnode.com/sobre-nos/" target="_blank" class="btn btn-primary mx-1">Site</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Firts Achievements-->
+                        <!-- Achievements -->
 
-                            <!--Second Achievements-->
-                            <div class="col mx-1 my-2">
-                                <div class="card border-0 w-100">
-                                    <img src="src/img/studies/enactus.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Team Leader Enactus IFCE Cedro</h5>
-                                        <p class="card-text">Atuei na criação e estruturação do time, a partir de imersões e estudos aprofundados sobre team building e cultura organizacional. Assim, participei no gerenciamento de projetos de empreendedorismo social no campus do IFCE Cedro e comunidade local.</p>
-                                        <span>
-                                            <a href="https://drive.google.com/file/d/18PVzBNQbtIz23bY0MuckSuqKFfhJGXhn/view?usp=sharing" target="_blank" class="btn btn-primary">Certificação</a>
-                                            <a href="http://www.enactus.org.br/conheca-o-time-enactus-ifce-cedro-2/" target="_blank" class="btn btn-primary mx-1">Site</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Second Achievements-->
-
-                            <!--Third Achievements-->
-                            <div class="col mx-1 my-2">
-                                <div class="card border-0 w-100">
-                                    <img src="src/img/studies/hackathon-fit-on.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">2º lugar na hackathon do evento FIT-ON, do Campus da UFC em Crateús</h5>
-                                        <p class="card-text">Com a problemática: “Como conectar pequenos agricultores ao mercado?”, desenvolvemos uma ideia de aplicativo web intitulado AgroShop, uma vitrine virtual em tempo integral que possibilita que os consumidores entrem em contato com comerciantes próximos.</p>
-                                        <span>
-                                            <a href="https://www.quixada.ufc.br/2021/03/11/equipe-do-campus-da-ufc-em-quixada-e-segunda-colocada-na-hackathon-do-evento-fit-on-do-campus-da-ufc-em-crateus/" target="_blank" class="btn btn-primary mx-1">Site</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Third Achievements-->
+                        <!--Firts Achievements-->
+                        <div class="row conquistas">
+                            <h4><span>&lt;</span> Conquistas <span>/&gt;</span></h4>
                             
-                        </div>
-                    </div>
-                    <!--End Modal Container Fluid-->
-                </div>
-                <!--End Modal Body-->
-                <!--Modal Footer-->
-                <div class="modal-footer bg-primary">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                </div>
-                <!--End Modal Footer-->
-            </div>
-            <!--End Modal Content-->
-        </div>
-        <!--End Modal Dialog-->
-    </div>
-    <!--End Modal Card 03-->
-
-    <!--Modal Card 04-->
-    <div class="modal fade" id="card04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!--Modal Dialog-->
-        <div class="modal-dialog modal-lg">
-            <!--Modal Content-->
-            <div class="modal-content">
-                <!--Modal Header-->
-                <div class="modal-header bg-primary">
-
-                </div>
-                <!--End Modal Header-->
-                <!--Modal Body-->
-                <div class="modal-body ColorWebsiteTheme">
-                    <!--Modal Container Fluid-->
-                    <div class="container-fluid">
-                        <!--Modal Row-->
-                        <div class="row justify-content-around">
-                            <!--Modal First Column-->
-                            <div class="col-md-10 mt-3">
-                                <h3 class="text-light">Desculpe, ainda estou trabalhando neste conteúdo :(</h3>
+                            <div class="conquistas-card">
+                                <div class="card-imagem">
+                                    <img class="img-fluid" src="src/img/studies/mocica.jpg" alt="">
+                                </div>
+                                <div class="card-details">
+                                    <h5 class="card-text-details">1º Lugar na área de exatas, nível superior</h5>
+                                    <p class="card-text-details">O evento reúne estudantes de todo o Brasil e de alguns países da América Latina com o objetivo de apresentar os projetos desenvolvidos na faculdade e concorrer a prêmios, meu projeto conquistou o 1º lugar na categoria exatas do ensino superior.</p>
+                                </div>
+                                <div class="card-buttons">
+                                    <div class="card-btn-top">
+                                        <a href="https://drive.google.com/file/d/1OIsw4KaEqbL8BFzsZqqW_DTmb_vfiEir/view?usp=sharing" target="_blank" class="more-btn certificate-buttons">Certificação</a>
+                                    </div>
+                                    <div class="card-btn-botton">
+                                        <a href="https://mocica.webnode.com/sobre-nos/" target="_blank" class="more-btn certificate-buttons">Site</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!--End Modal Row-->
+                        <!--End Firts Achievements-->
+
+                        <!--Second Achievements-->
+                        <div class="row conquistas">
+                            <div class="conquistas-card col">
+                                <div class="card-imagem">
+                                    <img class="img-fluid" src="src/img/studies/enactus.jpeg" alt="...">
+                                </div>
+                                <div class="card-details">
+                                    <h5 class="card-text-details">Team Leader Enactus IFCE Cedro</h5>
+                                    <p class="card-text-details">Atuei na criação e estruturação do time, a partir de imersões e estudos aprofundados sobre team building e cultura organizacional. Assim, participei no gerenciamento de projetos de empreendedorismo social no campus do IFCE Cedro e comunidade local.</p>
+                                </div>
+                                <div class="card-buttons">
+                                    <div class="card-btn-top">
+                                        <a href="https://drive.google.com/file/d/18PVzBNQbtIz23bY0MuckSuqKFfhJGXhn/view?usp=sharing" target="_blank" class="more-btn certificate-buttons">Certificação</a>
+                                    </div>
+                                    <div class="card-btn-botton">
+                                        <a href="http://www.enactus.org.br/conheca-o-time-enactus-ifce-cedro-2/" target="_blank" class="more-btn certificate-buttons">Site</a>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Second Achievements-->
+
+                        <!--Third Achievements-->
+                        <div class="row conquistas">
+                            <div class="conquistas-card col">
+                                <div class="card-imagem">
+                                    <img class="img-fluid" src="src/img/studies/hackathon-fit-on.jpeg" alt="...">
+                                </div>
+                                <div class="card-details">
+                                    <h5 class="card-text-details">2º lugar na hackathon do evento FIT-ON, do Campus da UFC em Crateús</h5>
+                                    <p class="card-text-details">Com a problemática: “Como conectar pequenos agricultores ao mercado?”, desenvolvemos uma ideia de aplicativo web intitulado AgroShop, uma vitrine virtual em tempo integral que possibilita que os consumidores entrem em contato com comerciantes próximos.</p>
+                                </div>
+                                <div class="card-buttons">
+                                    <div class="card-btn-top">
+                                        <a href="https://www.quixada.ufc.br/2021/03/11/equipe-do-campus-da-ufc-em-quixada-e-segunda-colocada-na-hackathon-do-evento-fit-on-do-campus-da-ufc-em-crateus/" target="_blank" class="more-btn certificate-buttons">Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Third Achievements-->
+
+                        <!-- End Achievements -->
                     </div>
-                    <!--End Modal Container Fluid-->
+                    <!--End Estudies-->
                 </div>
                 <!--End Modal Body-->
+
                 <!--Modal Footer-->
-                <div class="modal-footer bg-primary">
+                <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
                 <!--End Modal Footer-->
             </div>
-            <!--End Modal Content-->
         </div>
-        <!--End Modal Dialog-->
     </div>
-    <!--End Modal Card 04-->
+    <!--End Modal Card 03 - Estudies -->
 
-    <!--Modal Card 05-->
-    <div class="modal fade" id="card05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!--Modal Dialog-->
+    <!--Modal Card 04 - Blog -->
+    <div class="modal fade" id="modal-card-04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <!--Modal Content-->
             <div class="modal-content">
                 <!--Modal Header-->
-                <div class="modal-header bg-primary">
-                    <h5 class="modal-title text-light">Contato</h5>
+                <div class="modal-header">
+                    <h6 class="modal-title text-light">Blog</h6>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!--End Modal Header-->
                 <!--Modal Body-->
-                <div class="modal-body ColorWebsiteTheme">
-                    <!--Modal Container Fluid-->
-                    <div class="container">
-                        <!--Modal Form Row-->
-                        <div class="row">
-                            <!--Modal First Column-->
-                            <div class="col mb-4">
-                                <!--Modal Apresentation Form-->
-                                <h3 class="text-light">Se interessou pelo meu trabalho?</h3>
-                                <p class="text-light">Entre em contato, vamos discutir um projeto e tirar qualquer dúvida, minha caixa de mensagens está aberta a todos!</p>
-                                <!--End Modal Apresentation Form-->
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <form action="https://formsubmit.co/eacf758cacab49089089bbe41d726b0f" id="form-contact" method="POST">
-                                            <div class="mb-2">
-                                                <label for="assunto" class="form-label">Assunto</label>
-                                                <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Assunto desse e-mail">
-                                            </div>
-                                            <div class="mb-2">
-                                                <label for="nome" class="form-label">Nome</label>
-                                                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome">
-                                            </div>
-                                            <div class="mb-2">
-                                                <label for="email" class="form-label">E-mail</label>
-                                                <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu e-mail">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="mensagem" class="form-label">Mensagem</label>
-                                                <textarea class="form-control" name="mensagem" id="mensagem" cols="10" rows="5" placeholder="Mensagem"></textarea>
-                                            </div>
-                                            <div class="alert alert-danger mt-1 d-none" role="alert">
-                                                Por favor, preencha o campo <span id="erro-field"></span>!
-                                            </div>
-                                            <input type="hidden" name="_next" value="https://daviteixeira-btm.github.io/pages/thanks.html">
-                                            <input type="hidden" name="_captcha" value="false">
-                                            <div class="mb-1">
-                                                <button type="submit" class="btn btn-primary">Enviar</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Modal Form Row-->
-                        <div class="row">
-                            <div class="col mb-4">
-                                <h3 class="text-light">Encontre-me</h3>
-                                <div class="card w-100">
-                                    <div class="card-body">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.232325620365!2d-39.46578928572817!3d-6.099381095583359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a2d18c323fb353%3A0x60fd031f1b26abb1!2sAv.%20de%20Morais%20Pinho%20-%20Vila%20Esperan%C3%A7a%2C%20Acopiara%20-%20CE%2C%2063560-000!5e0!3m2!1spt-BR!2sbr!4v1621553287257!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    </div>
-                                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <div class="col-md-10 mt-3">
+                                <h4 class="text-light">Desculpe, ainda estou trabalhando neste conteúdo :(</h4>
                             </div>
                         </div>
                     </div>
-                    <!--End Modal Container Fluid-->
                 </div>
                 <!--End Modal Body-->
                 <!--Modal Footer-->
-                <div class="modal-footer bg-primary">
+                <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
                 <!--End Modal Footer-->
             </div>
-            <!--End Modal Content-->
         </div>
-        <!--End Modal Dialog-->
     </div>
-    <!--End Modal Card 05-->
+    <!--End Modal Card 04-->
 
-    <!--Particles-->
-    <script src="src/js/particles.js"></script>
-    <script src="src/js/app.js"></script>
-    <!--End Particles-->
+    <!--Modal Card 05-->
+    <div class="modal fade" id="modal-card-05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h6 class="modal-title text-light">Contato</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--End Modal Header-->
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="container">
+                        <!--Modal Apresentation Form-->
+                        <div class="row" id="apresentation-contact">
+                            <div class="col">
+                                <h3>Se interessou pelo meu trabalho?</h3>
+                                <p>Entre em contato, vamos discutir um projeto e tirar qualquer dúvida, minha caixa de mensagens está aberta a todos!</p>
+                            </div>
+                        </div>
+                        <!--End Modal Apresentation Form-->
+                        
+                        <!--Modal Form-->
+                        <div class="row" id="form-contact">
+                            <div class="col">
+                                <form action="https://formsubmit.co/a03add9d18846a66fc3ff63eaf1f227c" method="POST" id="formAction">
+                                    <div class="mb-2">
+                                        <label for="assunto" class="form-label">Assunto</label>
+                                        <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Assunto desse e-mail">
+                                    </div>  
+                                    <div class="mb-2">
+                                        <label for="nome" class="form-label">Seu Nome</label>
+                                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input class="form-control" type="email" name="email" id="email" placeholder="email@exemplo.com.br">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="tel" class="form-label">Contato</label>
+                                        <input class="form-control" type="tel" name="tel" id="tel" placeholder="(__) _____-____">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensagem" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" name="mensagem" id="mensagem" cols="10" rows="5" placeholder="Escreva a sua mensagem aqui"></textarea>
+                                    </div>
+                                    <div class="alert alert-danger mt-1 d-none" role="alert">
+                                        Por favor, preencha o campo <span id="erro-field"></span>!
+                                    </div>
+                                    <input type="hidden" name="_next" value="https://daviteixeira-btm.github.io/pages/thanks.html">
+                                    <input type="hidden" name="_captcha" value="false">
 
-    <!--Jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!--End Jquery-->
-    
-    <!--Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
-    <!--End Separate Popper and Bootstrap JS -->
+                                    <div class="mb-1" id="row-form-submit">
+                                        <button type="submit" class="more-btn form-submit">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--End Modal Form Row-->
 
-    <!--Project Scripts-->
-    <script src="src/js/main.js"></script>
-    <script src="src/js/form.js"></script>
-    <!--End Project Scripts-->
+                        <!-- Find-me -->
+                        <div class="row" id="find-me">
+                            <div class="col">
+                                <h4>Encontre-me</h4>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.232325620365!2d-39.46578928572817!3d-6.099381095583359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a2d18c323fb353%3A0x60fd031f1b26abb1!2sAv.%20de%20Morais%20Pinho%20-%20Vila%20Esperan%C3%A7a%2C%20Acopiara%20-%20CE%2C%2063560-000!5e0!3m2!1spt-BR!2sbr!4v1621553287257!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <!-- End Find-me -->
+                    </div>
+                </div>
+                <!--End Modal Body-->
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                <!--End Modal Footer-->
+            </div>
+        </div>
+    </div>
+    <!--End Modal Card 05 - Blog -->
+
+    <!--Modal Card 06 - Services -->
+    <div class="modal fade" id="modal-card-06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h6 class="modal-title text-light">Serviços</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--End Modal Header-->
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <h4><span>&lt;</span> Serviços <span>/&gt;</span></h4>
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="bi bi-laptop"></i>
+                                    <h5>Criação de Sites</h5>
+                                    <p>
+                                        Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="bi bi-phone"></i>
+                                    <h5>Sites Responsivos</h5>
+                                    <p>
+                                        Criação de sites responsivos para a melhor visualização em todas as resoluções.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="bi bi-code-square"></i>
+                                    <h5>Código Semântico</h5>
+                                    <p>
+                                        Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez melhor nas buscas.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="bi bi-cloud"></i>
+                                    <h5>Hospedagem de Sites</h5>
+                                    <p>
+                                        Hospedagem em ambientes cloud, e-mail profissional, CDN, Certificado Digital SSL.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Modal Body-->
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                <!--End Modal Footer-->
+            </div>
+        </div>
+    </div>
+    <!--End Modal Card 06 - Services -->
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!--Bootstrap 5 Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <!--Scripts-->
+    <script src="src/js/scripts.js"></script>
 </body>
-
 </html>

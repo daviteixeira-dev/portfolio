@@ -1,103 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Desenvolvedor Front-End graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.">
+    <title>Davi Teixeira - Front-End Web Developer</title>
+    <!--Bootstrap 5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/style.css">
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!--Style CSS-->
-    <link rel="stylesheet" href="../src/css/style.css">
-    <!--Icon-->
-    <link rel="shortcut icon" href="../src/img/logos-and-profile/logo.svg" type="image/x-icon">
-
-    <title>&lt;Davi Teixeira /&gt;</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Fav Icon-->
+    <link rel="icon" href="../src/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="../src/img/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="canonical" href="https://www.daviteixeira.dev.br/thanks.html" />
 </head>
 <body>
-    <!--<h1>Obrigado por enviar uma msg, retornaremos em breve!</h1>-->
-
-    <!--Container Home-->
-    <div class="container-fluid bg-dark">
-        <!--Title-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <h1><img src="../src/img/logos-and-profile/logo.png" alt="" width="60" height="60" class="d-inline-block align-text-center"> Davi Teixeira</h1>
-                </a>
-                <span class="text-light">&lt;Front-end Web Developer/&gt;</span>
-            </div>
-        </nav>
-        <!--End Title-->
-
-        <!--Container Cards-->
-        <div class="row justify-content-evenly pt-2 pb-4" id="container-cards">
-            <!--Paticles-->
-            <div id="particles-js"></div>
-
-            <!--Thank you card-->
-            <div class="card w-75 my-5 bg-dark">
-                <h5 class="card-header text-light">Obrigado!</h5>
-                <div class="card-body">
-                    <h5 class="card-title text-light">Recebi o seu e-mail</h5>
-                    <p class="card-text text-light">Agradeço pelo interesse em meu trabalho, agora é só relaxar que, em breve, entrarei em contato com você.</p>
-                    <a href="../index.html" class="btn btn-primary">Voltar a página Inicial</a>
-                </div>
-            </div>
-            <!--End Thank you card-->
-
-        </div>
-        
-        <!--Footer-->
-        <div class="row pt-5">
-            <!--Lower Main Menu-->
-            <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/daviteixeira-btm" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                            </li>
-                            <li class="nav-item dropup">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Social</a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown10">
-                                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/daviteixeira-me/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
-                                    <li><a class="dropdown-item" href="https://www.instagram.com/daviteixeira.dev/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
-                                    <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC3EWiQHzZw8n_jo4nvMGCog" target="_blank"><i class="bi bi-youtube"></i> Youtube</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="navbar-brand">&copy; 2021 Davi Teixeira</a>
+                    <a class="navbar-brand" href="../src/index.html">
+                        <img id="logo" src="../src/img/logo.svg" alt="Logomarca" class="d-inline-block align-text-top">
+                    </a>
                 </div>
             </nav>
-            <!--End Lower Main Menu-->
         </div>
-        <!--End Footer-->
-    </div>
-    <!--End Container Home-->
+    </header>
+    <main id="thanks-banner">
+        <!--Thank you card-->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col" id="thank-you-card">
+                    <div id="thank-you-card-top">
+                        <h1>Davi Teixeira</h1>
+                        <h2>&lt; Front-End Developer /&gt;</h2>
+                        <h3>Obrigado!</h3>
+                        <h4>Recebi o seu e-mail</h4>
+                        <h5>Agradeço pelo interesse em meu trabalho, agora é só relaxar que, em breve, entrarei em contato com você.</h5>
+                    </div>
+                    <div id="thank-you-card-bottom">
+                        <a href="../index.html" class="more-btn thanks-btn">Voltar a página inicial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Thank you card-->
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" id="footer-menu">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/daviteixeira-btm">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/daviteixeira-me/">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/dt.webites/">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/channel/UC3EWiQHzZw8n_jo4nvMGCog">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <h6>&copy 2021 Davi Teixeira</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <!--Particles-->
-    <script src="../src/js/particles.js"></script>
-    <script src="../src/js/app.js"></script>
-    <!--End Particles-->
-
-    <!--Jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!--End Jquery-->
-    
-    <!--Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
-    <!--End Separate Popper and Bootstrap JS -->
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!--Bootstrap 5 Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <!--Scripts-->
+    <script src="../src/js/scripts.js"></script>
 </body>
 </html>
