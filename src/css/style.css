@@ -67,8 +67,8 @@ body {
     bottom: 8.5rem;
     position: fixed;
     color: #f2f2f2;
-    font-size: 1.7rem;
-    padding-top: .2rem;
+    font-size: 1.5rem;
+    padding-top: .3rem;
     border-radius: 50%;
     text-align: center;
     background-color: green;
@@ -112,7 +112,7 @@ header, .navbar {
     background-position: 0 55%;
     box-shadow: .5px .5px #000;
     background-repeat: no-repeat;
-    background-image: url('../img/main-banner.jpg');
+    background-image: url('../img/main-banner.svg');
 }
 
 #main-banner #apresentation {
