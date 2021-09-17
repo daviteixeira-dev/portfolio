@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="src/img/logos-and-profile/logo.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Personal Portfolio">
+  <img src="src/img/logo.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Personal Portfolio">
 </h1>
 
 <h1 align="center">
@@ -39,8 +39,6 @@
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [jQuery](https://jquery.com/)
 - [Bootstrap](https://getbootstrap.com/)
-- [Express](https://expressjs.com/pt-br/)
-- [Nodemon](https://www.npmjs.com/package/nodemon)
 - [FormSubmit](https://formsubmit.co/)
 
 ## 💻 Installation, execution and development
@@ -49,8 +47,7 @@
 ### Prerequisites
 ```💻 Pré-requisitos```
 
-- [npm](https://www.npmjs.com/)
-- [Node.js](https://nodejs.org/en/)
+- - [Bootstrap](https://getbootstrap.com/)
 
 ### 🌐 Web
 ```bash
