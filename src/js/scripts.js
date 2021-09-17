@@ -2,8 +2,8 @@ $(document).ready(function(){
 
     // Parallax
     setTimeout(function(){
-        $('#banner').parallax({imageSrc: '../src/img/services-banner.svg'});
-        $('#thanks-banner').parallax({imageSrc: '../src/img/services-banner.svg'});
+        $('#banner').parallax({imageSrc: '../src/img/services-banner.jpg'});
+        $('#thanks-banner').parallax({imageSrc: '../src/img/services-banner.jpg'});
         
     }, 250);
 
