@@ -47,7 +47,7 @@
 ### Prerequisites
 ```💻 Pré-requisitos```
 
-- - [Bootstrap](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ### 🌐 Web
 ```bash
