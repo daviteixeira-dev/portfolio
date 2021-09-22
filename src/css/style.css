@@ -94,12 +94,14 @@ header, .navbar {
 
 #logo {
     width: 3.5rem;
+    height: 3.5rem;
     transition: .5s;
     margin-left: 1rem;
 }
 
 #logo:hover {
     width: 4rem;
+    height: 4rem;
 }
 
 /* Main Banner */
@@ -112,7 +114,7 @@ header, .navbar {
     background-position: 0 55%;
     box-shadow: .5px .5px #000;
     background-repeat: no-repeat;
-    background-image: url('../img/main-banner.jpg');
+    background-image: url('../img/main-banner.png');
 }
 
 #main-banner #apresentation {
