@@ -19,17 +19,21 @@ body {
 
 .more-btn {
     color: #f2f2f2;
-    width: 12rem;
-    height: 3.75rem;
+    width: 10rem;
+    height: 2.5rem;
     transition: .5s;
     cursor: pointer;
-    font-size: .7rem;
+    font-size: .6rem;
     padding: .6rem 1rem;
     border-radius: 1.8rem;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #195466;
     border: 3px solid transparent;
+}
+
+.more-btn i {
+    padding-right: .3rem;
 }
 
 .principal-title-card, .principal-text-card {
