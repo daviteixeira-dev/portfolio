@@ -1,0 +1,9 @@
+{
+    "name": "daviteixeira.dev",
+    "short_name": "daviteixeira.dev",
+    "theme_color": "#121212",
+    "background_color": "#121212",
+    "display": "standalone",
+    "scope": "index.html",
+    "start_url": "/"
+}
