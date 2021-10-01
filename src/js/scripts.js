@@ -11,12 +11,6 @@ if('serviceWorker' in navigator){
     });
 }
 
-// Parallax
-setTimeout(function(){
-    $('#banner').parallax({imageSrc: '../src/img/services-banner.webp'});
-    $('#thanks-banner').parallax({imageSrc: '../src/img/services-banner.webp'});  
-}, 250);
-
 // Button back to the top
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
