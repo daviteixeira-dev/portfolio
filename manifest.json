@@ -7,9 +7,14 @@
     "scope": "index.html",
     "icons": [
         {
+          "src": "src/img/favicon.png",
+          "type": "image/png",
+          "sizes": "50x50"
+        },
+        {
           "src": "src/img/logo.png",
           "type": "image/png",
-          "sizes": "512x512"
+          "sizes": "100x100"
         },
         {
             "src": "src/img/maskable_icon.png",
