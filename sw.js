@@ -3,6 +3,17 @@
 const CACHE_NAME = "daviteixeira.dev-cache-v1";
 const urlsToCache = [
   /* Add an array of files to precache for your app */
+  'https://www.daviteixeira.dev.br/src/img/main-banner.webp',
+  'https://www.daviteixeira.dev.br/src/img/logo.png',
+  'https://www.daviteixeira.dev.br/src/img/banner-cards/about-me.webp',
+  'https://www.daviteixeira.dev.br/src/img/banner-cards/contact.webp',
+  'https://www.daviteixeira.dev.br/src/img/banner-cards/services.webp',
+  'https://www.daviteixeira.dev.br/src/img/banner-cards/projects.webp',
+  'https://www.daviteixeira.dev.br/src/css/style.css',
+  'https://www.daviteixeira.dev.br/src/img/banner-cards/studies.webp',
+  'https://www.daviteixeira.dev.br/src/img/banner-cards/my-blog.webp',
+  'https://www.daviteixeira.dev.br/src/js/scripts.js',
+  'https://www.daviteixeira.dev.br/src/js/parallax.js'
 ];
 
 self.addEventListener("install", function (event){
