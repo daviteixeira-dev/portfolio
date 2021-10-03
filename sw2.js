@@ -1,17 +1,17 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   /* Add an array of files to precache for your app */
-  'src/img/main-banner.webp',
-  'src/img/logo.png',
-  'src/img/banner-cards/about-me.webp',
-  'src/img/banner-cards/contact.webp',
-  'src/img/banner-cards/services.webp',
-  'src/img/banner-cards/projects.webp',
-  'src/css/style.css',
-  'src/img/banner-cards/studies.webp',
-  'src/img/banner-cards/my-blog.webp',
-  'src/js/scripts.js',
-  'src/js/parallax.js'
+  '/src/img/main-banner.webp',
+  '/src/img/logo.png',
+  '/src/img/banner-cards/about-me.webp',
+  '/src/img/banner-cards/contact.webp',
+  '/src/img/banner-cards/services.webp',
+  '/src/img/banner-cards/projects.webp',
+  '/src/css/style.css',
+  '/src/img/banner-cards/studies.webp',
+  '/src/img/banner-cards/my-blog.webp',
+  '/src/js/scripts.js',
+  '/src/js/parallax.js'
 ];
 
 
