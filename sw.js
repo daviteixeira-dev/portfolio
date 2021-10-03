@@ -18,13 +18,13 @@ const urlsToCache = [
 
 self.addEventListener("install", function (event){
   
-  console.log("[PWA Builder] Install Event processing");
-  console.log("[PWA Builder] Skip waiting on install");
-  self.skipWaiting();
+  //console.log("[PWA Builder] Install Event processing");
+  //console.log("[PWA Builder] Skip waiting on install");
+  //self.skipWaiting();
 
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
-      console.log("[PWA Builder] Caching pages during install");
+      console.log(" --> Opened cache");
       return cache.addAll(urlsToCache);
     })
   );
