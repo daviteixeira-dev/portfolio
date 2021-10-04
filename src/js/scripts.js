@@ -1,4 +1,5 @@
 // Service Worker
+
 if('serviceWorker' in navigator){
     window.addEventListener('load', function(){
         navigator.serviceWorker.register('/sw.js').then(function(registration){
@@ -12,6 +13,7 @@ if('serviceWorker' in navigator){
 }
 
 // Button back to the top
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
         $('#back-to-top').fadeIn();
@@ -29,6 +31,7 @@ $('#back-to-top').click(function () {
 });
 
 // Form Action
+
 $('#formAction').submit(function(){
 
     var nome = $('#nome'); 
