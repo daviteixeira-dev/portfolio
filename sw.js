@@ -1,22 +1,26 @@
 var CACHE_NAME = 'my-site-cache-v1';
+
+// Files to save in cache
 var urlsToCache = [
   /* Add an array of files to precache for your app */
-  'https://www.daviteixeira.dev.br/src/img/services-banner.webp',
-  'https://www.daviteixeira.dev.br/src/img/main-banner.webp',
-  'https://www.daviteixeira.dev.br/src/img/logo.png',
-  'https://www.daviteixeira.dev.br/src/img/banner-cards/about-me.webp',
-  'https://www.daviteixeira.dev.br/src/img/banner-cards/contact.webp',
-  'https://www.daviteixeira.dev.br/src/img/banner-cards/services.webp',
-  'https://www.daviteixeira.dev.br/src/img/banner-cards/projects.webp',
-  'https://www.daviteixeira.dev.br/src/css/style.css',
-  'https://www.daviteixeira.dev.br/src/img/banner-cards/studies.webp',
-  'https://www.daviteixeira.dev.br/src/img/banner-cards/my-blog.webp',
-  'https://www.daviteixeira.dev.br/src/js/scripts.js',
-  'https://www.daviteixeira.dev.br/src/js/parallax.js'
+  './',
+  './src/img/services-banner.webp',
+  './src/img/main-banner.webp',
+  './src/img/logo.png',
+  './src/img/banner-cards/about-me.webp',
+  './src/img/banner-cards/contact.webp',
+  './src/img/banner-cards/services.webp',
+  './src/img/banner-cards/projects.webp',
+  './src/css/style.css',
+  './src/img/banner-cards/studies.webp',
+  './src/img/banner-cards/my-blog.webp',
+  './src/js/scripts.js',
+  './src/js/parallax.js'
 ];
 
-
+//Adding `install` event listener
 self.addEventListener('install', function(event){
+    console.info('Event: Install');
     // Perform install steps
     event.waitUntil(
         caches.open(CACHE_NAME)
