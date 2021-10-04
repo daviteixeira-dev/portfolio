@@ -1,8 +1,7 @@
-// This is the service worker with the Cache-first network
-
-const CACHE_NAME = "daviteixeira.dev-cache-v1";
-const urlsToCache = [
+var CACHE_NAME = 'my-site-cache-v1';
+var urlsToCache = [
   /* Add an array of files to precache for your app */
+  'https://www.daviteixeira.dev.br/src/img/services-banner.webp',
   'https://www.daviteixeira.dev.br/src/img/main-banner.webp',
   'https://www.daviteixeira.dev.br/src/img/logo.png',
   'https://www.daviteixeira.dev.br/src/img/banner-cards/about-me.webp',
@@ -16,80 +15,55 @@ const urlsToCache = [
   'https://www.daviteixeira.dev.br/src/js/parallax.js'
 ];
 
-self.addEventListener("install", function (event){
+
+self.addEventListener('install', function(event){
+    // Perform install steps
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+          .then(function(cache){
+            console.log('Opened cache');
+            return cache.addAll(urlsToCache);
+          })
+    );
+});
+
+self.addEventListener('fetch', function(event){
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response) {
+            // Cache hit - return response
+            if(response){
+                return response;
+            }
   
-  //console.log("[PWA Builder] Install Event processing");
-  //console.log("[PWA Builder] Skip waiting on install");
-  //self.skipWaiting();
+            // IMPORTANT: Clone the request. A request is a stream and
+            // can only be consumed once. Since we are consuming this
+            // once by cache and once by the browser for fetch, we need
+            // to clone the response.
+            var fetchRequest = event.request.clone();
+  
+            return fetch(fetchRequest).then(
+                function(response) {
+                // Check if we received a valid response
+                if(!response || response.status !== 200 || response.type !== 'basic'){
+                    return response;
+                }
+  
+                // IMPORTANT: Clone the response. A response is a stream
+                // and because we want the browser to consume the response
+                // as well as the cache consuming the response, we need
+                // to clone it so we have two streams.
+                var responseToCache = response.clone();
+  
+                caches.open(CACHE_NAME)
+                    .then(function(cache) {
+                        cache.put(event.request, responseToCache);
+                    });
 
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(function(cache) {
-      console.log(" --> Opened cache");
-      return cache.addAll(urlsToCache);
-    })
-  );
-});
-
-// Allow sw to control of current page
-self.addEventListener("activate", function (event){
-  console.log("[PWA Builder] Claiming clients for current page");
-  event.waitUntil(self.clients.claim());
-});
-
-// If any fetch fails, it will look for the request in the cache and serve it from there first
-self.addEventListener("fetch", function(event){ 
-  if (event.request.method !== "GET") return;
-
-  event.respondWith(
-    fromCache(event.request).then(
-      function (response) {
-        // The response was found in the cache so we responde with it and update the entry
-
-        // This is where we call the server to get the newest version of the
-        // file to use the next time we show view
-        event.waitUntil(
-          fetch(event.request).then(function (response){
-            return updateCache(event.request, response);
-          })
-        );
-
-        return response;
-      },
-
-      function(){
-        // The response was not found in the cache so we look for it on the server
-        return fetch(event.request)
-          .then(function (response){
-            // If request was success, add or update it in the cache
-            event.waitUntil(updateCache(event.request, response.clone()));
-
-            return response;
-          })
-          .catch(function (error){
-            console.log("[PWA Builder] Network request failed and no cache." + error);
-          });
-      }
-    )
-  );
-});
-
-function fromCache(request){
-  // Check to see if you have it in the cache
-  // Return response
-  // If not in the cache, then return
-  return caches.open(CACHE_NAME).then(function (cache){
-    return cache.match(request).then(function (matching){
-      if (!matching || matching.status === 404) {
-        return Promise.reject("no-match");
-      }
-
-      return matching;
-    });
-  });
-}
-
-function updateCache(request, response){
-  return caches.open(CACHE_NAME).then(function (cache){
-    return cache.put(request, response);
-  });
-}
+                    return response;
+                }
+            );
+        })
+    );
+});  
+  
