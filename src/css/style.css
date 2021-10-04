@@ -280,7 +280,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 }
 
 #modal-card-01 #coluna-esquerda table tr td{
-    width: 6rem;
+    width: 7rem;
     text-align: center;
     border: 1px solid #121212;
 }
@@ -298,7 +298,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 
 #modal-card-01 #coluna-esquerda table tr td p{
     color: #121212;
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: bold;
 }
 
