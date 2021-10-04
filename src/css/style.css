@@ -137,16 +137,19 @@ header, .navbar {
     text-align: center;
 }
 
-#main-banner #apresentation h1, h2 {
-    color: #f2f2f2;
-    font-weight:bold;
-    text-shadow: .5px .5px rgb(0, 0, 0);
+#main-banner #apresentation h1 {
+    color: #33859E;
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(10, 10, 10);
 }
 
 #main-banner #apresentation h2 {
+    color: #33859E;
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     margin-bottom: 4rem;
+    text-shadow: 3px 3px rgb(10, 10, 10);
 }
 
 #main-banner #apresentation .more-btn:hover {
@@ -250,6 +253,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     font-size: .8rem;
     text-align: right;
     font-weight: bold;
+    margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
@@ -294,7 +298,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 
 #modal-card-01 #coluna-esquerda table tr td p{
     color: #121212;
-    font-size: .6rem;
+    font-size: .8rem;
     font-weight: bold;
 }
 
