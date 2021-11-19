@@ -2,9 +2,12 @@
     "name": "daviteixeira.dev",
     "short_name": "daviteixeira.dev",
     "theme_color": "#121212",
+    "theme-color": "#121212",
     "background_color": "#121212",
+    "background-color": "#121212",
+    "description": "Desenvolvedor Front-End graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.",
     "display": "standalone",
-    "scope": "https://www.daviteixeira.dev.br/index.html",
+    "scope": "/",
     "icons": [
         {
           "src": "../img/favicon.png",
@@ -13,6 +16,11 @@
         },
         {
           "src": "../img/logo.png",
+          "type": "image/png",
+          "sizes": "200x200"
+        },
+        {
+          "src": "../img/512-logo.png",
           "type": "image/png",
           "sizes": "512x512"
         },
@@ -23,5 +31,5 @@
             "purpose": "maskable"
         }
       ],
-    "start_url": "https://www.daviteixeira.dev.br/index.html"
+    "start_url": "/"
 }
