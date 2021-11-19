@@ -7,7 +7,7 @@
     "background-color": "#121212",
     "description": "Desenvolvedor Front-End graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.",
     "display": "standalone",
-    "scope": "/",
+    "scope": "./",
     "icons": [
         {
           "src": "../img/favicon.png",
@@ -31,5 +31,5 @@
             "purpose": "maskable"
         }
       ],
-    "start_url": "/"
+    "start_url": "./"
 }
