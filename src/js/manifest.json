@@ -1,35 +1,346 @@
 {
-    "name": "daviteixeira.dev",
-    "short_name": "daviteixeira.dev",
-    "theme_color": "#121212",
-    "theme-color": "#121212",
-    "background_color": "#121212",
-    "background-color": "#121212",
-    "description": "Desenvolvedor Front-End graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.",
-    "display": "standalone",
-    "scope": "/",
-    "icons": [
-        {
-          "src": "../img/favicon.png",
-          "type": "image/png",
-          "sizes": "50x50"
-        },
-        {
-          "src": "../img/logo.png",
-          "type": "image/png",
-          "sizes": "200x200"
-        },
-        {
-          "src": "../img/512-logo.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        },
-        {
-            "src": "../img/maskable_icon.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "maskable"
-        }
-      ],
-    "start_url": "www.daviteixeira.dev.br"
+  "name": "daviteixeira.dev",
+  "short_name": "daviteixeira.dev",
+  "theme_color": "#121212",
+  "theme-color": "#121212",
+  "background_color": "#121212",
+  "background-color": "#121212",
+  "dir": "ltr",
+  "lang": "BR",
+  "orientation": "portrait",
+  "categories": ["developer", "website", "front-end"],
+  "description": "Desenvolvedor Front-End graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.",
+  "display": "standalone",
+  "scope": "https://www.daviteixeira.dev.br",
+  "icons": [
+    {
+      "src": "../img/manifest-icons/16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "../img/manifest-icons/20x20.png",
+      "type": "image/png",
+      "sizes": "20x20"
+    },
+    {
+      "src": "../img/manifest-icons/24x24.png",
+      "type": "image/png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "../img/manifest-icons/29x29.png",
+      "type": "image/png",
+      "sizes": "29x29"
+    },
+    {
+      "src": "../img/manifest-icons/30x30.png",
+      "type": "image/png",
+      "sizes": "30x30"
+    },
+    {
+      "src": "../img/manifest-icons/32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "../img/manifest-icons/36x36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "../img/manifest-icons/40x40.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "../img/manifest-icons/44x44.png",
+      "type": "image/png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "../img/manifest-icons/48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "../img/manifest-icons/50x50.png",
+      "type": "image/png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "../img/manifest-icons/55x55.png",
+      "type": "image/png",
+      "sizes": "55x55"
+    },
+    {
+      "src": "../img/manifest-icons/57x57.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "../img/manifest-icons/58x58.png",
+      "type": "image/png",
+      "sizes": "58x58"
+    },
+    {
+      "src": "../img/manifest-icons/60x60.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "../img/manifest-icons/63x63.png",
+      "type": "image/png",
+      "sizes": "63x63"
+    },
+    {
+      "src": "../img/manifest-icons/64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "../img/manifest-icons/66x66.png",
+      "type": "image/png",
+      "sizes": "66x66"
+    },
+    {
+      "src": "../img/manifest-icons/71x71.png",
+      "type": "image/png",
+      "sizes": "71x71"
+    },
+    {
+      "src": "../img/manifest-icons/72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "../img/manifest-icons/75x75.png",
+      "type": "image/png",
+      "sizes": "75x75"
+    },
+    {
+      "src": "../img/manifest-icons/76x76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "../img/manifest-icons/80x80.png",
+      "type": "image/png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "../img/manifest-icons/87x87.png",
+      "type": "image/png",
+      "sizes": "87x87"
+    },
+    {
+      "src": "../img/manifest-icons/88x88.png",
+      "type": "image/png",
+      "sizes": "88x88"
+    },
+    {
+      "src": "../img/manifest-icons/89x89.png",
+      "type": "image/png",
+      "sizes": "89x89"
+    },
+    {
+      "src": "../img/manifest-icons/96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "../img/manifest-icons/100x100.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "../img/manifest-icons/107x107.png",
+      "type": "image/png",
+      "sizes": "107x107"
+    },
+    {
+      "src": "../img/manifest-icons/114x114.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "../img/manifest-icons/120x120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "../img/manifest-icons/128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "../img/manifest-icons/142x142.png",
+      "type": "image/png",
+      "sizes": "142x142"
+    },
+    {
+      "src": "../img/manifest-icons/144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "../img/manifest-icons/150x150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "../img/manifest-icons/152x152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "../img/manifest-icons/167x167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "../img/manifest-icons/176x176.png",
+      "type": "image/png",
+      "sizes": "176x176"
+    },
+    {
+      "src": "../img/manifest-icons/180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "../img/manifest-icons/188x188.png",
+      "type": "image/png",
+      "sizes": "188x188"
+    },
+    {
+      "src": "../img/manifest-icons/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "../img/manifest-icons/200x200.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "../img/manifest-icons/225x225.png",
+      "type": "image/png",
+      "sizes": "225x225"
+    },
+    {
+      "src": "../img/manifest-icons/256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "../img/manifest-icons/284x284.png",
+      "type": "image/png",
+      "sizes": "284x284"
+    },
+    {
+      "src": "../img/manifest-icons/300x300.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "../img/manifest-icons/310x150.png",
+      "type": "image/png",
+      "sizes": "310x150"
+    },
+    {
+      "src": "../img/manifest-icons/310x310.png",
+      "type": "image/png",
+      "sizes": "310x310"
+    },
+    {
+      "src": "../img/manifest-icons/388x188.png",
+      "type": "image/png",
+      "sizes": "388x188"
+    },
+    {
+      "src": "../img/manifest-icons/388x388.png",
+      "type": "image/png",
+      "sizes": "388x388"
+    },
+    {
+      "src": "../img/manifest-icons/465x255.png",
+      "type": "image/png",
+      "sizes": "465x225"
+    },
+    {
+      "src": "../img/manifest-icons/465x465.png",
+      "type": "image/png",
+      "sizes": "465x465"
+    },
+    {
+      "src": "../img/manifest-icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "../img/manifest-icons/600x600.png",
+      "type": "image/png",
+      "sizes": "600x600"
+    },
+    {
+      "src": "../img/manifest-icons/620x300.png",
+      "type": "image/png",
+      "sizes": "620x300"
+    },
+    {
+      "src": "../img/manifest-icons/620x620.png",
+      "type": "image/png",
+      "sizes": "620x620"
+    },
+    {
+      "src": "../img/manifest-icons/775x375.png",
+      "type": "image/png",
+      "sizes": "775x375"
+    },
+    {
+      "src": "../img/manifest-icons/930x450.png",
+      "type": "image/png",
+      "sizes": "930x450"
+    },
+    {
+      "src": "../img/manifest-icons/1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "../img/manifest-icons/1240x600.png",
+      "type": "image/png",
+      "sizes": "1240x600"
+    },
+    {
+      "src": "../img/manifest-icons/1240x1240.png",
+      "type": "image/png",
+      "sizes": "1240x1240"
+    },
+    {
+      "src": "../img/manifest-icons/2480x1200.png",
+      "type": "image/png",
+      "sizes": "2480x1200"
+    },
+    {
+      "src": "../img/maskable_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "../../index.html",
+  "screenshots": [
+    {
+      "src": "/images/screenshot-1.png",
+      "sizes": "1349x1103",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/screenshot-2.png",
+      "sizes": "300x530",
+      "type": "image/png"
+    }
+  ]
 }
