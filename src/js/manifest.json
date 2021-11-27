@@ -11,7 +11,7 @@
   "categories": ["developer", "website", "front-end"],
   "description": "Desenvolvedor Front-End graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.",
   "display": "standalone",
-  "scope": "https://www.daviteixeira.dev.br",
+  "scope": ".",
   "icons": [
     {
       "src": "../img/manifest-icons/16x16.png",
@@ -330,7 +330,7 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "../../index.html",
+  "start_url": "./",
   "screenshots": [
     {
       "src": "/images/screenshot-1.png",
