@@ -109,6 +109,9 @@ header, .navbar {
     height: 3.5rem;
     transition: .5s;
     margin-left: 1rem;
+    border-radius: 50%;
+    border: 2px outset #195466;
+    padding: .1rem;
 }
 
 #logo:hover {
