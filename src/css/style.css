@@ -50,7 +50,7 @@ body {
 
 #back-to-top {
     z-index: 1;
-    right: 2rem;
+    right: 1.5rem;
     width: 3rem;
     height: 3rem;
     bottom: 4rem;
@@ -72,7 +72,7 @@ body {
 
 #whatsapp-button {
     z-index: 1;
-    right: 2rem;
+    right: 1.5rem;
     width: 3rem;
     height: 3rem;
     bottom: 8.5rem;
@@ -107,11 +107,11 @@ header, .navbar {
 #logo {
     width: 3.5rem;
     height: 3.5rem;
+    padding: .1rem;
     transition: .5s;
     margin-left: 1rem;
     border-radius: 50%;
     border: 2px outset #195466;
-    padding: .1rem;
 }
 
 #logo:hover {
@@ -142,10 +142,8 @@ header, .navbar {
 }
 
 #main-banner #apresentation {
-    margin-top: 13%;
-    margin-left: auto;
+    margin: auto;
     position: relative;
-    margin-right: auto;
     text-align: center;
 }
 
