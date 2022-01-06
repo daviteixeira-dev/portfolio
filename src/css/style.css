@@ -119,6 +119,14 @@ header, .navbar {
     height: 4rem;
 }
 
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+.navbar-nav {
+    margin: 1rem;
+}
+
 /*Simple effect parallax with css*/
 #services-banner, #thanks-banner {
     background-size: cover;
