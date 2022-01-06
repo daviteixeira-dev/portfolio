@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="src/img/logo.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Personal Portfolio">
+  <img src="src/img/new-logo.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Personal Portfolio">
 </h1>
 
 <h1 align="center">
@@ -23,7 +23,6 @@
 <p align="center">
   <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-installation-execution-and-development">Installation, execution and development</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-license">License</a>
 </p>
@@ -35,34 +34,15 @@
 ## 🚀 Technology
 ```🚀 Tecnologias```
 
-- [Node.js](https://nodejs.org/en/)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [jQuery](https://jquery.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [FormSubmit](https://formsubmit.co/)
 
-## 💻 Installation, execution and development
-```💻 Instalação, execução e desenvolvimento```
-
-### Prerequisites
-```💻 Pré-requisitos```
-
-- [Bootstrap](https://getbootstrap.com/)
-
-### 🌐 Web
-```bash
-### Install the dependencies
-# Instale as dependências
-$ npm install
-$ npm init
-
-### Ready to start the web application
-# Tudo pronto para iniciar a aplicação web
-$ npm start
-
-```
 ## 🤔 How to contribute
 ```🤔 Como contribuir```
+
+```
 
 **Fork the repository and follow the steps below**<br>
 ```Faça um fork deste repositório e siga os passos a baixo```
