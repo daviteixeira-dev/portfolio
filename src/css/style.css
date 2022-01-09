@@ -831,13 +831,48 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     background-color: transparent;
 }
 
-/* Thank you Page */
+/* Projects Page */
 
-#projects-banner .container-fluid {
-    margin-top: 5rem;
+#projects-banner .container {
     height: auto;
-    padding: 1rem;
+    margin-top: 4rem;
     text-align: center;
     background-color: transparent;
-    border: 1px solid black;
+}
+
+#about-project-title {
+    padding: 1.5rem;
+    border: 5px solid #195466;
+    background-color: #121212;
+}
+
+#about-project-title h1, #about-project-title p {
+    color: #f2f2f2;
+}
+
+#filter-btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-btn {
+    margin: .5rem;
+    border: 2px solid #33859E;
+}
+
+#portfolio-area #filter-btn-box .filter-btn {
+    width: auto;
+    height: 40px;
+    color: #444;
+    padding: 0 20px;
+    min-width: 100px;
+    line-height: 40px;
+    text-transform: none;
+    border-radius: 1.5rem;
+}
+
+#portfolio-area #filter-btn-box .filter-btn.active, #portfolio-area #filter-btn-box .filter-btn:hover {
+    border: none;
+    color: #fff;
+    background-color: #195466;
 }

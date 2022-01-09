@@ -26,6 +26,10 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+    <!--Fav Icon-->
+    <link rel="icon" href="../src/img/new-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="../src/img/favicon.png">
+    <link rel="canonical" href="https://www.daviteixeira.dev.br/" />
   </head>
   <body>
     <header>
@@ -72,24 +76,44 @@
       </div>
     </header>
     <main id="projects-banner">
-      <section class="container-fluid" id="portfolio-area">
+      <section class="container" id="portfolio-area">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12" id="about-project-title">
             <h1>Conheça meus projetos</h1>
+            <p>Aqui você pode conferir alguns projetos que desenvolvi, desde projetos pessoais, clones de interfaces de grandes marcas, jogos, projetos desenvolvidos em workshops, entre outros.</p>
           </div>
+        </div>
 
-          <div class="col-12 my-4" id="filter-btn-box">
+        <div class="row my-4" id="filter-btn-box">
+          <div class="col-sm-12 col-md-3">
             <button class="main-btn filter-btn active" id="all-btn">
               Todos
             </button>
-            <button class="main-btn filter-btn" id="dev-btn">
-              Desenvolvimento
-            </button>
-            <button class="main-btn filter-btn" id="dsg-btn">Design</button>
-            <button class="main-btn filter-btn" id="seo-btn">SEO</button>
           </div>
+          <div class="col-sm-12 col-md-2">
+            <button class="main-btn filter-btn" id="curso-btn">
+              Cursos
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <button class="main-btn filter-btn" id="autoral-btn">
+              Autorais
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <button class="main-btn filter-btn" id="clone-btn">
+              Clones
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <button class="main-btn filter-btn" id="jogo-btn">
+              Jogos
+            </button>
+          </div>
+        </div>
 
-          <div class="col-md-4 mb-4 project-box dev">
+        <div class="row">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/netflix-interface.webp"
               class="img-fluid"
@@ -98,7 +122,7 @@
               height="850"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box dsg">
+          <div class="col-md-4 mb-4 project-box autoral">
             <img
               src="../src/img/projetos/batfamily.webp"
               class="img-fluid"
@@ -107,7 +131,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/alurakut.webp"
               class="img-fluid"
@@ -116,7 +140,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box dev">
+          <div class="col-md-4 mb-4 project-box clone">
             <img
               src="../src/img/projetos/denmark-apparel.webp"
               class="img-fluid"
@@ -125,7 +149,7 @@
               height="850"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box dsg">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/dev-finance.webp"
               class="img-fluid"
@@ -134,7 +158,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/jobfinder.webp"
               class="img-fluid"
@@ -143,7 +167,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/be-the-hero.webp"
               class="img-fluid"
@@ -152,7 +176,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/dev-radar.webp"
               class="img-fluid"
@@ -161,7 +185,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/DOE.webp"
               class="img-fluid"
@@ -170,7 +194,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box curso">
             <img
               src="../src/img/projetos/letmeask.webp"
               class="img-fluid"
@@ -179,7 +203,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box autoral">
             <img
               src="../src/img/projetos/link-dev.webp"
               class="img-fluid"
@@ -188,7 +212,7 @@
               height="853"
             />
           </div>
-          <div class="col-md-4 mb-4 project-box seo">
+          <div class="col-md-4 mb-4 project-box curso jogo">
             <img
               src="../src/img/projetos/snake-game.webp"
               class="img-fluid"
@@ -279,7 +303,9 @@
       async
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
     ></script>
+    <!--jQuery-->
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--Scripts-->
-    <script async src="../src/js/scripts.js"></script>
+    <script async src="../src/js/projects.js"></script>
   </body>
 </html>
