@@ -833,21 +833,21 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 
 /* Projects Page */
 
-#projects-banner .container {
+#projects-banner #portfolio-area {
     height: auto;
     margin-top: 4rem;
     text-align: center;
-    background-color: transparent;
+    background-color: #121212;
 }
 
 #about-project-title {
     padding: 1.5rem;
-    border: 5px solid #195466;
-    background-color: #121212;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 5px 0px #000;
 }
 
 #about-project-title h1, #about-project-title p {
-    color: #f2f2f2;
+    color: #121212;
 }
 
 #filter-btn-box {
@@ -857,21 +857,27 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 
 .filter-btn {
     margin: .5rem;
-    border: 2px solid #33859E;
+    box-shadow: 0px 0px 5px 0px #000;
 }
 
 #portfolio-area #filter-btn-box .filter-btn {
     width: auto;
     height: 40px;
-    color: #444;
     padding: 0 20px;
+    color: #121212;
+    font-weight: 600;
     min-width: 100px;
     line-height: 40px;
     text-transform: none;
     border-radius: 1.5rem;
 }
 
-#portfolio-area #filter-btn-box .filter-btn.active, #portfolio-area #filter-btn-box .filter-btn:hover {
+.project-box img {
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+#portfolio-area #filter-btn-box .filter-btn.active, 
+#portfolio-area #filter-btn-box .filter-btn:hover {
     border: none;
     color: #fff;
     background-color: #195466;
