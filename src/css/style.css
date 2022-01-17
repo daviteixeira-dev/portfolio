@@ -846,7 +846,12 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     box-shadow: 0px 0px 5px 0px #000;
 }
 
-#about-project-title h1, #about-project-title p {
+#about-project-title h1 {
+    font-weight: bold;
+}
+
+#about-project-title h1, 
+#about-project-title p {
     color: #121212;
 }
 
@@ -872,7 +877,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     border-radius: 1.5rem;
 }
 
-.project-box img {
+.project-box .project-banner {
     box-shadow: 0px 0px 5px 0px #000;
 }
 
@@ -881,4 +886,49 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     border: none;
     color: #fff;
     background-color: #195466;
+}
+
+.aboutProject {
+    display: flex;
+    height: 15rem;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+}
+
+.aboutProject h2 {
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.aboutProject p {
+    height: 6rem;
+    font-size: .8rem;
+}
+
+.aboutProject ul {
+    padding: 0;
+    height: 3rem;
+    display: flex;
+    display: flex;
+    line-height: 2.5rem;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.aboutProject ul li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.aboutProject ul li img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.aboutProject ul li .more-btn:hover {
+    color: #f2f2f2;
+    background-color: #33859E;
 }
