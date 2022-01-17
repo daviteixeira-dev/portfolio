@@ -391,21 +391,21 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     text-align: center;
 }
 
-#modal-card-02 .modal-body #presentation .row .col h4{
+#modal-card-02 .modal-body #presentation .row #main-projects h4{
     color: #f2f2f2;
     font-weight: bold;
 }
 
-#modal-card-02 .modal-body #presentation .row .col h4 span {
+#modal-card-02 .modal-body #presentation .row #main-projects h4 span {
     color: #195466;
     font-weight: bold;
 }
 
-#modal-card-02 .modal-body #presentation .row .col p {
+#modal-card-02 .modal-body #presentation .row #main-projects p {
     color: #f2f2f2;
 }
 
-#modal-card-02 .modal-body #presentation .row .col .more-btn:hover {
+#modal-card-02 .modal-body #presentation .row #more-about-projects-links .more-btn:hover {
     color: #f2f2f2;
     border: 4px solid #195466;
     background-color: transparent;
@@ -912,9 +912,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     padding: 0;
     height: 3rem;
     display: flex;
-    display: flex;
     line-height: 2.5rem;
-    justify-content: center;
     justify-content: space-evenly;
 }
 
