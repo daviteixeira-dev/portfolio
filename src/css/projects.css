@@ -1,0 +1,59 @@
+.img-project {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 5s;
+}
+
+.img-project:hover {
+  background-position: bottom;
+}
+
+#project-doe {
+  background-image: url(../img/img-projects/site-doe.png);
+}
+
+#project-linkdev {
+  background-image: url(../img/img-projects/site-linkdev.png);
+}
+
+#project-alurakut {
+  background-image: url(../img/img-projects/site-alurakut.png);
+}
+
+#project-devradar {
+  background-image: url(../img/img-projects/site-devradar.png);
+}
+
+#project-letmeask {
+  background-image: url(../img/img-projects/site-letmeask.png);
+}
+
+#project-batfamily {
+  background-image: url(../img/img-projects/site-batfamily.png);
+}
+
+#project-jobfinder {
+  background-image: url(../img/img-projects/site-jobfinder.png);
+}
+
+#project-dev-finance {
+  background-image: url(../img/img-projects/site-dev-finance.png);
+}
+
+#project-be-the-hero {
+  background-image: url(../img/img-projects/site-be-the-hero.png);
+}
+
+#project-netflix-clone {
+  background-image: url(../img/img-projects/site-netflix-clone.png);
+}
+
+#project-denmark-apparel {
+  background-image: url(../img/img-projects/site-denmark-apparel.png);
+}
+
+#project-jogo-da-cobrinha {
+  background-image: url(../img/img-projects/site-jogo-da-cobrinha.gif);
+}

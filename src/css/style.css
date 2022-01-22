@@ -847,7 +847,9 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 }
 
 #about-project-title h1 {
+    font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 #about-project-title h1, 
