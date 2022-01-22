@@ -930,3 +930,17 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     color: #f2f2f2;
     background-color: #33859E;
 }
+
+.page-link {
+    color: #195466;
+    background-color: #f2f2f2;
+}
+
+.page-link:hover {
+    color: #33859E;
+}
+
+.page-item.active .page-link {
+    background-color: #195466;
+    border-color: #195466;
+}
