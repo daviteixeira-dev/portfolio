@@ -193,11 +193,12 @@ header, .navbar {
     color: #49c6ec;
     font-weight: bold;
     margin-bottom: 4rem;
+    text-transform: uppercase;
     text-shadow: 3px 3px rgb(10, 10, 10);
 }
 
 #main-banner #apresentation h1 span {
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 
 #main-banner #apresentation .more-btn:hover {
