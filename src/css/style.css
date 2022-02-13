@@ -190,7 +190,7 @@ header, .navbar {
 }
 
 #main-banner #apresentation h1 {
-    color: #33859E;
+    color: #f2f2f2;
     font-weight: bold;
     margin-bottom: 4rem;
     text-shadow: 3px 3px rgb(10, 10, 10);
@@ -311,6 +311,13 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     margin-bottom: 1rem;
     border-radius: 1rem;
     background-color: #f2f2f2;
+}
+
+#modal-card-01 #coluna-esquerda table caption,
+#modal-card-01 #coluna-direita table caption {
+    color: #f2f2f2;
+    font-size: .5rem;
+    background-color: #121212;
 }
 
 #modal-card-01 #coluna-esquerda table thead tr th {
