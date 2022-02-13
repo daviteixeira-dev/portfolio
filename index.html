@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
+<html lang="pt" dir="ltr">
 <head>
     <!--Meta Tags-->
     <meta charset="utf-8">
@@ -12,30 +12,47 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="copyright" content="daviteixeira.dev 2021" />
-    <meta prefix="og:https://www.daviteixeira.dev.br" property="og:title" content="Davi Teixeira - Desenvolvedor Front-End" />
-    <meta prefix="og:https://www.daviteixeira.dev.br" property="og:image" content="https://www.daviteixeira.dev.br/src/img/screenshot-1.png" />
-    <meta prefix="og:https://www.daviteixeira.dev.br" property="og:description" content="Este é o meu Portfólio, sou desenvolvedor Front-end graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais." />
-    <meta prefix="og:https://www.daviteixeira.dev.br" property="og:url" content="https://www.daviteixeira.dev.br" />
-    <meta prefix="og:https://www.daviteixeira.dev.br" property="og:type" content="website" />
+    <meta property="og:title" content="Davi Teixeira - Desenvolvedor Front-End" />
+    <meta property="og:image" content="https://www.daviteixeira.dev.br/src/img/screenshot-1.png" />
+    <meta property="og:description" content="Este é o meu Portfólio, sou desenvolvedor Front-end graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais." />
+    <meta property="og:url" content="https://www.daviteixeira.dev.br" />
+    <meta property="og:type" content="website" />
     <!--Twitter-->
-    <meta prefix="twitter:https://www.daviteixeira.dev.br" name="twitter:site" content="@DaviTei51909613" />
-    <meta prefix="twitter:https://www.daviteixeira.dev.br" name="twitter:card" content="summary_large_image" />
-    <meta prefix="twitter:https://www.daviteixeira.dev.br" name="twitter:image:src" content="https://www.daviteixeira.dev.br/src/img/screenshot-1.png" />
-    <meta prefix="twitter:https://www.daviteixeira.dev.br" name="twitter:creator" content="Davi Teixeira Silva" />
-    <meta prefix="twitter:https://www.daviteixeira.dev.br" name="twitter:title" content="Davi Teixeira - Desenvolvedor Front-End" />
-    <meta prefix="twitter:https://www.daviteixeira.dev.br" name="twitter:description" content="Este é o meu Portfólio, sou desenvolvedor Front-end graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais." />
+    <meta name="twitter:site" content="@DaviTei51909613" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="https://www.daviteixeira.dev.br/src/img/screenshot-1.png" />
+    <meta name="twitter:creator" content="Davi Teixeira Silva" />
+    <meta name="twitter:title" content="Davi Teixeira - Desenvolvedor Front-End" />
+    <meta name="twitter:description" content="Este é o meu Portfólio, sou desenvolvedor Front-end graduando em Sistemas de Informação, apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais." />
     <!--Title-->
     <title>Davi Teixeira - Front-End Web Developer</title>
     <!--Bootstrap 5 CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+        as="style"
+        rel="preload"
+        onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    >
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/projects.css">
     <!--Font Awesome-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+        as="style"
+        rel="preload"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+        as="style"
+        rel="preload"
+        onload="this.onload=null;this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+    >
     <!--Fav Icon-->
     <link rel="icon" href="src/img/new-logo.png" type="image/png">
     <link rel="apple-touch-icon" href="src/img/favicon.png">
@@ -48,8 +65,17 @@
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="src/img/new-logo.png" loading="eager" width="200" height="200" title="Essa é a logomarca da página" alt="Logomarca" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="#main-title">
+                        <img 
+                            id="logo"
+                            width="200" 
+                            height="200"
+                            loading="eager"
+                            alt="Logomarca"
+                            src="src/img/new-logo.png"
+                            title="Essa é a logomarca da página"
+                            class="d-inline-block align-text-top"
+                        >
                     </a>
                     <button
                         type="button"
@@ -65,10 +91,21 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                              <a
+                                href="/index.html"
+                                aria-current="page"
+                                class="nav-link active"
+                            >
+                                Home
+                            </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="/pages/projects/projects-page-01.html">Projetos</a>
+                            <a 
+                                class="nav-link" 
+                                href="/pages/projects/projects-page-01.html"
+                            >
+                                Projetos
+                            </a>
                           </li>
                         </ul>
                     </div>
@@ -76,136 +113,230 @@
             </nav>
         </div>
     </header>
+
     <!-- id banner for Parallax -->
     <main id="services-banner">
+        
         <!-- Banner Principal -->
         <section class="container-fluid">
             <div class="row" id="main-banner">
                 <div class="col-12" id="apresentation">
-                    <img src="src/img/new-logo.png" alt="Logomarca de apresentação" width="200" height="200" title="Logomarca para o banner de apresentação" loading="eager" class="mb-2">
-                    <h1>Davi Teixeira</h1>
-                    <h2>&lt; Front-End Developer /&gt;</h2>
-                    <button type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-05">Entre em contato</button>
+                    <img
+                        width="200" 
+                        height="200"
+                        class="mb-2"
+                        loading="eager"
+                        src="src/img/new-logo.png" 
+                        alt="Logomarca de apresentação"
+                        title="Logomarca para o banner de apresentação"
+                    >
+                    <h1 id="main-title">
+                        Davi Teixeira
+                        <br />
+                        <span>&lt; Front-End Developer /&gt;</span>
+                    </h1>
+                    <button 
+                        type="button" 
+                        class="more-btn" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modal-card-05"
+                    >
+                        Entre em contato
+                    </button>
                 </div>
             </div>
         </section>
+
         <!-- Serviços do site -->
-        <section class="container" id="services-container">
-            <!-- Primeira Linha -->
-            <div class="row" id="first-line">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="src/img/banner-cards/about-me.webp" loading="eager" class="img-fluid" width="410" height="240" alt="Sobre mim" title="Nesse card você pode encontrar informações sobre mim.">
+        <section class="container-fluid" id="services-container">
+            <div class="row py-2 px-4">
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410" 
+                            height="240"
+                            alt="Sobre mim"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/about-me.webp"
+                            title="Nesse card você pode encontrar informações sobre mim."
+                        >
                         <div class="card-body">
-                            <div class="card-body-top">
-                                <h3 class="principal-title-card">Sobre Mim</h3>
-                                <p class="principal-text-card">
-                                    Aqui você poderá saber um pouco mais sobre mim, bem como com quais tecnologias trabalho.
-                                </p>
-                            </div>
-                            <div class="card-body-bottom">
-                                <button type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-01">
-                                    <i class="far fa-folder-open"></i> Ver mais
-                                </button>
-                            </div>
+                            <h2 class="card-title">
+                                    Sobre Mim
+                            </h2>
+                            <p class="card-text">
+                                Aqui você poderá saber um pouco mais sobre mim, 
+                                bem como com quais tecnologias trabalho.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-01"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="src/img/banner-cards/projects.webp" loading="eager" class="img-fluid" width="410" height="240" alt="Projetos" title="Nesse card você pode encontrar informações sobre os projetos que desenvolvi.">
+
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410"
+                            height="240"
+                            alt="Projetos"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/projects.webp"
+                            title="Nesse card você pode encontrar informações sobre os projetos que desenvolvi."
+                        >
                         <div class="card-body">
-                            <div class="card-body-top">
-                                <h3 class="principal-title-card">Projetos</h3>
-                                <p class="principal-text-card">
-                                    Nessa seção você poderá encontrar informações sobre os projetos nos quais trabalhei.
-                                </p>
-                            </div>
-                            <div class="card-body-bottom">
-                                <button type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-02">
-                                    <i class="far fa-folder-open"></i> Ver mais
-                                </button>
-                            </div>
+                            <h2 class="card-title">
+                                Projetos
+                            </h2>
+                            <p class="card-text">
+                                Nessa seção você poderá encontrar informações sobre 
+                                os projetos nos quais trabalhei.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-02"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="src/img/banner-cards/services.webp" loading="eager" class="img-fluid" width="410" height="240" alt="Serviços" title="Nesse card você pode encontrar informações sobre meus serviços.">
+
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410" 
+                            height="240" 
+                            alt="Serviços"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/services.webp"
+                            title="Nesse card você pode encontrar informações sobre meus serviços."
+                        >
                         <div class="card-body">
-                            <div class="card-body-top">
-                                <h3 class="principal-title-card">Serviços</h3>
-                                <p class="principal-text-card">
-                                    Nessa sessão você vai poder ver detalhes sobre os tipos de serviços prestados.
-                                </p>
-                            </div>
-                            <div class="card-body-bottom">
-                                <button type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-06">
-                                    <i class="far fa-folder-open"></i> Ver mais
-                                </button>
-                            </div>
+                            <h2 class="card-title">
+                                Serviços
+                            </h2>
+                            <p class="card-text">
+                                Nessa sessão você vai poder ver informações sobre os 
+                                tipos de serviços prestados e perguntas frequentes.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-06"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Segunda Linha -->
-            <div class="row" id="second-line">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="src/img/banner-cards/my-blog.webp" loading="eager" class="img-fluid" width="410" height="240" alt="Blog" title="Nesse card você pode encontrar alguns assuntos que eu escrevi.">
+            
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img
+                            alt="Blog"
+                            width="410" 
+                            height="240"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/my-blog.webp"
+                            title="Nesse card você pode encontrar alguns assuntos que eu escrevi.">
                         <div class="card-body">
-                            <div class="card-body-top">
-                                <h3 class="principal-title-card">Blog</h3>
-                                <p class="principal-text-card">
-                                    Amo compartilhar conhecimento, assim, aqui você pode ler alguns dos materiais que já escrevi.
-                                </p>
-                            </div>
-                            <div class="card-body-bottom">
-                                <button type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-04">
-                                    <i class="far fa-folder-open"></i> Ver mais
-                                </button>
-                            </div>
+                            <h2 class="card-title">
+                                Blog
+                            </h2>
+                            <p class="card-text">
+                                Amo compartilhar conhecimento, assim, aqui 
+                                você pode ler alguns dos materiais que já escrevi.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-04"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="src/img/banner-cards/contact.webp" loading="eager" class="img-fluid" width="410" height="240" alt="Contate-me" title="Nesse card você pode entrar em contato comigo.">
+
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410" 
+                            height="240"
+                            loading="eager"
+                            alt="Contate-me"
+                            class="card-img-top"
+                            src="src/img/banner-cards/contact.webp"
+                            title="Nesse card você pode entrar em contato comigo."
+                        >
                         <div class="card-body">
-                            <div class="card-body-top">
-                                <h3 class="principal-title-card">Contate-me</h3>
-                                <p class="principal-text-card">
-                                    Vamos criar um projeto ou apenas dizer um oi? Minha caixa de mensagens está aberta para você.
-                                </p>
-                            </div>
-                            <div class="card-body-bottom">
-                                <button type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-05">
-                                    <i class="fas fa-phone-alt"></i> Entre em contato
-                                </button>
-                            </div>
+                            <h2 class="card-title">
+                                Contato
+                            </h2>
+                            <p class="card-text">
+                                Vamos criar um projeto ou apenas dizer um oi? 
+                                Minha caixa de mensagens está aberta para você.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-05"
+                            >
+                                <i class="fas fa-phone-alt"></i> Entre em contato
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="src/img/banner-cards/studies.webp" loading="eager" class="img-fluid" width="410" height="240" alt="Estudos" title="Nesse card você pode encontrar informações sobre meus estudos.">
+
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img
+                            width="410" 
+                            height="240" 
+                            alt="Estudos"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/studies.webp"
+                            title="Nesse card você pode encontrar informações sobre meus estudos."
+                        >
                         <div class="card-body">
-                            <div class="card-body-top">
-                                <h3 class="principal-title-card">Estudos</h3>
-                                <p class="principal-text-card">
-                                    Confira algumas das minhas conquistas, certificações, premiações e artigos publicados.
-                                </p>
-                            </div>
-                            <div class="card-body-bottom">
-                                <button type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#modal-card-03">
-                                    <i class="far fa-folder-open"></i> Ver mais
-                                </button>
-                            </div>
+                            <h2 class="card-title">
+                                Estudos
+                            </h2>
+                            <p class="card-text">
+                                Aqui você pode conferir algumas das minhas conquistas, certificações, 
+                                premiações e artigos publicados.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-03"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--WhatsApp Button-->
         <a href="https://wa.me/message/Y5CDIZP3JEK3M1" target="_blank" rel="noopener" id="whatsapp-button" role="button" title="Botão para entrar em contato pelo WhatsApp.">
             <i class="fab fa-whatsapp"></i>
@@ -217,6 +348,7 @@
             <i class="fas fa-chevron-up"></i>
         </a>
         <!--End Button back to the top-->
+        
     </main>
     <footer>
         <div class="container-fluid">
@@ -224,33 +356,62 @@
                 <div class="col-12" id="footer-menu">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/daviteixeira-btm" target="_blank" rel="noopener" title="Link para acessar o meu GitHub.">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                title="Link para acessar o meu GitHub."
+                                href="https://github.com/daviteixeira-btm"
+                            >
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/daviteixeira-me/" target="_blank" rel="noopener" title="Link para acessar o meu perfil no LinkedIn.">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                href="https://www.linkedin.com/in/daviteixeira-me/"
+                                title="Link para acessar o meu perfil no LinkedIn."
+                            >
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://instagram.com/dt.websites?utm_medium=copy_link" target="_blank" rel="noopener" title="Link para acessar o meu perfil no Instagram.">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                title="Link para acessar o meu perfil no Instagram."
+                                href="https://instagram.com/dt.websites?utm_medium=copy_link"
+                            >
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA" target="_blank" rel="noopener" title="Link para acessar o meu canal no Youtube.">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                title="Link para acessar o meu canal no Youtube."
+                                href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA"
+                            >
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://twitter.com/DaviTei51909613" target="_blank" rel="noopener" title="Link para acessar o meu perfil no Twitter.">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                href="https://twitter.com/DaviTei51909613"
+                                title="Link para acessar o meu perfil no Twitter."
+                            >
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav justify-content-center">
-                        
                         <li class="nav-item">
                             <p>&copy; 2021 Davi Teixeira</p>
                         </li>
@@ -283,6 +444,7 @@
                                 <br>
                                 <!--Modal Technologies-->
                                 <table>
+                                    <caption>Ferramentas</caption>
                                     <thead>
                                         <tr>
                                             <th colspan="4">Ferramentas, idiomas e outras coisas com as quais gosto de trabalhar</th>
@@ -370,18 +532,24 @@
                             <div class="col-md-6" id="coluna-direita">
                                 <h4>Olá,</h4>
                                 <p>
-                                    meu nome é Davi Teixeira, sou desenvolvedor front-end apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.
+                                    meu nome é Davi Teixeira, sou desenvolvedor front-end 
+                                    apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais.
                                 </p>
                                 <p>
-                                    Graduando em Sistemas de Informação pela Universidade Federal do Ceará. Tenho experiência na criação e desenvolvimento de páginas Web utilizando tecnologias como HTML5, CSS3, SASS, JavaScript, Bootstrap, NodeJs e algumas outras bibliotecas bem legais.
+                                    Graduando em Sistemas de Informação pela Universidade Federal do Ceará. 
+                                    Tenho experiência na criação e desenvolvimento de páginas Web utilizando 
+                                    tecnologias como HTML5, CSS3, SASS, JavaScript, Bootstrap, NodeJs e algumas 
+                                    outras bibliotecas bem legais.
                                 </p>
                                 <p>
-                                    Estou em busca de experiências que me levem a uma formação profissional como desenvolvedor e informações mais detalhadas você pode encontrar no meu currículo.
+                                    Estou em busca de experiências que me levem a uma formação profissional 
+                                    como desenvolvedor e informações mais detalhadas você pode encontrar no meu currículo.
                                 </p>
                                 <a href="https://drive.google.com/file/d/1Jmw0asG5OAXe9g-_ILa6jnvXR4rPv-Ou/view?usp=sharing" target="_blank" rel="noopener" class="more-btn" id="curriculo"  title="Link para acessar o meu Currículo.">
                                     <i class="fas fa-cloud-download-alt"></i> Currículo
                                 </a>
                                 <table>
+                                    <caption>Network</caption>
                                     <thead>
                                         <tr>
                                             <th colspan="5">Social Network</th>
@@ -447,7 +615,7 @@
                 <!--Modal Body-->
                 <div class="modal-body">
                     <!--Presentation of projects-->
-                    <div class="container" id="presentation">
+                    <div class="container" class="presentation">
                         <div class="row">
                             <div class="col-12" id="main-projects">
                                 <h4><span>&lt;</span> Portfólio <span>/&gt;</span></h4>
@@ -455,7 +623,7 @@
                                     Aqui você pode conferir alguns dos meus projetos, caso queira ver todos clique em ver mais.
                                 </p>                                  
                             </div>
-                            <div class="col-12" id="more-about-projects-links">
+                            <div class="col-12" class="more-about-projects-links">
                                 <a href="https://github.com/daviteixeira-btm" target="_blank" rel="noopener" class="more-btn" title="Link para acessar o meu GitHub.">
                                     <i class="fab fa-github"></i> Ir ao GitHub
                                 </a>
@@ -536,9 +704,9 @@
                         <!--End Album card-->
                     </div>
                     <!--End Modal Album Row-->
-                    <div class="container d-flex justify-content-center" id="presentation">
+                    <div class="container d-flex justify-content-center" class="presentation">
                         <div class="row">
-                            <div class="col-12 mt-2" id="more-about-projects-links">
+                            <div class="col-12 mt-2" class="more-about-projects-links">
                                 <a href="/pages/projects/projects-page-01.html" target="_blank" rel="noopener" class="more-btn" title="Link para ver todos os meus projetos.">
                                     Ver mais
                                 </a>

@@ -7,6 +7,12 @@
     src: url('../fonts/font-awesome.woff') format('woff'), url('../fonts/font-awesome.woff2') format('woff2');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -43,7 +49,7 @@ body {
     padding-right: .3rem;
 }
 
-.principal-title-card, .principal-text-card {
+.card-title, .card-text {
     font-weight: 500;
     color: #121212;
 }
@@ -92,6 +98,16 @@ body {
     background-color: rgb(1, 153, 1);
 }
 
+.btn-danger {
+    color: #f2f2f2;
+    background-color: #dc3545;
+}
+
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
 /* Barra de Navegação */
 
 header, .navbar {
@@ -102,6 +118,18 @@ header, .navbar {
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+#nav-container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #121212;
+}
+
+#nav-container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #33859E;
+    background-color: #141414;
 }
 
 #logo {
@@ -139,7 +167,8 @@ header, .navbar {
 /* Main Banner */
 
 #main-banner {
-    height: 70vh;
+    height: 100%;
+    padding: 2rem;
     margin-top: 5rem;
     position: relative;
     background-size: cover;
@@ -163,16 +192,12 @@ header, .navbar {
 #main-banner #apresentation h1 {
     color: #33859E;
     font-weight: bold;
+    margin-bottom: 4rem;
     text-shadow: 3px 3px rgb(10, 10, 10);
 }
 
-#main-banner #apresentation h2 {
-    color: #33859E;
-    margin-top: 1rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-bottom: 4rem;
-    text-shadow: 3px 3px rgb(10, 10, 10);
+#main-banner #apresentation h1 span {
+    font-size: 1.1rem;
 }
 
 #main-banner #apresentation .more-btn:hover {
@@ -184,26 +209,11 @@ header, .navbar {
 
 /* Serviços do Site */
 
-#services-container #first-line .card, #second-line .card {
-    border: none;
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-}
-
-#first-line .card .card-body .card-body-top, #second-line .card .card-body .card-body-top {
+#services-container .card .card-body .card-text {
     height: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+} 
 
-#first-line .card .card-body .card-body-bottom, #second-line .card .card-body .card-body-bottom {
-    padding: 1.5rem 0;
-}
-
-#first-line .card .card-body .card-body-bottom .more-btn:hover, #second-line .card .card-body .card-body-bottom .more-btn:hover {
+#services-container .card .card-body button:hover {
     color: #f2f2f2;
     text-decoration: none;
     background-color: #33859E;
@@ -212,6 +222,7 @@ header, .navbar {
 /* Footer */
 
 footer {
+    height: 100%;
     background-color: #121212;
     border-top: 4px solid #195466;
 }
@@ -304,6 +315,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 
 #modal-card-01 #coluna-esquerda table thead tr th {
     padding: 1rem;
+    color: #121212;
     font-size: .8rem;
 }
 
@@ -362,6 +374,7 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
 
 #modal-card-01 #coluna-direita table thead tr th {
     padding: 1rem;
+    color: #121212;
     font-size: .8rem;
     border-bottom: 1px solid #121212;
 }
@@ -392,25 +405,25 @@ footer .container-fluid .row #footer-menu ul li a i:hover {
     background-color: #121212;
 }
 
-#modal-card-02 .modal-body #presentation{
+#modal-card-02 .modal-body .presentation{
     text-align: center;
 }
 
-#modal-card-02 .modal-body #presentation .row #main-projects h4{
+#modal-card-02 .modal-body .presentation .row #main-projects h4{
     color: #f2f2f2;
     font-weight: bold;
 }
 
-#modal-card-02 .modal-body #presentation .row #main-projects h4 span {
+#modal-card-02 .modal-body .presentation .row #main-projects h4 span {
     color: #195466;
     font-weight: bold;
 }
 
-#modal-card-02 .modal-body #presentation .row #main-projects p {
+#modal-card-02 .modal-body .presentation .row #main-projects p {
     color: #f2f2f2;
 }
 
-#modal-card-02 .modal-body #presentation .row #more-about-projects-links .more-btn:hover {
+#modal-card-02 .modal-body .presentation .row .more-about-projects-links .more-btn:hover {
     color: #f2f2f2;
     border: 4px solid #195466;
     background-color: transparent;
