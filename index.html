@@ -125,6 +125,9 @@
                                 Projetos
                             </a>
                           </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/blog.html">Blog</a>
+                          </li>
                         </ul>
                     </div>
                 </div>
@@ -133,7 +136,7 @@
     </header>
 
     <!-- id banner for Parallax -->
-    <main id="services-banner">
+    <main id="services-banner" alt="Imagem de Francesco Ungaro no Pexels">
         
         <!-- Banner Principal -->
         <section class="container-fluid">
@@ -259,7 +262,8 @@
                         </div>
                     </div>
                 </div>
-            
+                
+                <!--
                 <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
                     <div class="card text-center border-0">
                         <img
@@ -278,6 +282,13 @@
                                 Amo compartilhar conhecimento, assim, aqui 
                                 você pode ler alguns dos materiais que já escrevi.
                             </p>
+                            <a 
+                                href="pages/blog.html" 
+                                class="more-btn"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </a>
+                            ----------
                             <button 
                                 type="button" 
                                 class="more-btn" 
@@ -286,11 +297,13 @@
                             >
                                 <i class="far fa-folder-open"></i> Ver mais
                             </button>
+                            ----------
                         </div>
                     </div>
                 </div>
+                -->
 
-                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                <div class="col-sm-12 col-md-4 mx-auto col-xxl-4 my-2">
                     <div class="card text-center border-0">
                         <img 
                             width="410" 
@@ -321,7 +334,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                <div class="col-sm-12 col-md-4 mx-auto col-xxl-4 my-2">
                     <div class="card text-center border-0">
                         <img
                             width="410" 
@@ -1508,24 +1521,85 @@
 
                 <!--Modal Body-->
                 <div class="modal-body">
-                    <div class="container">
+                    <div class="container-fluid">
 
                         <!--Modal Apresentation Form-->
                         <div class="row" id="apresentation-contact">
-                            <div class="col">
+                            <div class="col-sm-12 col-md-6 mx-auto my-2">
                                 <h3>Se interessou pelo meu trabalho?</h3>
-                                <p>
-                                    Entre em contato, vamos discutir um projeto e tirar 
-                                    qualquer dúvida, minha caixa de mensagens está aberta 
-                                    a todos!
+                                <p class="text-contact">
+                                    Se você tem interese em falar comigo, contratar meus serviços 
+                                    e/ou uma mentoria pode enviar uma mensagem ao lado.
                                 </p>
+                                <p class="text-contact">
+                                    Estou sempre aberto a discutir sobre ideias, poder te ajudar 
+                                    de alguma forma ou só bater um papo mesmo. Saiba que você 
+                                    também pode me encontrar em outras redes sociais.
+                                </p>
+                                <div class="row my-2">
+                                    <div class="col-12">
+                                        <ul class="nav justify-content-center">
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://github.com/daviteixeira-btm"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu GitHub."
+                                              >
+                                                <i class="fab fa-github"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://www.linkedin.com/in/daviteixeira-me/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu perfil no LinkedIn."
+                                              >
+                                                <i class="fab fa-linkedin"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://instagram.com/dt.websites?utm_medium=copy_link"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu perfil no Instagram."
+                                              >
+                                                <i class="fab fa-instagram"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu canal no Youtube."
+                                              >
+                                                <i class="fab fa-youtube"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://twitter.com/DaviTei51909613"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu perfil no Twitter."
+                                              >
+                                                <i class="fab fa-twitter"></i>
+                                              </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!--End Modal Apresentation Form-->
-                        
-                        <!--Modal Form-->
-                        <div class="row" id="form-contact">
-                            <div class="col">
+                            <div class="col-sm-12 col-md-6 mx-auto my-2" id="form-contact">
+                                <!--Modal Form-->
                                 <form 
                                     action="https://formsubmit.co/a03add9d18846a66fc3ff63eaf1f227c" 
                                     method="POST" 
@@ -1580,8 +1654,7 @@
                                             cols="10" 
                                             rows="5" 
                                             placeholder="Escreva a sua mensagem aqui"
-                                        >
-                                        </textarea>
+                                        ></textarea>
                                     </div>
                                     <div class="alert alert-danger mt-1 d-none" role="alert">
                                         Por favor, preencha o campo <span id="erro-field"></span>!
@@ -1605,9 +1678,11 @@
                                         </button>
                                     </div>
                                 </form>
+                                <!--End Modal Form-->
                             </div>
                         </div>
-                        <!--End Modal Form Row-->
+                        <!--End Modal Apresentation Form-->
+                        
                     </div>
                 </div>
                 <!--End Modal Body-->
