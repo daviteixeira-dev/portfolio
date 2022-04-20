@@ -242,6 +242,13 @@ footer {
     border-top: 4px solid var(--PacificBlue);
 }
 
+footer .container-fluid .row #footer-menu p {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--Concrete);
+}
+
 footer .container-fluid .row #footer-menu ul li p {
     font-size: .8rem;
     margin-top: 1rem;

@@ -51,14 +51,8 @@
     font-weight: bold;
     color: var(--Concrete);
     text-transform: uppercase;
-    background-color: var(--BlueDianne);
+    background-color: var(--PacificBlue);
     font-family: Helvetica, sans-serif;
-}
-
-#main-blog #section-blog aside .card .card-body a:hover {
-    color: var(--BlueDianne);
-    background-color: var(--Concrete);
-    border: 2px solid var(--BlueDianne);
 }
 
 #main-blog #section-blog #postagens-blog {
