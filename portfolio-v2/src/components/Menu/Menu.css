@@ -1,0 +1,10 @@
+.nav-link {
+    font-weight: bold;
+    color: var(--Concrete);
+    text-transform: uppercase;
+}
+
+
+.nav-link:hover {
+    color: var(--PacificBlue);
+}

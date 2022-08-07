@@ -3,12 +3,12 @@ import React from 'react';
 import './App.css';
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 
-import { Button } from 'react-bootstrap' ;
+import Menu from './components/Menu/Menu';
 
 function App() {
   return (
     <div className="App">
-        <Button>Esse é um botão</Button>
+      <Menu /> 
     </div>
   );
 }

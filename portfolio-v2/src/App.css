@@ -1,0 +1,21 @@
+:root {
+    --Java: #03B5b7;
+    --Green: #008000;
+    --Masala: #3E3E3E;
+    --CapeCod: #464646;
+    --CodGray: #0D0D0D;
+    --Concrete: #F2F2F2;
+    --Lochmara: #427BC0;
+    --MineShaft: #2C2F30;
+    --PacificBlue: #009EC8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-container {
+    border: 1px solid;
+}
