@@ -1,30 +1,30 @@
 import React from "react";
-import { Box } from "@chakra-ui/react"
+import { Box, Heading, Text } from "@chakra-ui/react"
 
 function Servicos(){
     return(
         <Box as="section" id="services" border="1px solid">
-            <h2>
+            <Heading as="h2">
                 Serviços
-            </h2>
-            <h3>
+            </Heading>
+            <Heading as="h3">
                 Desenvolvimento
-            </h3>
-            <p>
+            </Heading>
+            <Text>
                 Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais.
-            </p>
-            <h3>
+            </Text>
+            <Heading as="h3">
                 Responsividade
-            </h3>
-            <p>
+            </Heading>
+            <Text>
                 Criação de sites responsivos para a melhor visualização em todas as resoluções.
-            </p>
-            <h3>
+            </Text>
+            <Heading as="h3">
                 SEO
-            </h3>
-            <p>
+            </Heading>
+            <Text>
                 Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez mais nas buscas.
-            </p>
+            </Text>
         </Box>
     )
 }

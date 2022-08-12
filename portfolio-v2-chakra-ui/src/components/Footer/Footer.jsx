@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@chakra-ui/react"
+import { Box, Text } from "@chakra-ui/react"
 
 function Footer(){
     return(
@@ -31,16 +31,16 @@ function Footer(){
                     </a>
                 </li>
             </ul>
-            <p>Desenvolvido por: 
-                <em>
+            <Text>Desenvolvido por: 
+                <Text as="em">
                     <a 
                         href="https://github.com/daviteixeira-btm" 
                         target="_blank"
                     >
                         Davi Teixeira
                     </a>
-                </em>
-            </p>
+                </Text>
+            </Text>
         </Box>
     )
 }

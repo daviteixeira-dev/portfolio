@@ -1,42 +1,42 @@
 import React from "react";
-import { Box } from "@chakra-ui/react"
+import { Box, Heading, Text } from "@chakra-ui/react"
 
 function Sobre(){
     return(
         <Box as="section" id="sobre" border="1px solid">
-            <h2>
+            <Heading as="h2">
                 Sobre min
-            </h2>
-            <p>
+            </Heading>
+            <Text>
                 Graduando em Sistemas de Informação pela Universidade Federal do Ceará. Sou Desenvolvedor Front-end apaixonado em tirar ideias do papel e transformá-las em código.
-            </p>
-            <p>
+            </Text>
+            <Text>
                 Assim, tenho trabalhado em projetos como foco tópicos relacionados à Responsividade, Acessibilidade Web e SEO.
-            </p>
-            <h3>
+            </Text>
+            <Heading as="h3">
                 Experiência
-            </h3>
-            <h4>
+            </Heading>
+            <Heading as="h4">
                 Dell Lead
-            </h4>
-            <h5>
+            </Heading>
+            <Heading as="h5">
                 Bolsista Desenvolvedor Front-end
-            </h5>
-            <p>
+            </Heading>
+            <Text>
                 Aqui vou falar alguma coisa do cargo que estou agora.
-            </p>
-            <h5>
+            </Text>
+            <Heading as="h5">
                 Bolsista Diagramador Web
-            </h5>
-            <p>
+            </Heading>
+            <Text>
                 Trabalhei na construção dos cursos ofertados na plataforma EAD Accessible Learning, desenvolvendo assim as ferramentas de aprendizagem;
-            </p>
-            <p>
+            </Text>
+            <Text>
                 Trabalhei também com a execução de implementações de melhorias, correções e retestes nas ferramentas de aprendizagem na plataforma.
-            </p>
-            <h3>
+            </Text>
+            <Heading as="h3">
                 Educação
-            </h3>
+            </Heading>
         </Box>
     )
 }

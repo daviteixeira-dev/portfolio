@@ -1,5 +1,7 @@
 
 import './App.css';
+import { Container } from '@chakra-ui/react'
+
 import Sobre from './components/Sobre/Sobre';
 import Servicos from './components/Servicos/Servicos';
 import Conhecimentos from './components/Conhecimentos/Conhecimentos';
@@ -12,8 +14,8 @@ import Header from './components/Header/Header';
 function App() {
 
   return (
-    <div className="App">
-      <Header />
+    <Container maxW='90%' className="App">
+        <Header />
         <Sobre />
         <Servicos />
         <Conhecimentos />
@@ -21,7 +23,7 @@ function App() {
         <Blog />
         <Contato />
         <Footer />
-    </div>
+    </Container>
   )
 }
 

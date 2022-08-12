@@ -1,15 +1,15 @@
 import React from "react";
-import { Box } from "@chakra-ui/react"
+import { Box, Heading, Text  } from "@chakra-ui/react"
 
 function Conhecimentos(){
     return(
         <Box as="section" id="conhecimentos" border="1px solid">
-            <h2>
+            <Heading as="h2">
                 Conhecimentos
-            </h2>
-            <p>
+            </Heading>
+            <Text>
                 Trabalhando e aprendendo com as seguintes tecnologias
-            </p>
+            </Text>
             <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>

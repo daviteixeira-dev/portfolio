@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@chakra-ui/react"
+import { Box, Heading, Text } from "@chakra-ui/react"
 
 function Header(){
     return(
@@ -43,12 +43,12 @@ function Header(){
                     </li>
                 </ul>
             </nav>
-            <h1>
+            <Heading as="h1">
                 Olá, seja bem-vindo(a), meu nome é Davi Teixeira.
-            </h1>
-            <p>
+            </Heading>
+            <Text>
                 Sou Desenvolvedor Front-end.
-            </p>
+            </Text>
             <ul>
                 <li>
                     <a 

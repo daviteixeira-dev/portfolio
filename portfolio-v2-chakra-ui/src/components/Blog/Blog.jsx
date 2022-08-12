@@ -1,12 +1,12 @@
 import React from "react";
-import { Box } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 
 function Blog(){
     return(
         <Box as="section" id="blog" border="1px solid">
-            <h2>
+            <Heading as="h2">
                 Blog
-            </h2>
+            </Heading>
         </Box>
     )
 }
