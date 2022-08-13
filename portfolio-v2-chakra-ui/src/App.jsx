@@ -11,20 +11,19 @@ import Contato from './components/Contato/Contato';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
-function App() {
-
+function App(){
   return (
-    <Container maxW='90%' className="App">
-        <Header />
-        <Sobre />
-        <Servicos />
-        <Conhecimentos />
-        <Projetos />
-        <Blog />
-        <Contato />
-        <Footer />
+    <Container maxW="full" className="App">
+      <Header />
+      <Sobre />
+      <Servicos />
+      <Conhecimentos />
+      <Projetos />
+      <Blog />
+      <Contato />
+      <Footer />
     </Container>
-  )
-}
+  );
+};
 
 export default App;

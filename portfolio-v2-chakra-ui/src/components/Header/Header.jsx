@@ -1,54 +1,21 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react"
 
+import MainMenu from "./MainMenu";
+
 function Header(){
     return(
         <Box as="header" id="home" border="1px solid">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">
-                            Início
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#sobre">
-                            Sobre mim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#services">
-                            Serviços
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#conhecimentos">
-                            Conhecimentos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projetos">
-                            Projetos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#blog">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contato">
-                            Contato
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <MainMenu />
+
             <Heading as="h1">
                 Olá, seja bem-vindo(a), meu nome é Davi Teixeira.
             </Heading>
+            
             <Text>
                 Sou Desenvolvedor Front-end.
             </Text>
+            
             <ul>
                 <li>
                     <a 
@@ -66,8 +33,9 @@ function Header(){
                     </a>
                 </li>
             </ul>
+            
         </Box>
-    )
-}
+    );
+};
 
 export default Header;
