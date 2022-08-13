@@ -16,8 +16,8 @@ const MenuToggle = ({ toggle, isOpen }) => {
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
     return (
-      <Link href={to} style={{ textDecoration: 'none', letterSpacing: "1px" }}>
-        <Text display="block" {...rest} _hover={{ borderBottom: "3px solid #f8f8f7"}}>
+      <Link href={to} style={{ textDecoration: 'none' }}>
+        <Text display="block" {...rest} _hover={{ borderBottom: "3px solid #63B3ED"}}>
           {children}
         </Text>
       </Link>
@@ -59,9 +59,9 @@ const NavBarContainer = ({ children, ...props }) => {
             w="100%"
             mb={8}
             p={8}
-            bg={["#1b1c1f", "#1b1c1f", "#1b1c1f", "#1b1c1f"]}
+            bg={["black", "black", "black", "black"]}
             color={["#f8f8f7", "#f8f8f7", "#f8f8f7", "#f8f8f7"]}
-            fontFamily="Inter, sans-serif;"
+            fontFamily="Inter, sans-serif"
             {...props}
         >
             {children}
@@ -78,7 +78,7 @@ const MainMenu = (props) => {
     return(
         <NavBarContainer {...props }>
             <Logo 
-                w="120px"
+                w="200px"
                 color={["#eee7f3", "#eee7f3", "#eee7f3", "#eee7f3"]}
             />
             <MenuToggle toggle={toggle} isOpen={isOpen} />
