@@ -1,45 +1,39 @@
 import React from "react";
 import {
-    Box,
     Flex,
     Link,
     Text,
-    Button,
     Heading,
 } from "@chakra-ui/react";
 
-import "../../../public/images/apresentation-banner.jpg";
-
 function Presentation(){
     return(
-        <Box>
+        <Flex h="100vh">
             <Flex
-                w="30rem"
-                h="100vh"
-                mt="5rem"
-                textAlign="left"
+                w="auto"
                 flexDirection="column"
+                justifyContent="center"
                 ml={["1rem", "0", "5rem"]}
             >
                 <Text
                     py=".3rem"
-                    color="whiteAlpha.900"
                     fontWeight="bold"
                     fontSize="1.5rem"
+                    color="whiteAlpha.900"
                     fontFamily="Inter, sans-serif"
                 >
                     Olá, eu sou
                 </Text>
-                
+
                 <Heading
                     as="h1"
                     py=".3rem"
-                    bgClip='text'
-                    fontSize={["2.5rem", "4rem", "4rem"]}
+                    bgClip="text"
                     letterSpacing="2px"
-                    fontWeight='extrabold'
+                    fontWeight="extrabold"
                     fontFamily="Inter, sans-serif"
-                    bgGradient='linear(to-l, blue.600, blue.300)'
+                    fontSize={["2.5rem", "4rem", "4rem"]}
+                    bgGradient="linear(to-l, blue.600, blue.300)"
                 >
                     Davi Teixeira
                 </Heading>
@@ -47,56 +41,54 @@ function Presentation(){
                 <Text
                     py=".3rem"
                     fontSize="1rem"
-                    color="whiteAlpha.900"
                     fontWeight="bold"
+                    color="whiteAlpha.900"
                     fontFamily="Inter, sans-serif"
                 >
                     Sou Desenvolvedor Front-end.
                 </Text>
 
                 <Flex
-                    w="13rem"
+                    w="14rem"
                     mt="2rem"
                     justifyContent="space-between"
                 >
-                    <Button
+                    <Link
+                        isExternal
+                        p=".5rem 1.5rem"
+                        borderRadius=".5rem"
                         color="whiteAlpha.900"
+                        style={{ textDecoration: "none" }}
                         bgGradient='linear(to-l, blue.600, blue.300)'
+                        href="https://github.com/daviteixeira-btm"
                         _hover={{
                             bgGradient: 'linear(to-l, blue.500, blue.200)'
                         }}
                     >
-                        <Link
-                            isExternal
-                            style={{ textDecoration: "none" }}
-                            href="https://github.com/daviteixeira-btm"
-                        >
-                            <Text fontFamily="Inter, sans-serif">
-                                GitHub
-                            </Text>
-                        </Link>
-                    </Button>
-                    
-                    <Button
+                        <Text fontFamily="Inter, sans-serif">
+                            GitHub
+                        </Text>
+                    </Link>
+
+                    <Link
+                        isExternal
+                        p=".5rem 1.5rem"
+                        borderRadius=".5rem"
                         color="whiteAlpha.900"
+                        style={{ textDecoration: "none" }}
                         bgGradient='linear(to-l, blue.600, blue.300)'
+                        href="https://www.linkedin.com/in/daviteixeira-me/"
                         _hover={{
                             bgGradient: 'linear(to-l, blue.500, blue.200)'
                         }}
                     >
-                        <Link
-                            isExternal
-                            style={{ textDecoration: "none" }}
-                            href="https://www.linkedin.com/in/daviteixeira-me/"
-                        >
-                            <Text fontFamily="Inter, sans-serif">
-                                LinkedIn
-                            </Text>
-                        </Link>
-                    </Button>
+                        <Text fontFamily="Inter, sans-serif">
+                            LinkedIn
+                        </Text>
+                    </Link>
                 </Flex>
             </Flex>
-        </Box>
+        </Flex>
     );
 };
 
