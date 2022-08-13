@@ -1,19 +1,18 @@
+import "./App.css";
+import { Container } from "@chakra-ui/react";
 
-import './App.css';
-import { Container } from '@chakra-ui/react'
+import Blog from "./components/Blog/Blog";
+import Sobre from "./components/Sobre/Sobre";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Contato from "./components/Contato/Contato";
+import Projetos from "./components/Projetos/Projetos";
+import Servicos from "./components/Servicos/Servicos";
+import Conhecimentos from "./components/Conhecimentos/Conhecimentos";
 
-import Sobre from './components/Sobre/Sobre';
-import Servicos from './components/Servicos/Servicos';
-import Conhecimentos from './components/Conhecimentos/Conhecimentos';
-import Projetos from './components/Projetos/Projetos';
-import Blog from './components/Blog/Blog';
-import Contato from './components/Contato/Contato';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-
-function App(){
+function App() {
   return (
-    <Container maxW="full" className="App">
+    <Container maxW="full" className="App" p="0">
       <Header />
       <Sobre />
       <Servicos />
@@ -24,6 +23,6 @@ function App(){
       <Footer />
     </Container>
   );
-};
+}
 
 export default App;
