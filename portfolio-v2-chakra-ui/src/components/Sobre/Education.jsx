@@ -7,52 +7,58 @@ import { FaLaptopCode } from "react-icons/fa";
 function Education(){
     return(
         <Flex
-            m="1rem"
-            //border="1px solid green"
             textAlign="center"
+            m={[".5rem", "1rem"]}
             flexDirection="column"
         >
             <Flex 
                 m=".5rem" 
                 alignItems="baseline"
-                fontFamily="Inter, sans-serif"
-                //border="1px solid red"
+                flexDirection="column"
             >
-                <FaLaptopCode />
-
-                <Heading
-                    as="h4"
-                    mx="1rem"
-                    fontSize="1.5rem"
+                <Flex 
+                    m=".5rem" 
+                    alignItems="center"
+                    fontFamily="Inter, sans-serif"
                 >
-                    Universidade Federal do Ceará
-                </Heading>
+                    <FaLaptopCode fontSize="1.5rem" />
 
-                <Text
-                    fontSize="1rem"
-                    fontWeight="bold"
-                >
-                    2022 - Atual
-                </Text>
+                    <Heading
+                        as="h4"
+                        mx="1rem"
+                        fontSize={["1rem", "1.5rem"]}
+                        fontFamily="Inter, sans-serif"
+                    >
+                        Universidade Federal do Ceará
+                    </Heading>
+
+                    <Text
+                        fontSize="1rem"
+                        fontWeight="bold"
+                        fontFamily="Inter, sans-serif"
+                    >
+                        2019 - Atual
+                    </Text>
+                </Flex>
             </Flex>
 
             <Flex
                 m=".5rem"
-                textAlign="start"
+                alignItems="baseline"
                 flexDirection="column"
-                //border="1px solid red"
             >
                 <Flex
-                    textAlign="center"
-                    alignItems="baseline"
+                    m=".5rem" 
+                    alignItems="center"
                     fontFamily="Inter, sans-serif"
                 >
-                    <FaLaptopCode />
+                    <FaLaptopCode fontSize="1.5rem"/>
 
                     <Heading 
-                        as="h5"
+                        as="h4"
                         mx="1rem"
-                        fontSize="1.5rem"
+                        fontSize={["1rem", "1.5rem"]}
+                        fontFamily="Inter, sans-serif"
                     >
                         Técnico em Informática
                     </Heading>
@@ -60,14 +66,11 @@ function Education(){
                     <Text 
                         fontSize="1rem"
                         fontWeight="bold"
+                        fontFamily="Inter, sans-serif"
                     >
-                        2022 - Atual
+                        2013 - 2015
                     </Text>
                 </Flex>
-
-                <Text>
-                    Aqui vou falar alguma coisa do cargo que estou agora.
-                </Text>
             </Flex>
         </Flex>
     );

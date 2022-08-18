@@ -7,23 +7,21 @@ import { FaCalendar, FaAngleRight } from "react-icons/fa";
 function Experience() {
     return (
         <Flex
-            m="1rem"
-            //border="1px solid green" 
             textAlign="center"
+            m={[".5rem", "1rem"]}
             flexDirection="column"
         >
             <Flex
                 m=".5rem"
                 alignItems="baseline"
-                fontFamily="Inter, sans-serif"
-                //border="1px solid red"
             >
-                <FaCalendar />
+                <FaCalendar fontSize="1.5rem" />
 
                 <Heading
                     as="h4"
                     mx="1rem"
-                    fontSize="1.5rem"
+                    fontSize={["1rem", "1.5rem"]}
+                    fontFamily="Inter, sans-serif"
                 >
                     Dell Lead
                 </Heading>
@@ -31,6 +29,7 @@ function Experience() {
                 <Text
                     fontSize="1rem"
                     fontWeight="bold"
+                    fontFamily="Inter, sans-serif"
                 >
                     2022 - Atual
                 </Text>
@@ -40,33 +39,41 @@ function Experience() {
                 m=".5rem"
                 textAlign="start"
                 flexDirection="column"
-                //border="1px solid red"
             >
                 <Flex
-                    textAlign="center"
                     alignItems="baseline"
-                    fontFamily="Inter, sans-serif"
+                    textAlign={["start", "center"]}
                 >
                     <FaAngleRight />
 
                     <Heading
                         as="h5"
-                        mx="1rem"
-                        fontSize="1.2rem"
+                        mx=".5rem"
+                        fontSize={["1rem", "1.2rem"]}
+                        fontFamily="Inter, sans-serif"
                     >
-                        Bolsista Desenvolvedor Front-end
+                        Estágio em Desenvolvedor Front-end
                     </Heading>
 
                     <Text
-                        fontSize="1rem"
+                        mx=".5rem"
                         fontWeight="bold"
+                        fontSize={[".8rem", "1rem"]}
+                        fontFamily="Inter, sans-serif"
                     >
-                        2022 - Atual
+                        2022 / Atual
                     </Text>
                 </Flex>
 
-                <Text>
-                    Aqui vou falar alguma coisa do cargo que estou agora.
+                <Text
+                    mt="1rem"
+                    mx="1rem"
+                    fontFamily="Inter, sans-serif"
+                >
+                    Membro da equipe de desenvolvimento Front-end, responsável 
+                    pela implementação de correções, melhorias e novas funcionalidades 
+                    para desenvolvimento dos entregáveis do projeto, utilizando as metodologias 
+                    ágeis de desenvolvimento, a partir do backlog de requisitos planejados.
                 </Text>
             </Flex>
 
@@ -74,32 +81,37 @@ function Experience() {
                 m=".5rem"
                 textAlign="start"
                 flexDirection="column"
-                //border="1px solid red"
             >
                 <Flex
-                    textAlign="center"
                     alignItems="baseline"
-                    fontFamily="Inter, sans-serif"
+                    textAlign={["start", "center"]}
                 >
                     <FaAngleRight />
 
                     <Heading
                         as="h5"
-                        mx="1rem"
-                        fontSize="1.2rem"
+                        mx=".5rem"
+                        fontSize={["1rem", "1.2rem"]}
+                        fontFamily="Inter, sans-serif"
                     >
-                        Bolsista Diagramador Web
+                        Estágio em Diagramador Web
                     </Heading>
 
                     <Text
-                        fontSize="1rem"
+                        mx=".5rem"
                         fontWeight="bold"
+                        fontSize={[".8rem", "1rem"]}
+                        fontFamily="Inter, sans-serif"
                     >
                         12/2021 - 03/2022
                     </Text>
                 </Flex>
 
-                <Text>
+                <Text
+                    mt="1rem"
+                    mx="1rem"
+                    fontFamily="Inter, sans-serif"
+                >
                     Trabalhei na construção dos cursos ofertados na plataforma EAD Accessible
                     Learning, desenvolvendo assim as ferramentas de aprendizagem, como também
                     com a execução de implementações de melhorias, correções e retestes nas

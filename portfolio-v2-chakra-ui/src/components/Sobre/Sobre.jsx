@@ -6,7 +6,7 @@ import Education from "./Education";
 
 function Sobre() {
     return (
-        <Flex h="auto" flexDirection="column">
+        <Flex h="auto" w="100vw" flexDirection="column">
             <Flex
                 p="2rem"
                 w="100vw"
@@ -17,17 +17,18 @@ function Sobre() {
                 justifyContent="space-evenly"
                 direction={["column", "row", "row"]}
             >
-                <Flex w="auto">
+                <Flex>
                     <Image
-                        w="400"
-                        h="400"
+                        w={["200", "400"]}
+                        h={["200", "400"]}
                         borderRadius=".5rem"
                         src="images/davi.jpg"
                     />
                 </Flex>
 
                 <Flex
-                    w="30rem"
+                    p={["1rem", "0"]}
+                    w={["auto", "30rem"]}
                     flexDirection="column"
                 >
                     <Heading
@@ -68,22 +69,32 @@ function Sobre() {
             </Flex>
 
             <Flex
-                p="2rem"
                 bg="#ededec"
-                //border="1px solid blue" 
+                p={[".5rem", "2rem"]}
                 justifyContent="space-evenly"
+                flexDirection={["column", "row", "row"]}
             >
-                <Flex maxW="50%" flexDirection="column" textAlign="center">
+                <Flex
+                    textAlign="center"
+                    flexDirection="column"
+                    maxW={["100vw", "50vw", "50vw"]}
+                >
                     <Heading as="h3">
                         Experiência
                     </Heading>
+
                     <Experience />
                 </Flex>
 
-                <Flex maxW="50%" flexDirection="column" textAlign="center">
+                <Flex
+                    textAlign="center"
+                    flexDirection="column"
+                    maxW={["100vw", "50vw", "50vw"]}
+                >
                     <Heading as="h3">
                         Educação
                     </Heading>
+
                     <Education />
                 </Flex>
             </Flex>
