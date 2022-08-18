@@ -52,17 +52,18 @@ const MenuLinks = ({ isOpen }) => {
 const NavBarContainer = ({ children, ...props }) => {
     return (
         <Flex
+            top="0"
+            py={4}
+            px={8}
             as="nav"
-            align="center"
-            justify="space-between"
+            w="100vw"
             wrap="wrap"
-            w="100%"
-            p={8}
+            align="center"
+            position="fixed"
+            justify="space-between"
+            fontFamily="Inter, sans-serif"
             bg={["black", "black", "black", "black"]}
             color={["#f8f8f7", "#f8f8f7", "#f8f8f7", "#f8f8f7"]}
-            fontFamily="Inter, sans-serif"
-            position="fixed"
-            top="0"
             {...props}
         >
             {children}
