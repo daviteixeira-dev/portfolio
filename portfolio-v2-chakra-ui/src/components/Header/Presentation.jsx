@@ -8,7 +8,7 @@ import {
 
 function Presentation(){
     return(
-        <Flex h="100vh">
+        <Flex h="100vh" w="100vw">
             <Flex
                 w="auto"
                 flexDirection="column"
