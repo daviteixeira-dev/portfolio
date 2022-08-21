@@ -8,7 +8,7 @@ function Servicos(){
         <Flex
             p="2rem"
             h="100%"
-            w="100vw"
+            w="100%"
             as="section"
             id="services"
             bg="blackAlpha.900"

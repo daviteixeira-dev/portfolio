@@ -7,7 +7,7 @@ import Presentation from "./Presentation";
 function Header(){
     return(
         <Box
-            w="100vw"
+            w="100%"
             as="header"
             style={{                
                 backgroundSize: "cover",

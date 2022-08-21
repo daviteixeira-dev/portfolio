@@ -5,7 +5,7 @@ function Conhecimentos(){
     return(
         <Flex
             h="100%"
-            w="100vw"
+            w="100%"
             as="section"
             id="conhecimentos"
             bg="blackAlpha.900"

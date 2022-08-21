@@ -6,10 +6,10 @@ import Education from "./Education";
 
 function Sobre() {
     return (
-        <Flex h="auto" w="100vw" flexDirection="column">
+        <Flex h="auto" w="100%" flexDirection="column">
             <Flex
                 p="2rem"
-                w="100vw"
+                w="100%"
                 id="sobre"
                 bg="#ededec"
                 as="section"

@@ -56,7 +56,7 @@ const NavBarContainer = ({ children, ...props }) => {
             py={4}
             px={8}
             as="nav"
-            w="100vw"
+            w="100%"
             wrap="wrap"
             align="center"
             position="fixed"
