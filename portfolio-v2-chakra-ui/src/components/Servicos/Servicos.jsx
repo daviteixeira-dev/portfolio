@@ -6,12 +6,12 @@ import { FaCode, FaTabletAlt, FaCogs } from "react-icons/fa";
 function Servicos(){
     return(
         <Flex
-            w="100vw"
-            h="100%"
             p="2rem"
-            bg="black"
+            h="100%"
+            w="100vw"
             as="section"
             id="services"
+            bg="blackAlpha.900"
             flexDirection="column"
             justifyContent="center"
         >
