@@ -15,8 +15,7 @@ function Conhecimentos(){
             <Flex
                 textAlign="center"
                 w={["100%", "50%"]}
-                p={["0rem", "2rem"]}
-                //border='1px solid red' 
+                p={["0rem", "2rem"]} 
                 flexDirection="column"
                 justifyContent="center"
             >
