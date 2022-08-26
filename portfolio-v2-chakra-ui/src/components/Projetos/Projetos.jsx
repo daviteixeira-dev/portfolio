@@ -8,32 +8,32 @@ function Projetos(){
             as="section"
             id="projetos"
             textAlign="center"
-            p={["1rem", "2rem"]}
             flexDirection="column"
+            p={["1rem", "1rem", "1.5rem", "2rem"]}
         >
             <Heading
                 as="h2"
                 mb="2rem"
                 textAlign="center"
                 color="blackAlpha.900"
-                fontSize={["2rem", "3rem"]}
                 fontFamily="Inter, sans-serif"
+                fontSize={["2rem", "2rem", "3rem", "3rem"]}
             >
                 Projetos
                 <Text as="span" color="#63B3ED">.</Text>
             </Heading>
 
             <Text
-                fontSize="1.5rem"
                 color="blackAlpha.900"
                 fontFamily="Inter, sans-serif"
+                fontSize={["1.5rem", "1.5rem", "1.3rem", "1.5rem"]}
             >
                 Nessa seção você poderá ver alguns dos principais projetos que desenvolvi. 
             </Text>
             <Text
-                fontSize="1.5rem"
                 color="blackAlpha.900"
                 fontFamily="Inter, sans-serif"
+                fontSize={["1.5rem", "1.5rem", "1.3rem", "1.5rem"]}
             >
                 Caso queira ver mais alguns outros projetos, clique em:
             </Text>
@@ -50,8 +50,8 @@ function Projetos(){
                     borderRadius=".5rem"
                     color="whiteAlpha.900"                   
                     style={{ textDecoration: "none" }}
-                    bgGradient='linear(to-l, blue.600, blue.300)'
                     href="https://github.com/daviteixeira-btm"
+                    bgGradient='linear(to-l, blue.600, blue.300)'
                     _hover={{
                         bgGradient: 'linear(to-l, blue.500, blue.200)'
                     }}
@@ -63,14 +63,18 @@ function Projetos(){
             <Flex
                 mt="2rem"
                 justifyContent="space-between"
-                flexDirection={["column", "row"]}
+                flexDirection={["column", "column", "column", "row"]}
             >
-
+                <Flex
+                    justifyContent="space-between"
+                    w={["100%", "100%", "100%", "49%"]}
+                    flexDirection={["column", "column", "row", "row"]}
+                >
                     <Flex
                         mb="1rem"
                         h="30rem"
-                        w={["100%","24%"]}
                         flexDirection="column"
+                        w={["100%", "100%", "49%", "49%"]}
                     >
                         <Flex
                             h="15rem"
@@ -131,8 +135,8 @@ function Projetos(){
                     <Flex
                         mb="1rem"
                         h="30rem"
-                        w={["100%","24%"]}
                         flexDirection="column"
+                        w={["100%", "100%", "49%", "49%"]}
                     >
                         <Flex
                             h="15rem"
@@ -190,12 +194,18 @@ function Projetos(){
                             </Link>
                         </Flex> 
                     </Flex>
+                </Flex>
 
+                <Flex
+                    justifyContent="space-between"
+                    w={["100%", "100%", "100%", "49%"]}
+                    flexDirection={["column", "column", "row", "row"]}
+                >
                     <Flex
                         mb="1rem"
                         h="30rem"
-                        w={["100%","24%"]}
                         flexDirection="column"
+                        w={["100%", "100%", "49%", "49%"]}
                     >
                         <Flex
                             h="15rem"
@@ -256,8 +266,8 @@ function Projetos(){
                     <Flex
                         mb="1rem"
                         h="30rem"
-                        w={["100%","24%"]}
                         flexDirection="column"
+                        w={["100%", "100%", "49%", "49%"]}
                     >
                         <Flex
                             h="15rem"
@@ -314,6 +324,8 @@ function Projetos(){
                             </Link>
                         </Flex> 
                     </Flex>
+                </Flex>
+
             </Flex>
         </Flex>
     );

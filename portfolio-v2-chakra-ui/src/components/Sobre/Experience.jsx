@@ -49,6 +49,7 @@ function Experience() {
                     <Heading
                         as="h5"
                         mx=".5rem"
+                        textAlign="start"
                         fontSize={["1rem", "1.2rem"]}
                         fontFamily="Inter, sans-serif"
                     >
@@ -91,6 +92,7 @@ function Experience() {
                     <Heading
                         as="h5"
                         mx=".5rem"
+                        textAlign="start"
                         fontSize={["1rem", "1.2rem"]}
                         fontFamily="Inter, sans-serif"
                     >

@@ -7,17 +7,22 @@ function Blog(){
             id="blog"
             as="section"
             bg="blackAlpha.900"
-            p={["1rem", "2rem"]}
-            flexDirection={["column", "row"]}
+            justifyContent="space-between"
+            p={["1rem", "1rem", "2rem", "2rem"]}
+            flexDirection={["column", "column", "row","row"]}
         >
-            <Flex w={["100%", "50%"]} flexDirection="column" mb="1rem">
+            <Flex
+                mb="1rem"
+                flexDirection="column"
+                w={["100%", "100%", "49%", "49%"]}
+            >
                 <Heading
                     as="h2"
                     mb="2rem"
                     color="#f8f8f7"
                     textAlign="start"
-                    fontSize={["2rem", "3rem"]}
                     fontFamily="Inter, sans-serif"
+                    fontSize={["2rem", "2rem", "3rem", "3rem"]}
                 >
                     Blog
                     <Text as="span" color="#63B3ED">.</Text>
@@ -25,8 +30,8 @@ function Blog(){
 
                 <Text
                     color="#f8f8f7"
-                    fontSize="1.4rem"
                     fontFamily="Inter, sans-serif"
+                    fontSize={["1.4rem", "1.4rem", "1.3rem", "1.4rem"]}
                 >
                     Neste blog, quero trazer conteúdos que possam agregar à sua carreira como 
                     desenvolvedor web, quero lhe fornecer informações das quais tive muita 
@@ -36,15 +41,15 @@ function Blog(){
             </Flex>
 
             <Flex
-                w={["100%", "50%"]}
                 alignItems="center"
                 flexDirection="column"
+                w={["100%", "100%", "49%", "49%"]}
             >
                     <Flex
                         h="30rem"
                         textAlign="center"
-                        w={["100%","60%"]}
                         flexDirection="column"
+                        w={["100%", "100%", "100%", "60%"]}
                     >
                         <Flex
                             h="15rem"
@@ -87,15 +92,15 @@ function Blog(){
                             justifyContent="center"
                         >
                             <Link 
-                                isExternal
                                 w="6rem"
+                                isExternal
                                 fontSize="1rem"
                                 p=".5rem .5rem"
                                 borderRadius=".5rem"
                                 color="whiteAlpha.900"                   
                                 style={{ textDecoration: "none" }}
-                                bgGradient='linear(to-l, blue.600, blue.300)'
                                 href="https://github.com/daviteixeira-btm"
+                                bgGradient='linear(to-l, blue.600, blue.300)'
                                 _hover={{
                                     bgGradient: 'linear(to-l, blue.500, blue.200)'
                                 }}

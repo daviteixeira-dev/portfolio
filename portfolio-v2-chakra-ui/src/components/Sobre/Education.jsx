@@ -26,6 +26,7 @@ function Education(){
                     <Heading
                         as="h4"
                         mx="1rem"
+                        textAlign="start"
                         fontSize={["1rem", "1.5rem"]}
                         fontFamily="Inter, sans-serif"
                     >
@@ -57,6 +58,7 @@ function Education(){
                     <Heading 
                         as="h4"
                         mx="1rem"
+                        textAlign="start"
                         fontSize={["1rem", "1.5rem"]}
                         fontFamily="Inter, sans-serif"
                     >

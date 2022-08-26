@@ -1,12 +1,16 @@
 import React from "react";
 import { Flex, Heading, Text, Image } from "@chakra-ui/react"
 
-import Experience from "./Experience";
 import Education from "./Education";
+import Experience from "./Experience";
 
-function Sobre() {
+function Sobre(){
     return (
-        <Flex h="auto" w="100%" flexDirection="column">
+        <Flex 
+            h="auto"
+            w="100%"
+            flexDirection="column"
+        >
             <Flex
                 p="2rem"
                 w="100%"
@@ -14,25 +18,31 @@ function Sobre() {
                 bg="#ededec"
                 as="section"
                 alignItems="center"
-                justifyContent="space-evenly"
-                direction={["column", "row", "row"]}
+                direction={["column", "column", "row", "row"]}
+                justifyContent={["space-evenly", "space-evenly", "space-between", "space-evenly"]}
             >
-                <Flex>
+                <Flex
+                    justifyContent="center"
+                    w={["100%", "100%", "30%", "30rem"]}
+                >
                     <Image
-                        w={["200", "400"]}
-                        h={["200", "400"]}
                         borderRadius=".5rem"
                         src="images/davi.jpg"
+                        w={["200", "200", "200", "400"]}
+                        h={["200", "200", "200", "400"]}
                     />
                 </Flex>
 
                 <Flex
-                    p={["1rem", "0"]}
-                    w={["auto", "30rem"]}
                     flexDirection="column"
+                    p={["1rem", "1rem", "1rem", "0"]}
+                    w={["100%", "100%", "70%", "30rem"]}
+                    textAlign={["center", "center", "start", "start"]}
+                    alignItems={["center", "center", "start", "start"]}
                 >
                     <Heading
                         as="h2"
+                        w="100%"
                         mb="1rem"
                         fontWeight="extrabold"
                         fontFamily="Inter, sans-serif"
@@ -42,6 +52,7 @@ function Sobre() {
 
                     <Heading
                         as="h3"
+                        w="100%"
                         mb="1rem"
                         fontSize="1rem"
                         fontFamily="Inter, sans-serif"
@@ -51,6 +62,7 @@ function Sobre() {
 
                     <Text
                         mb="1rem"
+                        fontSize="1rem"
                         fontFamily="Inter, sans-serif"
                     >
                         Graduando em Sistemas de Informação pela Universidade Federal do Ceará. 
@@ -59,6 +71,7 @@ function Sobre() {
                     </Text>
 
                     <Text
+                        fontSize="1rem"
                         fontFamily="Inter, sans-serif"
                     >
                         Assim, tenho trabalhado em projetos como foco tópicos relacionados 
@@ -70,14 +83,14 @@ function Sobre() {
 
             <Flex
                 bg="#ededec"
-                p={[".5rem", "2rem"]}
                 justifyContent="space-evenly"
-                flexDirection={["column", "row", "row"]}
+                p={[".5rem", ".5rem", ".5rem", "2rem"]}
+                flexDirection={["column", "row", "row", "row"]}
             >
                 <Flex
                     textAlign="center"
                     flexDirection="column"
-                    maxW={["100vw", "50vw", "50vw"]}
+                    w={["100%", "100%", "50%", "50%"]}
                 >
                     <Heading as="h3">
                         Experiência
@@ -89,7 +102,7 @@ function Sobre() {
                 <Flex
                     textAlign="center"
                     flexDirection="column"
-                    maxW={["100vw", "50vw", "50vw"]}
+                    w={["100%", "100%", "50%", "50%"]}
                 >
                     <Heading as="h3">
                         Educação

@@ -8,7 +8,7 @@ import Logo from "./Logo";
 
 const MenuToggle = ({ toggle, isOpen }) => {
     return (
-      <Box display={{ base: "block", md: "none" }} onClick={toggle}>
+      <Box display={{ base: "block", lg: "none" }} onClick={toggle}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </Box>
     );
@@ -27,15 +27,16 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
 const MenuLinks = ({ isOpen }) => {
     return (
         <Box
-            display={{ base: isOpen ? "block" : "none", md: "block" }}
             flexBasis={{ base: "100%", md: "auto" }}
+            display={{ base: isOpen ? "block" : "none", lg: "block" }}
         >
             <Stack 
                 spacing={8}
                 align="center"
-                justify={["center", "space-between", "flex-end", "flex-end"]}
-                direction={["column", "column", "row", "row"]}
                 pt={[4, 4, 0, 0]}
+                m={[0, 0, "1rem", 0]}
+                direction={["column", "column", "row", "row"]}
+                justify={["center", "space-between", "flex-end", "flex-end"]}
             >
                 <MenuItem to="/">Início</MenuItem>
                 <MenuItem to="#sobre">Sobre mim</MenuItem>

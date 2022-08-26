@@ -10,10 +10,13 @@ function Footer(){
             p="2rem"
             bg="black"
             as="footer"
-            justifyContent="space-around"
-            flexDirection={["column", "row"]}
+            justifyContent="space-between"
+            flexDirection={["column", "column", "row", "row"]}
         >
-            <Flex flexDirection="column">
+            <Flex 
+                flexDirection="column" 
+                w={["100%", "100%", "32%", "32%"]}
+            >
                 <Heading
                     as="h4"
                     mb="1rem"
@@ -102,7 +105,12 @@ function Footer(){
                 </Text>
             </Flex>
 
-            <Flex flexDirection="column">
+            <Flex
+                flexDirection="column"
+                p={[0, 0, "0 1rem", 0]}
+                my={["1rem", "1rem", 0, 0]}
+                w={["100%", "100%", "32%", "32%"]}
+            >
                 <Link
                     mb=".5rem"
                     color="#f8f8f7"
@@ -159,7 +167,10 @@ function Footer(){
                 </Link>
             </Flex>
 
-            <Flex>
+            <Flex
+                flexDirection="column" 
+                w={["100%", "100%", "32%", "32%"]}
+            >
                 <Contato />
             </Flex>
         </Flex>

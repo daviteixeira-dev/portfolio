@@ -13,7 +13,7 @@ function Presentation(){
                 w="auto"
                 flexDirection="column"
                 justifyContent="center"
-                ml={["1rem", "0", "5rem"]}
+                ml={["1rem", "1rem", "1rem", "5rem"]}
             >
                 <Text
                     py=".3rem"

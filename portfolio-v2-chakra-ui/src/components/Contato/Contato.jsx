@@ -4,7 +4,7 @@ import { FormControl, FormLabel, Input, Textarea, Link } from "@chakra-ui/react"
 
 function Contato(){
     return(
-        <FormControl w="25rem">
+        <FormControl w="100%">
             <FormLabel color="#f8f8f7">
                 Assunto
             </FormLabel>
