@@ -1,15 +1,18 @@
 import React from "react";
-import {
-    Flex,
-    Link,
-    Text,
-    Heading,
-} from "@chakra-ui/react";
+
+import { Flex, Text, Heading } from "@chakra-ui/react";
+
+import LinkButton from "../LinkButton/LinkButton";
 
 function Presentation(){
     return(
-        <Flex h="100vh" w="100%">
+        <Flex
+            w="100%"
+            h="100vh"
+            flexDirection="column"
+        >
             <Flex
+                h="100%"
                 w="auto"
                 flexDirection="column"
                 justifyContent="center"
@@ -49,43 +52,20 @@ function Presentation(){
                 </Text>
 
                 <Flex
-                    w="14rem"
                     mt="2rem"
-                    justifyContent="space-between"
+                    justifyContent="space-around"
+                    w={["65%", "65%", "30%", "20%"]}
                 >
-                    <Link
-                        isExternal
-                        p=".5rem 1.5rem"
-                        borderRadius=".5rem"
-                        color="whiteAlpha.900"
-                        style={{ textDecoration: "none" }}
-                        bgGradient='linear(to-l, blue.600, blue.300)'
-                        href="https://github.com/daviteixeira-btm"
-                        _hover={{
-                            bgGradient: 'linear(to-l, blue.500, blue.200)'
-                        }}
-                    >
-                        <Text fontFamily="Inter, sans-serif">
-                            GitHub
-                        </Text>
-                    </Link>
-
-                    <Link
-                        isExternal
-                        p=".5rem 1.5rem"
-                        borderRadius=".5rem"
-                        color="whiteAlpha.900"
-                        style={{ textDecoration: "none" }}
-                        bgGradient='linear(to-l, blue.600, blue.300)'
-                        href="https://www.linkedin.com/in/daviteixeira-me/"
-                        _hover={{
-                            bgGradient: 'linear(to-l, blue.500, blue.200)'
-                        }}
-                    >
-                        <Text fontFamily="Inter, sans-serif">
-                            LinkedIn
-                        </Text>
-                    </Link>
+                    <LinkButton
+                        text="GitHub"
+                        isExternal={true}
+                        link="https://github.com/daviteixeira-btm"
+                    />
+                    <LinkButton
+                        text="LinkedIn"
+                        isExternal={true}
+                        link="https://www.google.com"
+                    />
                 </Flex>
             </Flex>
         </Flex>
