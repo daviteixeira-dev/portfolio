@@ -9,19 +9,20 @@ function Sobre(){
         <Flex 
             h="auto"
             w="100%"
+            id="sobre"
+            as="section"
+            bg="#ededec"
             flexDirection="column"
         >
             <Flex
                 p="2rem"
                 w="100%"
-                id="sobre"
-                bg="#ededec"
-                as="section"
                 alignItems="center"
                 direction={["column", "column", "row", "row"]}
                 justifyContent={["space-evenly", "space-evenly", "space-between", "space-evenly"]}
             >
                 <Flex
+                    mt="4rem"
                     justifyContent="center"
                     w={["100%", "100%", "30%", "30rem"]}
                 >

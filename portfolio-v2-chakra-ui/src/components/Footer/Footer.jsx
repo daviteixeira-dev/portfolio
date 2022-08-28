@@ -29,9 +29,11 @@ function Footer(){
 
                 <Link
                     mb="1rem"
+                    isExternal
                     color="#f8f8f7"
                     fontSize="1.2rem"
                     fontFamily="Inter, sans-serif"
+                    href="mailto:daviteixeira.dev@gmail.com"
                 >
                     daviteixeira.dev@gmail.com
                 </Link>
@@ -57,7 +59,10 @@ function Footer(){
                             background: "gray.600"
                         }}
                     >
-                        <Link>
+                        <Link
+                            isExternal
+                            href="https://www.instagram.com/daviteixeira.dev/"
+                        >
                             <FaInstagram
                                 fontSize="2rem"
                                 color="#f8f8f7"
@@ -72,7 +77,10 @@ function Footer(){
                             background: "gray.600"
                         }}
                     >
-                        <Link>
+                        <Link
+                            isExternal
+                            href="https://www.linkedin.com/in/daviteixeira-me/"
+                        >
                             <FaLinkedinIn
                                 fontSize="2rem"
                                 color="#f8f8f7"
@@ -87,7 +95,10 @@ function Footer(){
                             background: "gray.600"
                         }}
                     >
-                        <Link>
+                        <Link
+                            isExternal 
+                            href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA"
+                        >
                             <FaYoutube
                                 fontSize="2rem"
                                 color="#f8f8f7"
@@ -112,6 +123,7 @@ function Footer(){
                 w={["100%", "100%", "32%", "32%"]}
             >
                 <Link
+                    href="#"
                     mb=".5rem"
                     color="#f8f8f7"
                     fontSize="1rem"
@@ -122,6 +134,7 @@ function Footer(){
                 </Link>
                 <Link
                     mb=".5rem"
+                    href="#sobre"
                     color="#f8f8f7"
                     fontSize="1rem"
                     fontFamily="Inter, sans-serif"
@@ -133,6 +146,7 @@ function Footer(){
                     mb=".5rem"
                     color="#f8f8f7"
                     fontSize="1rem"
+                    href="#services"
                     fontFamily="Inter, sans-serif"
                     _hover={{ textDecoration: "none"}}
                 >
@@ -142,6 +156,7 @@ function Footer(){
                     mb=".5rem"
                     color="#f8f8f7"
                     fontSize="1rem"
+                    href="#conhecimentos"
                     fontFamily="Inter, sans-serif"
                     _hover={{ textDecoration: "none"}}
                 >
@@ -151,6 +166,7 @@ function Footer(){
                     mb=".5rem"
                     color="#f8f8f7"
                     fontSize="1rem"
+                    href="#projetos"
                     fontFamily="Inter, sans-serif"
                     _hover={{ textDecoration: "none"}}
                 >
@@ -158,6 +174,7 @@ function Footer(){
                 </Link>
                 <Link
                     mb=".5rem"
+                    href="#blog"
                     color="#f8f8f7"
                     fontSize="1rem"
                     fontFamily="Inter, sans-serif"

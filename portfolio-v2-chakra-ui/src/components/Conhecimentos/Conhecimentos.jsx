@@ -40,6 +40,7 @@ function Conhecimentos(){
             </Flex>
 
             <Flex
+                mt="3rem"
                 alignItems="center"
                 flexDirection="column"
                 w={["100%", "100%", "55%", "50%"]}

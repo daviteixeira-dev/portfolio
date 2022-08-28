@@ -9,6 +9,7 @@ function Servicos(){
             p="2rem"
             h="auto"
             w="100%"
+            pt="6rem"
             as="section"
             id="services"
             bg="blackAlpha.900"
