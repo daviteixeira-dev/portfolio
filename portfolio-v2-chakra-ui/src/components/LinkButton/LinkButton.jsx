@@ -20,7 +20,7 @@ function LinkButton(props){
                 bgGradient: 'linear(to-l, blue.500, blue.200)'
             }}
         >
-            {props.text}
+            {props.children}
         </Link>
     );
 };

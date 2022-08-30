@@ -63,10 +63,11 @@ function Projetos(){
                 justifyContent="center"
             >
                 <LinkButton
-                    text="Ver Projetos"
                     isExternal={true}
                     link="https://github.com/daviteixeira-btm"
-                />
+                >
+                    Ver Projetos
+                </LinkButton>
             </Flex>
 
             <Flex
@@ -78,6 +79,7 @@ function Projetos(){
                     <Card
                         img={jobfinder}
                         title="JobFinder"
+                        button="Ver Projeto"
                         w={["100%", "100%", "49%", "49%"]}
                         text="Nesse projeto de site fiz uma 
                         página para encontrar empregos ou repostar vagas."
@@ -86,6 +88,7 @@ function Projetos(){
                     <Card
                         title="SaúdeA+"
                         img={saudeamais}
+                        button="Ver Projeto"
                         w={["100%", "100%", "49%", "49%"]}
                         text="O studio de Pilates (saúde a+) necessita sistema de 
                         gerenciamento das atividades/modalidades do estúdio 
@@ -97,6 +100,7 @@ function Projetos(){
                     <Card
                         img={hdcAgency}
                         title="hDC Agency"
+                        button="Ver Projeto"
                         w={["100%", "100%", "49%", "49%"]}
                         text="Design de site para criar uma página para encontrar 
                         empregos ou postar vagas."
@@ -105,6 +109,7 @@ function Projetos(){
                     <Card
                         img={galleria}
                         title="Galleria"
+                        button="Ver Projeto"
                         w={["100%", "100%", "49%", "49%"]}
                         text="Aprendendo os conceitos básicos de SASS e SCSS criando uma 
                         página de galeria de fotos."

@@ -53,6 +53,7 @@ function Blog(){
                 <Card
                     img={banner}
                     title="Ver Post"
+                    button="Ver Post"
                     w={["100%", "100%", "80%", "60%"]}
                     text='Confira já o último post sobre "Como fazer um bom 
                     portfólio Dev para suas habilidades e conhecimentos em 

@@ -60,12 +60,17 @@ function Presentation(){
                         text="GitHub"
                         isExternal={true}
                         link="https://github.com/daviteixeira-btm"
-                    />
+                    >
+                        GitHub
+                    </LinkButton>
+
                     <LinkButton
                         text="LinkedIn"
                         isExternal={true}
-                        link="https://www.google.com"
-                    />
+                        link="https://www.linkedin.com/in/daviteixeira-me/"
+                    >
+                        LinkedIn
+                    </LinkButton>
                 </Flex>
             </Flex>
         </Flex>

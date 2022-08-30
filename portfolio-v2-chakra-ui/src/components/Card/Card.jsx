@@ -52,7 +52,9 @@ function Card(props){
                     text="Ver Projeto"
                     isExternal={true}
                     link="https://github.com/daviteixeira-btm"
-                />
+                >
+                    {props.button}
+                </LinkButton>
             </Flex>
         </Flex>
     );
