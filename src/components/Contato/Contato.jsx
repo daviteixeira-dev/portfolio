@@ -6,7 +6,6 @@ function Contato(){
     return(
         <FormControl
             w="100%"
-            id="contato"
             as="form"
             action="https://formsubmit.co/a03add9d18846a66fc3ff63eaf1f227c"
             method="POST"

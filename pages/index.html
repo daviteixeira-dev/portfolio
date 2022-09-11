@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr" xml:lang="pt-BR">
+<head>
+    <!--Meta Tags-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="theme-color" content="#121212"/>
+    <meta name="author" content="Davi Teixeira Silva" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <meta 
+        name="description" 
+        content="Desenvolvedor Front-End graduando em Sistemas de Informação, 
+        apaixonado por projetos que me desafiem a melhorar cada dia um pouco mais."
+    />
+    <meta 
+        name="keywords" 
+        content="sites, web, desenvolvimento, programador, daviteixeira, 
+        front-end, designer, ui, davi, freelancer, freela, website" 
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="copyright" content="daviteixeira.dev 2021" />
+    <meta property="og:title" content="Davi Teixeira - Desenvolvedor Front-End"/>
+    <meta property="og:image" content="https://www.daviteixeira.dev.br/src/img/screenshot-1.png"/>
+    <meta 
+        property="og:description" 
+        content="Este é o meu Portfólio, sou desenvolvedor Front-end 
+        graduando em Sistemas de Informação, apaixonado por projetos 
+        que me desafiem a melhorar cada dia um pouco mais." 
+    />
+    <meta property="og:url" content="https://www.daviteixeira.dev.br"/>
+    <meta property="og:type" content="website"/>
+    <!--Twitter-->
+    <meta name="twitter:site" content="@DaviTei51909613"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="https://www.daviteixeira.dev.br/src/img/screenshot-1.png"/>
+    <meta name="twitter:creator" content="Davi Teixeira Silva"/>
+    <meta name="twitter:title" content="Davi Teixeira - Desenvolvedor Front-End"/>
+    <meta 
+        name="twitter:description" 
+        content="Este é o meu Portfólio, sou desenvolvedor Front-end 
+        graduando em Sistemas de Informação, apaixonado por projetos 
+        que me desafiem a melhorar cada dia um pouco mais."
+    />
+    <!--Title-->
+    <title>Davi Teixeira - Front-End Web Developer</title>
+    <!--Bootstrap 5 CSS-->
+    <link
+        as="style"
+        rel="preload"
+        onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    >
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/projects.css">
+    <!--Font Awesome-->
+    <link
+        as="style"
+        rel="preload"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        as="style"
+        rel="preload"
+        onload="this.onload=null;this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+    >
+    <!--Fav Icon-->
+    <link rel="icon" href="src/img/new-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="src/img/favicon.png">
+    <link rel="canonical" href="https://www.daviteixeira.dev.br/index.html" />
+    <!--PWA-->
+    <link rel="manifest" href="/src/js/manifest.json">
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#main-title">
+                        <img 
+                            id="logo"
+                            width="200" 
+                            height="200"
+                            loading="eager"
+                            alt="Logomarca"
+                            src="src/img/new-logo.png"
+                            title="Essa é a logomarca da página"
+                            class="d-inline-block align-text-top"
+                        >
+                    </a>
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        aria-label="Toggle navigation"
+                        aria-controls="navbarSupportedContent"
+                        data-bs-target="#navbarSupportedContent"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                              <a
+                                href="/index.html"
+                                aria-current="page"
+                                class="nav-link active"
+                            >
+                                Home
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a 
+                                class="nav-link" 
+                                href="/pages/projects/page-01.html"
+                            >
+                                Projetos
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/blog.html">Blog</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- id banner for Parallax -->
+    <main id="services-banner" alt="Imagem de Francesco Ungaro no Pexels">
+        
+        <!-- Banner Principal -->
+        <section class="container-fluid">
+            <div class="row" id="main-banner">
+                <div class="col-12" id="apresentation">
+                    <img
+                        width="200" 
+                        height="200"
+                        class="mb-2"
+                        loading="eager"
+                        src="src/img/new-logo.png" 
+                        alt="Logomarca de apresentação"
+                        title="Logomarca para o banner de apresentação"
+                    >
+                    <h1>Davi Teixeira<br /><span>&lt; Front-End Developer /&gt;</span></h1>
+                    <button 
+                        type="button" 
+                        id="main-title"
+                        class="more-btn" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modal-card-05"
+                    >
+                        Entre em contato
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços do site -->
+        <section class="container-fluid" id="services-container">
+            <div class="row py-2 px-4">
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410" 
+                            height="240"
+                            alt="Sobre mim"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/about-me.webp"
+                            title="Nesse card você pode encontrar informações sobre mim."
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                    Sobre Mim
+                            </h2>
+                            <p class="card-text">
+                                Aqui você poderá saber um pouco mais sobre mim, 
+                                bem como com quais tecnologias trabalho.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-01"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410"
+                            height="240"
+                            alt="Projetos"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/projects.webp"
+                            title="Nesse card você pode encontrar informações 
+                            sobre os projetos que desenvolvi."
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Projetos
+                            </h2>
+                            <p class="card-text">
+                                Nessa seção você poderá encontrar informações sobre 
+                                os projetos nos quais trabalhei.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-02"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410" 
+                            height="240" 
+                            alt="Serviços"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/services.webp"
+                            title="Nesse card você pode encontrar informações 
+                            sobre meus serviços."
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Serviços
+                            </h2>
+                            <p class="card-text">
+                                Nessa sessão você vai poder ver informações sobre os 
+                                tipos de serviços prestados e perguntas frequentes.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-06"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--
+                <div class="col-sm-12 col-md-4 col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img
+                            alt="Blog"
+                            width="410" 
+                            height="240"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/my-blog.webp"
+                            title="Nesse card você pode encontrar alguns assuntos que eu escrevi.">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Blog
+                            </h2>
+                            <p class="card-text">
+                                Amo compartilhar conhecimento, assim, aqui 
+                                você pode ler alguns dos materiais que já escrevi.
+                            </p>
+                            <a 
+                                href="pages/blog.html" 
+                                class="more-btn"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </a>
+                            ----------
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-04"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
+                            ----------
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <div class="col-sm-12 col-md-4 mx-auto col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img 
+                            width="410" 
+                            height="240"
+                            loading="eager"
+                            alt="Contate-me"
+                            class="card-img-top"
+                            src="src/img/banner-cards/contact.webp"
+                            title="Nesse card você pode entrar em contato comigo."
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Contato
+                            </h2>
+                            <p class="card-text">
+                                Vamos criar um projeto ou apenas dizer um oi? 
+                                Minha caixa de mensagens está aberta para você.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-05"
+                            >
+                                <i class="fas fa-phone-alt"></i> Entre em contato
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 mx-auto col-xxl-4 my-2">
+                    <div class="card text-center border-0">
+                        <img
+                            width="410" 
+                            height="240" 
+                            alt="Estudos"
+                            loading="eager"
+                            class="card-img-top"
+                            src="src/img/banner-cards/studies.webp"
+                            title="Nesse card você pode encontrar informações sobre meus estudos."
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Estudos
+                            </h2>
+                            <p class="card-text">
+                                Aqui você pode conferir algumas das minhas conquistas, certificações, 
+                                premiações e artigos publicados.
+                            </p>
+                            <button 
+                                type="button" 
+                                class="more-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-card-03"
+                            >
+                                <i class="far fa-folder-open"></i> Ver mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--WhatsApp Button-->
+        <a
+            role="button"
+            rel="noopener"
+            target="_blank"
+            id="whatsapp-button"
+            href="https://wa.me/message/Y5CDIZP3JEK3M1"
+            title="Botão para entrar em contato pelo WhatsApp."
+        >
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!--End WhatsApp Button-->
+
+        <!--Button back to the top-->
+        <a
+            role="button"
+            id="back-to-top"
+            title="Botão para subir para o topo da página"
+        >
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!--End Button back to the top-->
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" id="footer-menu">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                title="Link para acessar o meu GitHub."
+                                href="https://github.com/daviteixeira-btm"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                href="https://www.linkedin.com/in/daviteixeira-me/"
+                                title="Link para acessar o meu perfil no LinkedIn."
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                title="Link para acessar o meu perfil no Instagram."
+                                href="https://instagram.com/dt.websites?utm_medium=copy_link"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                title="Link para acessar o meu canal no Youtube."
+                                href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA"
+                            >
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                class="nav-link"
+                                href="https://twitter.com/DaviTei51909613"
+                                title="Link para acessar o meu perfil no Twitter."
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <p>&copy; 2021 Davi Teixeira</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Card 01 - About-me -->
+    <div
+        tabindex="-1"
+        class="modal fade" 
+        id="modal-card-01"
+        aria-hidden="true"
+        aria-labelledby="SobreMimLabel"
+    >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h4
+                        id="SobreMimLabel"
+                        class="modal-title text-light"
+                    >
+                        Sobre Mim
+                    </h4>
+                    <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                    >
+                    </button>
+                </div>
+                <!--End Modal Header-->
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+
+                            <!--Modal right column-->
+                            <div class="col-md-6" id="coluna-esquerda">
+                                <img 
+                                    src="src/img/Davi-09-05-2020.webp" 
+                                    loading="lazy" 
+                                    alt="Este sou eu, Davi Teixeira." 
+                                    id="img-profile" 
+                                    width="192" 
+                                    height="183" 
+                                    title="Essa é uma foto minha de perfil."
+                                >
+                                <h4>
+                                    Citação
+                                </h4>
+                                <h5>
+                                    <span>"</span> Nunca deixe que mentes pequenas lhe convençam 
+                                    de que seus sonhos são muito grandes. <span>"</span>
+                                </h5>
+                                <p id="frase-autor">- Autor Desconhecido</p>
+                                <br>
+
+                                <!--Modal Technologies-->
+                                <table>
+                                    <caption>Ferramentas</caption>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4">
+                                                Ferramentas, idiomas e outras coisas com as quais 
+                                                gosto de trabalhar
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a 
+                                                    href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site da Mozilla Developer 
+                                                    para aprender sobre HTML5."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/Html5-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="HTML5" 
+                                                        width="288" 
+                                                        height="288" 
+                                                        title="Clique aqui para aprender mais sobre HTML5."
+                                                    />
+                                                </a>
+                                                <p>HTML5</p>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site da Mozilla Developer 
+                                                    para aprender sobre CSS3."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/Css3-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="CSS 3" 
+                                                        width="288" 
+                                                        height="288" 
+                                                        title="Clique aqui para aprender mais sobre CSS3." 
+                                                    />
+                                                </a>
+                                                <p>CSS3</p>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site da Mozilla Developer 
+                                                    para aprender sobre JavaScript."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/JavaScript-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="JavaScript"  
+                                                        width="1024" 
+                                                        height="1024" 
+                                                        title="Clique aqui para aprender mais sobre JavaScript."
+                                                    />
+                                                </a>
+                                                <p>JavaScript</p>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://sass-lang.com/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do Sass."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/Sass-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="Sass" 
+                                                        width="288" 
+                                                        height="288" 
+                                                        title="Clique aqui para aprender mais sobre Sass."
+                                                    />
+                                                </a>
+                                                <p>Sass</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a 
+                                                    href="https://getbootstrap.com/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do Bootstrap."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/Bootstrap-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="Bootstrap" 
+                                                        width="493" 
+                                                        height="507" 
+                                                        title="Clique 
+                                                        aqui para aprender mais sobre Bootstrap." 
+                                                    />
+                                                </a>
+                                                <p>Bootstrap</p>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://nodejs.org/en/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do NodeJS."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/Nodejs-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="Node JS" 
+                                                        width="288" 
+                                                        height="288" 
+                                                        title="Clique aqui para aprender mais sobre NodeJS." 
+                                                    />
+                                                </a>
+                                                <p>NodeJS</p>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://jquery.com/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do jQuery."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/jQuery-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="jQuery" 
+                                                        width="800" 
+                                                        height="800" 
+                                                        title="Clique aqui para aprender mais sobre jQuery." 
+                                                    />
+                                                </a>
+                                                <p>jQuery</p>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://gulpjs.com/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do Gulp."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/Gulp-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="Gulp" 
+                                                        width="288" 
+                                                        height="288" 
+                                                        title="Clique aqui para aprender mais sobre Gulp." 
+                                                    />
+                                                </a>
+                                                <p>Gulp</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a 
+                                                    href="https://ejs.co/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do EJS."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/EJS-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="EJS" 
+                                                        width="512" 
+                                                        height="512" 
+                                                        title="Clique aqui para aprender mais sobre EJS." 
+                                                    />
+                                                </a>
+                                                <p>EJS</p>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://sites.google.com" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do Google Sites."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/google-sites-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="Google Sites" 
+                                                        width="1200" 
+                                                        height="1200" 
+                                                        title="Clique aqui para aprender mais sobre Google Sites."
+                                                    />
+                                                </a>
+                                                <p>G. Sites</p>
+                                            </td>
+                                            <td colspan="2">
+                                                <a 
+                                                    href="https://wordpress.com" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o site oficial do Wordpress."
+                                                >
+                                                    <img 
+                                                        src="src/img/pasta-logos/wordpress-logo.webp" 
+                                                        loading="lazy" 
+                                                        alt="Wordpress" 
+                                                        width="1024" 
+                                                        height="1024" 
+                                                        title="Clique aqui para aprender mais sobre Wordpress."
+                                                    />
+                                                </a>
+                                                <p>Wordpress</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--End Modal Technologies-->
+                            </div>
+                            <!--End Modal right column-->
+
+                            <!--Modal left column-->
+                            <div class="col-md-6" id="coluna-direita">
+                                <h4>Olá,</h4>
+                                <p>
+                                    meu nome é Davi Teixeira, sou desenvolvedor front-end 
+                                    apaixonado por projetos que me desafiem a melhorar cada 
+                                    dia um pouco mais.
+                                </p>
+                                <p>
+                                    Graduando em Sistemas de Informação pela Universidade Federal 
+                                    do Ceará. Tenho experiência na criação e desenvolvimento de 
+                                    páginas Web utilizando  tecnologias como HTML5, CSS3, SASS, 
+                                    JavaScript, Bootstrap, NodeJs e algumas outras bibliotecas 
+                                    bem legais.
+                                </p>
+                                <p>
+                                    Estou em busca de experiências que me levem a uma formação 
+                                    profissional como desenvolvedor e informações mais detalhadas 
+                                    você pode encontrar no meu currículo.
+                                </p>
+                                <a 
+                                    href="https://drive.google.com/file/d/1n95CAwM86trlgeeLYSpXmu3SeQttEiMF/view?usp=sharing" 
+                                    target="_blank" 
+                                    rel="noopener" 
+                                    class="more-btn" 
+                                    id="curriculo" 
+                                    title="Link para acessar o meu Currículo."
+                                >
+                                    <i class="fas fa-cloud-download-alt"></i> Currículo
+                                </a>
+                                <table>
+                                    <caption>Network</caption>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="5">Social Network</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a 
+                                                    href="https://github.com/daviteixeira-btm" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o meu GitHub."
+                                                >
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://www.linkedin.com/in/daviteixeira-me/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o meu perfil no LinkedIn."
+                                                >
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://www.instagram.com/daviteixeira.dev/" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o meu perfil no Instagram."
+                                                >
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o meu canal no Youtube."
+                                                >
+                                                    <i class="fab fa-youtube"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a 
+                                                    href="https://twitter.com/DaviTei51909613" 
+                                                    target="_blank" 
+                                                    rel="noopener" 
+                                                    title="Link para acessar o meu perfil no Twitter."
+                                                >
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--End modal left column-->
+                        </div>
+                    </div>
+                </div>
+                <!--End Modal Body-->
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button 
+                        type="button" 
+                        class="btn btn-danger" 
+                        data-bs-dismiss="modal"
+                    >
+                        Fechar
+                    </button>
+                </div>
+                <!--End Modal Footer-->
+            </div>
+            <!--End Modal Content-->
+        </div>
+    </div>
+    <!-- End Modal Card 01 - About-me -->
+
+    <!-- Modal Card 02 - Projects -->
+    <div 
+        class="modal fade" 
+        id="modal-card-02" 
+        tabindex="-1" 
+        aria-labelledby="ProjetosLabel" 
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title text-light" id="ProjetosLabel">
+                        Projetos
+                    </h4>
+                    <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                    >
+                    </button>
+                </div>
+                <!--End Modal Header-->
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <!--Presentation of projects-->
+                    <div class="container presentation">
+                        <div class="row">
+                            <div class="col-12" id="main-projects">
+                                <h4><span>&lt;</span> Portfólio <span>/&gt;</span></h4>
+                                <p>
+                                    Aqui você pode conferir alguns dos meus projetos, 
+                                    caso queira ver todos clique em ver mais.
+                                </p>                                  
+                            </div>
+                            <div class="col-12 more-about-projects-links">
+                                <a 
+                                    href="https://github.com/daviteixeira-btm" 
+                                    target="_blank" 
+                                    rel="noopener" 
+                                    class="more-btn" 
+                                    title="Link para acessar o meu GitHub."
+                                >
+                                    <i class="fab fa-github"></i> Ir ao GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Presentation of projects-->
+
+                    <!--Modal Album Row-->
+                    <div class="row justify-content-around" id="projects">
+                        <!--Album card-->
+                        <div class="card">
+                            <a 
+                                href="http://www.daviteixeira.dev.br/jobfinder/" 
+                                target="_blank" 
+                                rel="noopener" 
+                                title="Veja agora"
+                            >
+                                <div class="img-project" id="project-jobfinder"></div>
+                            </a>
+                            <div class="card-body">
+                                <div class="card-top">
+                                    <h5>JobFinder</h5>
+                                    <p>Nesse projeto de site fiz uma página para encontrar 
+                                        empregos ou repostar vagas.
+                                    </p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a 
+                                        href="http://www.daviteixeira.dev.br/jobfinder/" 
+                                        target="_blank" 
+                                        rel="noopener" 
+                                        class="more-btn" 
+                                        title="Link para mostrar o projeto de site JobFinder"
+                                    >
+                                        Mostrar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Album card-->
+
+                        <!--Album card-->
+                        <div class="card">
+                            <a 
+                                href="https://github.com/daviteixeira-btm/saude-amais" 
+                                target="_blank" 
+                                rel="noopener" 
+                                title="Veja agora"
+                            >
+                                <div class="img-project" id="project-saudeamais"></div>
+                            </a>
+                            <div class="card-body">
+                                <div class="card-top">
+                                    <h5>SaúdeA+</h5>
+                                    <p>
+                                        O studio de Pilates (saúde a+) necessita sistema 
+                                        de gerenciamento das atividades/modalidades do estúdio 
+                                        e o agendamento de aulas teste e reposições.
+                                    </p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a 
+                                        href="https://github.com/daviteixeira-btm/saude-amais" 
+                                        target="_blank" 
+                                        rel="noopener" 
+                                        class="more-btn" 
+                                        title="Link para mostrar o projeto de site Dennmark Apparel"
+                                    >
+                                        Mostrar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Album card-->
+
+                        <!--Album card-->
+                        <div class="card">
+                            <a 
+                                href="http://www.daviteixeira.dev.br/hDC-Agency/" 
+                                target="_blank" 
+                                rel="noopener" 
+                                title="Veja agora"
+                            >
+                                <div class="img-project" id="project-hdc-agency"></div>
+                            </a>
+                            <div class="card-body">
+                                <div class="card-top">
+                                    <h5>hDC Agency</h5>
+                                    <p>
+                                        Design de site para criar uma página para 
+                                        encontrar empregos ou postar vagas. 
+                                    </p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a 
+                                        href="http://www.daviteixeira.dev.br/hDC-Agency/" 
+                                        target="_blank" 
+                                        rel="noopener" 
+                                        class="more-btn" 
+                                        title="Link para mostrar o repositorio do site hDC Agency"
+                                    >
+                                        Mostrar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Album card-->
+
+                        <!--Album card-->
+                        <div class="card">
+                            <a 
+                                href="http://www.daviteixeira.dev.br/galeria-de-fotos/" 
+                                target="_blank" 
+                                rel="noopener" 
+                                title="Veja agora"
+                            >
+                                <div class="img-project" id="project-galleria"></div>
+                            </a>
+                            <div class="card-body">
+                                <div class="card-top">
+                                    <h5>Galleria</h5>
+                                    <p>
+                                        Aprendendo os conceitos básicos de SASS e SCSS 
+                                        criando uma página de galeria de fotos.
+                                    </p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a 
+                                        href="http://www.daviteixeira.dev.br/galeria-de-fotos/" 
+                                        target="_blank" 
+                                        rel="noopener" 
+                                        class="more-btn" 
+                                        title="Link para mostrar o projeto de site Galleria"
+                                    >
+                                        Mostrar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Album card-->
+
+
+                    </div>
+                    <!--End Modal Album Row-->
+
+                    <div class="container d-flex justify-content-center presentation">
+                        <div class="row">
+                            <div class="col-12 mt-2 more-about-projects-links">
+                                <a 
+                                    href="/pages/projects/page-01.html" 
+                                    target="_blank" 
+                                    rel="noopener" 
+                                    class="more-btn" 
+                                    title="Link para ver todos os meus projetos."
+                                >
+                                    Ver mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--End Modal Body-->
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button 
+                        type="button" 
+                        class="btn btn-danger" 
+                        data-bs-dismiss="modal"
+                    >
+                        Fechar
+                    </button>
+                </div>
+                <!--End Modal Footer-->
+            </div>
+        </div>
+    </div>
+    <!--End Modal Card 02 - Projects -->
+
+    <!--Modal Card 03 - Estudies -->
+    <div 
+        class="modal fade" 
+        id="modal-card-03" 
+        tabindex="-1" 
+        aria-labelledby="EstudosLabel" 
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title text-light" id="EstudosLabel">Estudos</h4>
+                    <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                    >
+                    </button>
+                </div>
+                <!--End Modal Header-->
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <!--Estudies-->
+                    <div class="container">
+                        <!-- Academic Formation -->
+                        <div class="row" id="academic-formation">
+                            <h4><span>&lt;</span> Formação Acadêmica <span>/&gt;</span></h4>
+
+                            <!--Card Studies 01-->
+                            <div class="academic-card col">
+                                <div class="card-top">
+                                    <img 
+                                        src="src/img/studies/logo-ufc.webp" 
+                                        loading="lazy" 
+                                        alt="Logo da Universidade Federal do Ceará." 
+                                        width="83" 
+                                        height="100" 
+                                        title="Logo da UFC"
+                                    >
+                                    <h5>Universidade Federal do Ceará</h5>
+                                    <p>Bacharelando em Sistemas de Informação</p>
+                                    <p>2019 - Até o momento</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a 
+                                        href="https://www.quixada.ufc.br/" 
+                                        target="_blank" 
+                                        rel="noopener" 
+                                        class="more-btn" 
+                                        title="Link que leva ao site da Universidade Federal 
+                                        do Ceará, campus de Quixadá."
+                                    >
+                                        Site
+                                    </a>
+                                </div>
+                            </div>
+                            <!--End Card Studies 01-->
+
+                            <!--Card Studies 02-->
+                            <div class="academic-card col">
+                                <div class="card-top">
+                                    <img 
+                                        src="src/img/studies/logo-alfredo-nunes.webp" 
+                                        loading="lazy" 
+                                        alt="Logo da E.E.E.P Alfredo Nunes de Melo." 
+                                        width="91" 
+                                        height="93" 
+                                        title="Logo do Alfredo Nunes"
+                                    >
+                                    <h5>E.E.E.P Alfredo Nunes de Melo</h5>
+                                    <p>Técnico em Informática</p>
+                                    <p>2013 - 2015 (Transferência)</p>
+                                </div>
+                                <div class="card-bottom">
+                                    <a 
+                                        href="https://www.facebook.com/eeep.alfredonunesdemelo" 
+                                        target="_blank" 
+                                        rel="noopener" 
+                                        class="more-btn" 
+                                        title="Link que leva a página do Facebook da E.E.E.P Alfredo 
+                                        Nunes de Melo."
+                                    >
+                                        Site
+                                    </a>
+                                </div>
+                            </div>
+                            <!--End Card Studies 02-->
+
+                        </div>
+                        <!-- Academic Formation -->
+
+                        <!--Licenses and certificates-->
+                        <div class="row" id="certificates">
+                            <h4><span>&lt;</span> Licenças e certificados <span>/&gt;</span></h4>
+
+                            <!--Certificate One-->
+                            <div class="certificate-card col-md-5">
+                                <a 
+                                    href="https://certificates.digitalinnovation.one/8FF40D4B" 
+                                    target="_blank" 
+                                    rel="noopener" 
+                                    title="Link que mostra o meu certificado de HTML Web Developer."
+                                >
+                                    <img 
+                                        src="src/img/studies/certificado.svg" 
+                                        loading="lazy" 
+                                        alt="Logo para Certificado" 
+                                        width="48" height="48"
+                                    >
+                                </a>
+                                <p>HTML Web Developer</p>
+                            </div>
+                            <!--End Certificate One-->
+
+                            <!--Certificate Two-->
+                            <div class="certificate-card col-md-5">
+                                <a 
+                                    href="https://www.udemy.com/certificate/UC-2GRZRY6C/" 
+                                    target="_blank" 
+                                    rel="noopener" 
+                                    title="Link que mostra o meu certificado de Bootstrap 4: Completo 
+                                    e Direto ao Ponto."
+                                >
+                                    <img 
+                                        src="src/img/studies/certificado.svg" 
+                                        loading="lazy" 
+                                        alt="Logo para Certificado" 
+                                        width="48" 
+                                        height="48"
+                                    >
+                                </a>
+                                <p>Bootstrap 4: Completo e Direto ao Ponto</p>
+                            </div>
+                            <!--End Certificate Two-->
+
+                            <!--Certificate Three-->
+                            <div class="certificate-card col-md-5">
+                                <a 
+                                    href="https://ead.escoladotrabalhador.gov.br/mod/simplecertificate/verify.php" 
+                                    data-bs-toggle="tooltip" 
+                                    title="Nº Credencial: 4E42243D264EB7F19EC9C17A4B33586250F8" 
+                                    target="_blank" 
+                                    rel="noopener"
+                                >
+                                    <img 
+                                        src="src/img/studies/certificado.svg" 
+                                        loading="lazy" 
+                                        alt="Logo para Certificado" 
+                                        width="48" 
+                                        height="48"
+                                    >
+                                </a>
+                                <p>Inglês aplicado ao trabalho</p>
+                            </div>
+                            <!--End Certificate Three-->
+
+                            <!--Certificate Four-->
+                            <div class="certificate-card col-md-5">
+                                <a 
+                                    href="https://academy.club.hotmart.com/public/certificate?code=2b30ade6-ab08-45c0-9545-e49d0ea950fa" 
+                                    target="_blank" 
+                                    rel="noopener" 
+                                    title="Link que mostra o meu certificado de Marketing e Empreendedorismo Digital."
+                                >
+                                    <img 
+                                        src="src/img/studies/certificado.svg" 
+                                        loading="lazy" 
+                                        alt="Logo para Certificado" 
+                                        width="48" 
+                                        height="48"
+                                    >
+                                </a>
+                                <p>Marketing e Empreend. Digital</p>
+                            </div>
+                            <!--End Certificate Four-->
+
+                        </div>
+                        <!--End Licenses and certificates-->
+
+                        <!-- Achievements -->
+
+                        <!--Firts Achievements-->
+                        <div class="row conquistas">
+                            <h4><span>&lt;</span> Conquistas <span>/&gt;</span></h4>
+                            
+                            <div class="conquistas-card">
+                                <div class="card-imagem">
+                                    <img 
+                                        class="img-fluid" 
+                                        src="src/img/studies/mocica.webp" 
+                                        loading="lazy" 
+                                        alt="Foto da logo do evento" 
+                                        width="441" 
+                                        height="335" 
+                                        title="Imagem da logo do evento do MOCICA"
+                                    >
+                                </div>
+                                <div class="card-details">
+                                    <h5 class="card-text-details">
+                                        1º Lugar na área de exatas, nível superior
+                                    </h5>
+                                    <p class="card-text-details">
+                                        O evento reúne estudantes de todo o Brasil e de alguns 
+                                        países da América Latina com o objetivo de apresentar 
+                                        os projetos desenvolvidos na faculdade e concorrer 
+                                        a prêmios, meu projeto conquistou o 1º lugar na categoria 
+                                        exatas do ensino superior.
+                                    </p>
+                                </div>
+                                <div class="card-buttons">
+                                    <div class="card-btn-top">
+                                        <a 
+                                            href="https://drive.google.com/file/d/1OIsw4KaEqbL8BFzsZqqW_DTmb_vfiEir/view?usp=sharing" 
+                                            target="_blank" 
+                                            rel="noopener" 
+                                            class="more-btn certificate-buttons" 
+                                            title="Link que mostra minhas certificações do evento."
+                                        >
+                                            Certificação
+                                        </a>
+                                    </div>
+                                    <div class="card-btn-botton">
+                                        <a 
+                                            href="https://mocica.webnode.com/sobre-nos/" 
+                                            target="_blank" 
+                                            rel="noopener" 
+                                            class="more-btn certificate-buttons" 
+                                            title="Link que mostra o site do evento."
+                                        >
+                                            Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Firts Achievements-->
+
+                        <!--Second Achievements-->
+                        <div class="row conquistas">
+                            <div class="conquistas-card col">
+                                <div class="card-imagem">
+                                    <img 
+                                        class="img-fluid" 
+                                        src="src/img/studies/enactus.webp" 
+                                        loading="lazy" 
+                                        alt="Banner de Apresentação da Enactus." 
+                                        width="720" 
+                                        height="538" 
+                                        title="Imagem que me mostra em frente ao Banner de Apresentação da Enactus."
+                                    >
+                                </div>
+                                <div class="card-details">
+                                    <h5 class="card-text-details">
+                                        Team Leader Enactus IFCE Cedro
+                                    </h5>
+                                    <p class="card-text-details">
+                                        Atuei na criação e estruturação do time, a partir de imersões 
+                                        e estudos aprofundados sobre team building e cultura organizacional. 
+                                        Assim, participei no gerenciamento de projetos de empreendedorismo 
+                                        social no campus do IFCE Cedro e comunidade local.
+                                    </p>
+                                </div>
+                                <div class="card-buttons">
+                                    <div class="card-btn-top">
+                                        <a 
+                                            href="https://drive.google.com/file/d/18PVzBNQbtIz23bY0MuckSuqKFfhJGXhn/view?usp=sharing" 
+                                            target="_blank" 
+                                            rel="noopener" 
+                                            class="more-btn certificate-buttons" 
+                                            title="Link que mostra minha certificação do programa."
+                                        >
+                                            Certificação
+                                        </a>
+                                    </div>
+                                    <div class="card-btn-botton">
+                                        <a 
+                                            href="http://www.enactus.org.br/conheca-o-time-enactus-ifce-cedro-2/" 
+                                            target="_blank" 
+                                            rel="noopener" 
+                                            class="more-btn certificate-buttons" 
+                                            title="Link que mostra o site do programa Enactus."
+                                        >
+                                            Site
+                                        </a>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Second Achievements-->
+
+                        <!--Third Achievements-->
+                        <div class="row conquistas">
+                            <div class="conquistas-card col">
+                                <div class="card-imagem">
+                                    <img 
+                                        class="img-fluid" 
+                                        src="src/img/studies/hackathon-fit-on.webp" 
+                                        loading="lazy" 
+                                        alt="Banner de 2º Lugar no Hackaton." 
+                                        width="720" 
+                                        height="671" 
+                                        title="Imagem que mostra meu time que ficou em 2º Lugar no Hackaton."
+                                    >
+                                </div>
+                                <div class="card-details">
+                                    <h5 class="card-text-details">
+                                        2º lugar na hackathon do evento FIT-ON, do Campus da UFC em Crateús
+                                    </h5>
+                                    <p class="card-text-details">
+                                        Com a problemática: “Como conectar pequenos agricultores ao mercado?”, 
+                                        desenvolvemos uma ideia de aplicativo web intitulado AgroShop, uma 
+                                        vitrine virtual em tempo integral que possibilita que os consumidores 
+                                        entrem em contato com comerciantes próximos.
+                                    </p>
+                                </div>
+                                <div class="card-buttons">
+                                    <div class="card-btn-top">
+                                        <a 
+                                            href="https://www.quixada.ufc.br/2021/03/11/equipe-do-campus-da-ufc-em-quixada-e-segunda-colocada-na-hackathon-do-evento-fit-on-do-campus-da-ufc-em-crateus/" 
+                                            target="_blank" 
+                                            rel="noopener" 
+                                            class="more-btn certificate-buttons" 
+                                            title="Link que mostra o site sobre a matéria."
+                                        >
+                                            Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Third Achievements-->
+
+                        <!-- End Achievements -->
+                    </div>
+                    <!--End Estudies-->
+                </div>
+                <!--End Modal Body-->
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button 
+                        type="button" 
+                        class="btn btn-danger" 
+                        data-bs-dismiss="modal"
+                    >
+                        Fechar
+                    </button>
+                </div>
+                <!--End Modal Footer-->
+            </div>
+        </div>
+    </div>
+    <!--End Modal Card 03 - Estudies -->
+
+    <!--Modal Card 04 - Blog -->
+    <div 
+        class="modal fade" 
+        id="modal-card-04" 
+        tabindex="-1" 
+        aria-labelledby="BlogLabel" 
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title text-light" id="BlogLabel">Blog</h4>
+                    <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                    >
+                    </button>
+                </div>
+                <!--End Modal Header-->
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <div class="col-md-10 mt-3">
+                                <h4 class="text-light">
+                                    Desculpe, ainda estou trabalhando neste conteúdo :(
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Modal Body-->
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button 
+                        type="button" 
+                        class="btn btn-danger" 
+                        data-bs-dismiss="modal"
+                    >
+                        Fechar
+                    </button>
+                </div>
+                <!--End Modal Footer-->
+            </div>
+        </div>
+    </div>
+    <!--End Modal Card 04 - Blog-->
+
+    <!--Modal Card 05 - Contato -->
+    <div 
+        class="modal fade" 
+        id="modal-card-05" 
+        tabindex="-1" 
+        aria-labelledby="ContatoLabel" 
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title text-light" id="ContatoLabel">Contato</h4>
+                    <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                    >
+                    </button>
+                </div>
+                <!--End Modal Header-->
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                        <!--Modal Apresentation Form-->
+                        <div class="row" id="apresentation-contact">
+                            <div class="col-sm-12 col-md-6 mx-auto my-2">
+                                <h3>Se interessou pelo meu trabalho?</h3>
+                                <p class="text-contact">
+                                    Se você tem interese em falar comigo, contratar meus serviços 
+                                    e/ou uma mentoria pode enviar uma mensagem ao lado.
+                                </p>
+                                <p class="text-contact">
+                                    Estou sempre aberto a discutir sobre ideias, poder te ajudar 
+                                    de alguma forma ou só bater um papo mesmo. Saiba que você 
+                                    também pode me encontrar em outras redes sociais.
+                                </p>
+                                <div class="row my-2">
+                                    <div class="col-12">
+                                        <ul class="nav justify-content-center">
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://github.com/daviteixeira-btm"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu GitHub."
+                                              >
+                                                <i class="fab fa-github"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://www.linkedin.com/in/daviteixeira-me/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu perfil no LinkedIn."
+                                              >
+                                                <i class="fab fa-linkedin"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://instagram.com/dt.websites?utm_medium=copy_link"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu perfil no Instagram."
+                                              >
+                                                <i class="fab fa-instagram"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu canal no Youtube."
+                                              >
+                                                <i class="fab fa-youtube"></i>
+                                              </a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                class="nav-link"
+                                                href="https://twitter.com/DaviTei51909613"
+                                                target="_blank"
+                                                rel="noopener"
+                                                title="Link para acessar o meu perfil no Twitter."
+                                              >
+                                                <i class="fab fa-twitter"></i>
+                                              </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mx-auto my-2" id="form-contact">
+                                <!--Modal Form-->
+                                <form 
+                                    action="https://formsubmit.co/a03add9d18846a66fc3ff63eaf1f227c" 
+                                    method="POST" 
+                                    id="formAction"
+                                >
+                                    <div class="mb-2">
+                                        <label for="assunto" class="form-label">Assunto</label>
+                                        <input 
+                                            class="form-control" 
+                                            type="text" 
+                                            name="assunto" 
+                                            id="assunto" 
+                                            placeholder="Assunto desse e-mail"
+                                        >
+                                    </div>  
+                                    <div class="mb-2">
+                                        <label for="nome" class="form-label">Seu Nome</label>
+                                        <input 
+                                            class="form-control" 
+                                            type="text" 
+                                            name="nome" 
+                                            id="nome" 
+                                            placeholder="Digite o seu nome"
+                                        >
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input 
+                                            class="form-control" 
+                                            type="email" 
+                                            name="email" 
+                                            id="email" 
+                                            placeholder="email@exemplo.com.br"
+                                        >
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="tel" class="form-label">Contato</label>
+                                        <input 
+                                            class="form-control" 
+                                            type="tel" 
+                                            name="tel" 
+                                            id="tel" 
+                                            placeholder="(__) _____-____"
+                                        >
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensagem" class="form-label">Mensagem</label>
+                                        <textarea 
+                                            class="form-control" 
+                                            name="mensagem" 
+                                            id="mensagem" 
+                                            cols="10" 
+                                            rows="5" 
+                                            placeholder="Escreva a sua mensagem aqui"
+                                        ></textarea>
+                                    </div>
+                                    <div class="alert alert-danger mt-1 d-none" role="alert">
+                                        Por favor, preencha o campo <span id="erro-field"></span>!
+                                    </div>
+                                    <input 
+                                        type="hidden" 
+                                        name="_next" 
+                                        value="https://daviteixeira-btm.github.io/pages/thanks.html"
+                                    >
+                                    <input 
+                                        type="hidden" 
+                                        name="_captcha" 
+                                        value="true"
+                                    >
+                                    <div class="mb-1" id="row-form-submit">
+                                        <button 
+                                            type="submit" 
+                                            class="more-btn form-submit"
+                                        >
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </form>
+                                <!--End Modal Form-->
+                            </div>
+                        </div>
+                        <!--End Modal Apresentation Form-->
+                        
+                    </div>
+                </div>
+                <!--End Modal Body-->
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button 
+                        type="button" 
+                        class="btn btn-danger" 
+                        data-bs-dismiss="modal"
+                    >
+                        Fechar
+                    </button>
+                </div>
+                <!--End Modal Footer-->
+
+            </div>
+        </div>
+    </div>
+    <!--End Modal Card 05 - Contato -->
+
+    <!--Modal Card 06 - Services -->
+    <div 
+        class="modal fade" 
+        id="modal-card-06" 
+        tabindex="-1" 
+        aria-labelledby="ServicosLabel" 
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title text-light" id="ServicosLabel">Serviços</h4>
+                    <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                    >
+                    </button>
+                </div>
+                <!--End Modal Header-->
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <h4><span>&lt;</span> Serviços <span>/&gt;</span></h4>
+                            
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="fas fa-laptop"></i>
+                                    <h5>Criação de Sites</h5>
+                                    <p>
+                                        Desenvolvimento de sites profissionais, sistemas web, 
+                                        blogs e lojas virtuais.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <h5>Sites Responsivos</h5>
+                                    <p>
+                                        Criação de sites responsivos para a melhor visualização 
+                                        em todas as resoluções.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="fas fa-code"></i>
+                                    <h5>Código Semântico</h5>
+                                    <p>
+                                        Estratégia e monitoração para seu negócio, fazendo 
+                                        com que seu site apareça cada vez melhor nas buscas.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+
+                            <!--Service Card -->
+                            <div class="col col-md-6">
+                                <div class="service-card">
+                                    <i class="fas fa-cloud"></i>
+                                    <h5>Hospedagem de Sites</h5>
+                                    <p>
+                                        Hospedagem em ambientes cloud, e-mail profissional, 
+                                        CDN, Certificado Digital SSL.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--End Service Card -->
+                        </div>
+                    </div>
+                </div>
+                <!--End Modal Body-->
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button 
+                        type="button" 
+                        class="btn btn-danger" 
+                        data-bs-dismiss="modal"
+                    >
+                        Fechar
+                    </button>
+                </div>
+                <!--End Modal Footer-->
+            </div>
+        </div>
+    </div>
+    <!--End Modal Card 06 - Services -->
+
+    <!--jQuery-->
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Bootstrap 5 Scripts-->
+    <script 
+        async 
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    >
+    </script>
+    <script 
+        async 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    >
+    </script>
+    <!--Scripts-->
+    <script async src="src/js/scripts.js"></script>
+    <!--Script para SW Offline-->
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
+</body>
+</html>

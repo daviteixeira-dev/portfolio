@@ -15,7 +15,7 @@ function Card(props){
                 h="15rem"
                 backgroundSize="cover"
                 backgroundImage={props.img}
-                backgroundPosition="center" 
+                backgroundPosition="center"
             />
 
             <Flex

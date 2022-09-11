@@ -31,6 +31,7 @@ function Sobre(){
                         src="images/davi.jpg"
                         w={["200", "200", "200", "400"]}
                         h={["200", "200", "200", "400"]}
+                        alt="Essa é uma foto minha de perfil."
                     />
                 </Flex>
 

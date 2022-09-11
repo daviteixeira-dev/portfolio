@@ -55,7 +55,8 @@ function Conhecimentos(){
                             h={["8rem", "8rem", "5rem", "8rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
-                            <Image 
+                            <Image
+                                alt="HTML5" 
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/html5.png"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
@@ -72,6 +73,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="CSS3"
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/css3.png"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
@@ -91,6 +93,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="JavaScript"
                                 borderRadius=".5rem"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}
@@ -107,6 +110,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="TypeScript"
                                 borderRadius=".5rem"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}
@@ -129,6 +133,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="SASS"
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/sass.webp"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
@@ -145,6 +150,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="Styled Components"
                                 borderRadius=".5rem"
                                 w={["3rem", "3rem", "2rem", "4rem"]}
                                 h={["3rem", "3rem", "2rem", "4rem"]}
@@ -169,6 +175,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="Bootstrap"
                                 borderRadius=".5rem"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}
@@ -185,6 +192,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="jQuery"
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/jquery.png"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
@@ -207,6 +215,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="ReactJS"
                                 borderRadius=".5rem"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}
@@ -223,6 +232,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="Material UI"
                                 borderRadius=".5rem"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}
@@ -242,6 +252,7 @@ function Conhecimentos(){
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
+                                alt="Chakra UI"
                                 borderRadius=".5rem"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}

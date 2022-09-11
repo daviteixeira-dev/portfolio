@@ -10,6 +10,7 @@ function Footer(){
             p="2rem"
             bg="black"
             as="footer"
+            id="contato"
             justifyContent="space-between"
             flexDirection={["column", "column", "row", "row"]}
         >
