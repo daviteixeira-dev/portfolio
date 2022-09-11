@@ -36,8 +36,9 @@
 
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [ReactJS](https://pt-br.reactjs.org/)
-- [Chakra UI[(https://chakra-ui.com/)
+- [Chakra UI](https://chakra-ui.com/)
 - [FormSubmit](https://formsubmit.co/)
+- [Vite](https://vitejs.dev/)
 
 ## 🤔 How to contribute
 ```🤔 Como contribuir```
