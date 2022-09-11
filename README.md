@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img src="src/img/new-logo.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Personal Portfolio">
+  <img src="public/images/logo.png" in-width="400px" max-width="200px" width="200px" align="center" alt="Personal Portfolio">
 </h1>
 
 <h1 align="center">
-  Davi Teixeira - Personal Web Portfolio
+  Davi Teixeira - Personal Website Portfolio
 </h1>
 
 <p align="center">
@@ -35,9 +35,10 @@
 ```🚀 Tecnologias```
 
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [jQuery](https://jquery.com/)
-- [Bootstrap](https://getbootstrap.com/)
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Chakra UI](https://chakra-ui.com/)
 - [FormSubmit](https://formsubmit.co/)
+- [Vite](https://vitejs.dev/)
 
 ## 🤔 How to contribute
 ```🤔 Como contribuir```
