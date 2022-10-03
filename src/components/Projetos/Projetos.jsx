@@ -83,6 +83,7 @@ function Projetos(){
                         w={["100%", "100%", "49%", "49%"]}
                         text="Nesse projeto de site fiz uma 
                         página para encontrar empregos ou repostar vagas."
+                        link="https://daviteixeira-btm.github.io/jobfinder/"
                     />
 
                     <Card
@@ -93,6 +94,7 @@ function Projetos(){
                         text="O studio de Pilates (saúde a+) necessita sistema de 
                         gerenciamento das atividades/modalidades do estúdio 
                         e o agendamento de aulas teste e reposições."
+                        link="https://saude-amais.vercel.app/"
                     />
                 </Bloco>
 
@@ -104,6 +106,7 @@ function Projetos(){
                         w={["100%", "100%", "49%", "49%"]}
                         text="Design de site para criar uma página para encontrar 
                         empregos ou postar vagas."
+                        link="https://daviteixeira-btm.github.io/hDC-Agency/"
                     />
 
                     <Card
@@ -113,6 +116,7 @@ function Projetos(){
                         w={["100%", "100%", "49%", "49%"]}
                         text="Aprendendo os conceitos básicos de SASS e SCSS criando uma 
                         página de galeria de fotos."
+                        link="https://daviteixeira-btm.github.io/galeria-de-fotos/"
                     />
                 </Bloco>
             </Flex>
