@@ -29,8 +29,8 @@ function Sobre(){
                     <Image
                         borderRadius=".5rem"
                         src="images/davi.jpg"
-                        w={["200", "200", "200", "400"]}
-                        h={["200", "200", "200", "400"]}
+                        w={["200", "200", "200", "300"]}
+                        h={["200", "200", "200", "300"]}
                         alt="Essa é uma foto minha de perfil."
                     />
                 </Flex>
@@ -49,7 +49,7 @@ function Sobre(){
                         fontWeight="extrabold"
                         fontFamily="Inter, sans-serif"
                     >
-                        Davi Teixeira
+                        Davi Teixeira<Text as="span" color="#63B3ED">.</Text>
                     </Heading>
 
                     <Heading
@@ -77,8 +77,8 @@ function Sobre(){
                         fontFamily="Inter, sans-serif"
                     >
                         Assim, tenho trabalhado em projetos como foco tópicos relacionados 
-                        à <Text as="em">Responsividade</Text>, <Text as="em">Acessibilidade Web</Text> 
-                        e <Text as="em">SEO</Text>.
+                        à <Text as="em">Responsividade</Text>, <Text as="em">Acessibilidade Web</Text> e 
+                        <Text as="em"> SEO</Text>.
                     </Text>
                 </Flex>
             </Flex>
@@ -95,7 +95,7 @@ function Sobre(){
                     w={["100%", "100%", "50%", "50%"]}
                 >
                     <Heading as="h3">
-                        Experiência
+                        Experiência<Text as="span" color="#63B3ED">.</Text>
                     </Heading>
 
                     <Experience />
@@ -107,7 +107,7 @@ function Sobre(){
                     w={["100%", "100%", "50%", "50%"]}
                 >
                     <Heading as="h3">
-                        Educação
+                        Educação<Text as="span" color="#63B3ED">.</Text>
                     </Heading>
 
                     <Education />
