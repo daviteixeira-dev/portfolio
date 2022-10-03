@@ -97,7 +97,7 @@ function Conhecimentos(){
                                 borderRadius=".5rem"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}
-                                src="images/pasta-logos/javascript.webp"
+                                src="images/pasta-logos/javascript.png"
                             />
                             <Text color="#f8f8f7">JavaScript</Text>
                         </Flex>
@@ -135,7 +135,7 @@ function Conhecimentos(){
                             <Image
                                 alt="SASS"
                                 borderRadius=".5rem"
-                                src="images/pasta-logos/sass.webp"
+                                src="images/pasta-logos/sass.png"
                                 w={["4rem", "4rem", "3rem", "5rem"]}
                                 h={["4rem", "4rem", "3rem", "5rem"]}
                             />
