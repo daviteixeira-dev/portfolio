@@ -7,9 +7,8 @@ function Card(props){
         <Flex
             mb="1rem"
             h="30rem"
-            flexDirection="column"
             w={props.w}
-            //w={["100%", "100%", "49%", "49%"]}
+            flexDirection="column"
         >
             <Image
                 h="15rem"
@@ -51,7 +50,7 @@ function Card(props){
                 <LinkButton
                     text="Ver Projeto"
                     isExternal={true}
-                    link="https://github.com/daviteixeira-btm"
+                    link={props.link}
                 >
                     {props.button}
                 </LinkButton>
