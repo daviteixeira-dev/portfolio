@@ -1,15 +1,15 @@
-import React from 'react';
-
 import {
     Box,
     Flex,
     Text,
     Heading,
+    ListItem,
     Accordion,
+    UnorderedList,
     AccordionIcon,
     AccordionItem,
     AccordionPanel,
-    AccordionButton,
+    AccordionButton
 } from '@chakra-ui/react'
 
 import { FaRocket } from 'react-icons/fa';
@@ -62,14 +62,38 @@ function Experience() {
                                 <Text
                                     as='span'
                                     fontSize='1rem'
-                                > (2022 - Atual)</Text>
+                                > (04/2022 - 02/2023)</Text>
                             </Heading>
-                            <Text textAlign='left'>
-                                Membro da equipe de desenvolvimento Front-end, responsável
-                                pela implementação de correções, melhorias e novas funcionalidades
-                                para desenvolvimento dos entregáveis do projeto, utilizando as metodologias
-                                ágeis de desenvolvimento, a partir do backlog de requisitos planejados.
+                            <Text textAlign='left' mb='1rem'>
+                                Membro da equipe de desenvolvimento Front-end, fui responsável pela 
+                                implementação de correções, melhorias e novas funcionalidades para 
+                                desenvolvimento dos entregáveis do projeto, utilizando as 
+                                metodologias ágeis de desenvolvimento, a partir do backlog de 
+                                requisitos planejados.
                             </Text>
+                            <UnorderedList>
+                                <ListItem>
+                                    Utilização de tecnologias como: ReactJS v.16+ com Typescript;
+                                </ListItem>
+                                <ListItem>
+                                    Implementações de features, correção de bugs, integrações com endpoints, refatoração de código;
+                                </ListItem>
+                                <ListItem>
+                                    Conhecimento inicial sobre CI/CD;
+                                </ListItem>
+                                <ListItem>
+                                    Vivência com Scrum como metodologia ágil;
+                                </ListItem>
+                                <ListItem>
+                                    Conhecimento inicial em teste de software com Jest;
+                                </ListItem>
+                                <ListItem>
+                                    Testes unitários com JEST/Testing-Library;
+                                </ListItem>
+                                <ListItem>
+                                    API's com Swagger.
+                                </ListItem>
+                            </UnorderedList>
                         </Box>
 
                         <Box
@@ -88,12 +112,19 @@ function Experience() {
                                     fontSize='1rem'
                                 > (12/2021 - 03/2022)</Text>
                             </Heading>
-                            <Text textAlign='left'>
-                                Trabalhei na construção dos cursos ofertados na plataforma EAD Accessible
-                                Learning, desenvolvendo assim as ferramentas de aprendizagem, como também
-                                com a execução de implementações de melhorias, correções e retestes nas
-                                ferramentas de aprendizagem na plataforma.
+                            <Text textAlign='left' mb='1rem'>
+                                Trabalhei na construção dos cursos ofertados na plataforma EAD 
+                                Accessible Learning, desenvolvendo assim as ferramentas de 
+                                aprendizagem.
                             </Text>
+                            <UnorderedList>
+                                <ListItem>
+                                    Execução de implementações de melhorias, correções e retestes nas da plataforma;
+                                </ListItem>
+                                <ListItem>
+                                    Utilização de HTML, CSS, JavaScript, Bootstrap e práticas de Acessibilidade Web.
+                                </ListItem>
+                            </UnorderedList>
                         </Box>
                     </AccordionPanel>
                 </AccordionItem>
