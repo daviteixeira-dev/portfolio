@@ -1,12 +1,11 @@
-import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 import MainMenu from "./MainMenu";
 import Presentation from "./Presentation";
 
 function Header(){
     return(
-        <Box
+        <Flex
             w="100%"
             as="header"
             style={{                
@@ -17,7 +16,7 @@ function Header(){
         >
             <MainMenu />
             <Presentation />
-        </Box>
+        </Flex>
     );
 };
 

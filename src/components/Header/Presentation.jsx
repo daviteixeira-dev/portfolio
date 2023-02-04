@@ -1,6 +1,8 @@
-import React from "react";
-
-import { Flex, Text, Heading } from "@chakra-ui/react";
+import { 
+    Flex, 
+    Text, 
+    Heading 
+} from "@chakra-ui/react";
 
 import LinkButton from "../LinkButton/LinkButton";
 
@@ -10,27 +12,16 @@ function Presentation(){
             w="100%"
             h="100vh"
             flexDirection="column"
+            justifyContent="center"
         >
             <Flex
-                h="100%"
                 w="auto"
+                m={["1rem", "2rem"]}
                 flexDirection="column"
                 justifyContent="center"
-                ml={["1rem", "1rem", "1rem", "5rem"]}
             >
-                <Text
-                    py=".3rem"
-                    fontWeight="bold"
-                    fontSize="1.5rem"
-                    color="whiteAlpha.900"
-                    fontFamily="Inter, sans-serif"
-                >
-                    Olá, eu sou
-                </Text>
-
                 <Heading
                     as="h1"
-                    py=".3rem"
                     bgClip="text"
                     letterSpacing="2px"
                     fontWeight="extrabold"
@@ -42,20 +33,22 @@ function Presentation(){
                 </Heading>
 
                 <Text
-                    py=".3rem"
-                    fontSize="1rem"
-                    fontWeight="bold"
+                    p=".3rem"
+                    fontWeight="semibold"
                     color="whiteAlpha.900"
+                    fontSize={["1rem", "1.5rem"]}
                     fontFamily="Inter, sans-serif"
                 >
-                    Sou Desenvolvedor Front-end.
+                    Desenvolvedor Front-end
                 </Text>
+            </Flex>
 
-                <Flex
-                    mt="2rem"
-                    justifyContent="space-around"
-                    w={["65%", "65%", "30%", "20%"]}
-                >
+            <Flex
+                mt="2rem"
+                m={["1rem", "2rem"]}
+                justifyContent="space-evenly"
+                w={["90%", "65%", "30%", "20%"]}
+            >
                     <LinkButton
                         text="GitHub"
                         isExternal={true}
@@ -72,7 +65,6 @@ function Presentation(){
                         LinkedIn
                     </LinkButton>
                 </Flex>
-            </Flex>
         </Flex>
     );
 };
