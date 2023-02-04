@@ -19,6 +19,7 @@ function Presentation(){
                 m={["1rem", "2rem"]}
                 flexDirection="column"
                 justifyContent="center"
+                textAlign={["center", "center", "start", "start"]}
             >
                 <Heading
                     as="h1"
