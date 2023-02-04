@@ -10,7 +10,7 @@ function Header(){
             as="header"
             style={{                
                 backgroundSize: "cover",
-                backgroundPosition: "20% 30%",
+                backgroundPosition: "10% 30%",
                 backgroundImage: "url(/images/apresentation-banner.jpg)",
             }}
         >
