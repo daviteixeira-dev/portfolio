@@ -49,22 +49,22 @@ function Presentation(){
                 justifyContent="space-evenly"
                 w={["90%", "65%", "30%", "20%"]}
             >
-                    <LinkButton
-                        text="GitHub"
-                        isExternal={true}
-                        link="https://github.com/daviteixeira-btm"
-                    >
-                        GitHub
-                    </LinkButton>
+                <LinkButton
+                    text="GitHub"
+                    isExternal={true}
+                    link="https://github.com/daviteixeira-btm"
+                >
+                    GitHub
+                </LinkButton>
 
-                    <LinkButton
-                        text="LinkedIn"
-                        isExternal={true}
-                        link="https://www.linkedin.com/in/daviteixeira-me/"
-                    >
-                        LinkedIn
-                    </LinkButton>
-                </Flex>
+                <LinkButton
+                    text="LinkedIn"
+                    isExternal={true}
+                    link="https://www.linkedin.com/in/daviteixeira-me/"
+                >
+                    LinkedIn
+                </LinkButton>
+            </Flex>
         </Flex>
     );
 };
