@@ -1,5 +1,9 @@
-import React from "react";
-import { Flex, Heading, Text, Image  } from "@chakra-ui/react"
+import { 
+    Flex, 
+    Text, 
+    Image,  
+    Heading 
+} from "@chakra-ui/react"
 
 function Conhecimentos(){
     return(
@@ -9,10 +13,12 @@ function Conhecimentos(){
             as="section"
             id="conhecimentos"
             bg="blackAlpha.900"
+            alignItems="center"
             p={["1rem", "2rem"]}
             flexDirection={["column", "column", "row", "row"]}
         >
             <Flex
+                h="100%"
                 textAlign="center"
                 p={["0rem", "2rem"]} 
                 flexDirection="column"
@@ -40,6 +46,7 @@ function Conhecimentos(){
             </Flex>
 
             <Flex
+                h="100%"
                 mt="3rem"
                 alignItems="center"
                 flexDirection="column"
@@ -51,16 +58,16 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="HTML5" 
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/html5.png"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                             />
                             <Text color="#f8f8f7">HTML5</Text>
                         </Flex>
@@ -68,16 +75,16 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="CSS3"
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/css3.png"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                             />
                             <Text color="#f8f8f7">CSS3</Text>
                         </Flex>
@@ -88,15 +95,15 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="JavaScript"
                                 borderRadius=".5rem"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                                 src="images/pasta-logos/javascript.png"
                             />
                             <Text color="#f8f8f7">JavaScript</Text>
@@ -105,15 +112,15 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="TypeScript"
                                 borderRadius=".5rem"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                                 src="images/pasta-logos/typescript.png"
                             />
                             <Text color="#f8f8f7">TypeScript</Text>
@@ -121,23 +128,23 @@ function Conhecimentos(){
                     </Flex>    
                 </Flex>
 
-                <Flex flexDirection={["column", "row"]}>
+                <Flex flexDirection={["column", "column", "row", "row"]}>
 
                     <Flex>
                         <Flex
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="SASS"
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/sass.png"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                             />
                             <Text color="#f8f8f7">Sass</Text>
                         </Flex>
@@ -145,15 +152,15 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="Styled Components"
                                 borderRadius=".5rem"
-                                w={["3rem", "3rem", "2rem", "4rem"]}
-                                h={["3rem", "3rem", "2rem", "4rem"]}
+                                w={["3rem", "3rem", "2rem", "3rem"]}
+                                h={["3rem", "3rem", "2rem", "3rem"]}
                                 src="images/pasta-logos/styled-components.png"
                             />
                             <Text
@@ -170,15 +177,15 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="Bootstrap"
                                 borderRadius=".5rem"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                                 src="images/pasta-logos/bootstrap.png"
                             />
                             <Text color="#f8f8f7">Bootstrap</Text>
@@ -187,16 +194,16 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="jQuery"
                                 borderRadius=".5rem"
                                 src="images/pasta-logos/jquery.png"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                             />
                             <Text color="#f8f8f7">jQuery</Text>
                         </Flex>
@@ -204,21 +211,21 @@ function Conhecimentos(){
 
                 </Flex>
 
-                <Flex flexDirection={["column", "row"]}>
+                <Flex flexDirection={["column", "column", "row", "row"]}>
                     <Flex>
                         <Flex
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="ReactJS"
                                 borderRadius=".5rem"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                                 src="images/pasta-logos/reactjs.png"
                             />
                             <Text color="#f8f8f7">ReactJS</Text>
@@ -227,15 +234,15 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="Material UI"
                                 borderRadius=".5rem"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                                 src="images/pasta-logos/material-ui.png"
                             />
                             <Text color="#f8f8f7">Material UI</Text>
@@ -247,15 +254,15 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Image
                                 alt="Chakra UI"
                                 borderRadius=".5rem"
-                                w={["4rem", "4rem", "3rem", "5rem"]}
-                                h={["4rem", "4rem", "3rem", "5rem"]}
+                                w={["4rem", "4rem", "3rem", "4rem"]}
+                                h={["4rem", "4rem", "3rem", "4rem"]}
                                 src="images/pasta-logos/chakra-ui.png"
                             />
                             <Text color="#f8f8f7">Chakra UI</Text>
@@ -265,15 +272,15 @@ function Conhecimentos(){
                             alignItems="center"
                             flexDirection="column"
                             justifyContent="center"
-                            w={["8rem", "8rem", "5rem", "8rem"]}
-                            h={["8rem", "8rem", "5rem", "8rem"]}
+                            w={["8rem", "8rem", "5rem", "5rem"]}
+                            h={["8rem", "8rem", "5rem", "5rem"]}
                             m={["1rem", "1rem", ".5rem", "1rem"]}
                         >
                             <Text
                                 color="#f8f8f7"
                                 fontSize={["1.1rem", "1.1rem", ".8rem", "1.1rem"]}
                             >
-                                E aprendendo cada vez mais!
+                                Aprendendo cada vez mais!
                             </Text>
                         </Flex>
                     </Flex>    
