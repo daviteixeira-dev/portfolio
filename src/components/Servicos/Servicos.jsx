@@ -1,7 +1,15 @@
-import React from "react";
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { 
+    Flex, 
+    Text, 
+    Heading
+} from "@chakra-ui/react";
 
-import { FaCode, FaTabletAlt, FaCogs } from "react-icons/fa";
+import { 
+    FaCode, 
+    FaCogs, 
+    FaTabletAlt, 
+    FaAccessibleIcon 
+} from "react-icons/fa";
 
 function Servicos(){
     return(
@@ -36,10 +44,11 @@ function Servicos(){
                     my=".5rem"
                     bg="gray.900"
                     flexDirection="column"
-                    w={["100%", "100%", "30%", "30%"]}
+                    w={["100%", "100%", "23%", "23%"]}
                     p={["2rem", "2rem", "1rem", "2rem"]}
                     _hover={{ 
-                        border: "3px solid #63B3ED",
+                        cursor: "pointer",
+                        border: "2px solid #63B3ED",
                     }}
                 >
                     <Flex
@@ -57,7 +66,7 @@ function Servicos(){
                         color="#f8f8f7"
                         textAlign="center"
                         fontFamily="Inter, sans-serif"
-                        fontSize={["1.5rem", "1.5rem", "1.3rem", "2rem"]}
+                        fontSize={["1.5rem", "1.5rem", "1.3rem", "1.6rem"]}
                     >
                         Desenvolvimento
                     </Heading>
@@ -66,7 +75,7 @@ function Servicos(){
                         color="#f8f8f7"
                         textAlign="center"
                         fontFamily="Inter, sans-serif"
-                        fontSize={["1.2rem", "1.2rem", "1.2rem", "1.3rem"]}
+                        fontSize={["1.2rem", "1.2rem", "1.2rem", "1.2rem"]}
                     >
                         Desenvolvimento de sites profissionais, sistemas web, 
                         blogs e lojas virtuais.
@@ -77,10 +86,11 @@ function Servicos(){
                     my=".5rem"
                     bg="gray.900"
                     flexDirection="column"
-                    w={["100%", "100%", "30%", "30%"]}
+                    w={["100%", "100%", "23%", "23%"]}
                     p={["2rem", "2rem", "1rem", "2rem"]}
                     _hover={{ 
-                        border: "3px solid #63B3ED",
+                        cursor: "pointer",
+                        border: "2px solid #63B3ED",
                     }}
                 >
                     <Flex
@@ -98,7 +108,7 @@ function Servicos(){
                         color="#f8f8f7"
                         textAlign="center"
                         fontFamily="Inter, sans-serif"
-                        fontSize={["1.5rem", "1.5rem", "1.3rem", "2rem"]}
+                        fontSize={["1.5rem", "1.5rem", "1.3rem", "1.6rem"]}
                     >
                         Responsividade
                     </Heading>
@@ -107,7 +117,7 @@ function Servicos(){
                         color="#f8f8f7"
                         textAlign="center"
                         fontFamily="Inter, sans-serif"
-                        fontSize={["1.2rem", "1.2rem", "1.2rem", "1.3rem"]} 
+                        fontSize={["1.2rem", "1.2rem", "1.2rem", "1.2rem"]} 
                     >
                         Criação de sites responsivos para a melhor visualização 
                         em todas as resoluções.
@@ -118,10 +128,11 @@ function Servicos(){
                     my=".5rem"
                     bg="gray.900"
                     flexDirection="column"
-                    w={["100%", "100%", "30%", "30%"]}
+                    w={["100%", "100%", "23%", "23%"]}
                     p={["2rem", "2rem", "1rem", "2rem"]}
                     _hover={{ 
-                        border: "3px solid #63B3ED",
+                        cursor: "pointer",
+                        border: "2px solid #63B3ED",
                     }}
                 >
                     <Flex
@@ -139,7 +150,7 @@ function Servicos(){
                         color="#f8f8f7"
                         textAlign="center"
                         fontFamily="Inter, sans-serif"
-                        fontSize={["1.5rem", "1.5rem", "1.3rem", "2rem"]}
+                        fontSize={["1.5rem", "1.5rem", "1.3rem", "1.6rem"]}
                     >
                         SEO
                     </Heading>
@@ -148,12 +159,54 @@ function Servicos(){
                         color="#f8f8f7"
                         textAlign="center"
                         fontFamily="Inter, sans-serif"
-                        fontSize={["1.2rem", "1.2rem", "1.2rem", "1.3rem"]} 
+                        fontSize={["1.2rem", "1.2rem", "1.2rem", "1.2rem"]} 
                     >
                         Estratégias para fazer com que seu site apareça 
                         cada vez mais nas buscas.
                     </Text>
-                </Flex>    
+                </Flex>
+
+                <Flex
+                    my=".5rem"
+                    bg="gray.900"
+                    flexDirection="column"
+                    w={["100%", "100%", "23%", "23%"]}
+                    p={["2rem", "2rem", "1rem", "2rem"]}
+                    _hover={{
+                        cursor: "pointer",
+                        border: "2px solid #63B3ED",
+                    }}
+                >
+                    <Flex
+                        justifyContent="center"
+                    >
+                        <FaAccessibleIcon
+                            color="#f8f8f7"
+                            fontSize="3rem"
+                        />
+                    </Flex> 
+
+                    <Heading
+                        as="h3"
+                        my="1rem"
+                        color="#f8f8f7"
+                        textAlign="center"
+                        fontFamily="Inter, sans-serif"
+                        fontSize={["1.5rem", "1.5rem", "1.3rem", "1.6rem"]}
+                    >
+                        Acessibilidade
+                    </Heading>
+
+                    <Text
+                        color="#f8f8f7"
+                        textAlign="center"
+                        fontFamily="Inter, sans-serif"
+                        fontSize={["1.2rem", "1.2rem", "1.2rem", "1.2rem"]} 
+                    >
+                        Desenvolvimento de websites que sejam acessiveis 
+                        para os mais diversos usúarios.
+                    </Text>
+                </Flex> 
             </Flex> 
         </Flex>
     );
