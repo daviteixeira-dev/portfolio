@@ -1,5 +1,9 @@
-import React from "react";
-import { Flex, Heading, Text } from "@chakra-ui/react"
+import { 
+    Flex, 
+    Text, 
+    Heading 
+} from "@chakra-ui/react";
+
 import Card from "../Card/Card";
 
 import banner from "../../../public/images/img-cinza.png";
@@ -55,9 +59,7 @@ function Blog(){
                     title="Ver Post"
                     button="Ver Post"
                     w={["100%", "100%", "80%", "60%"]}
-                    text='Confira já o último post sobre "Como fazer um bom 
-                    portfólio Dev para suas habilidades e conhecimentos em 
-                    uma entrevista de emprego.'
+                    text='Em construção...'
                 />
             </Flex>
         </Flex>
