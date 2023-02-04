@@ -1,15 +1,15 @@
-import React from 'react';
-
 import {
     Box,
     Flex,
     Text,
     Heading,
+    ListItem,
     Accordion,
+    UnorderedList,
     AccordionIcon,
     AccordionItem,
     AccordionPanel,
-    AccordionButton,
+    AccordionButton
 } from '@chakra-ui/react'
 
 import { FaBook } from 'react-icons/fa';
@@ -56,6 +56,7 @@ function Education() {
                         >
                             <Heading
                                 as='span'
+                                mb='1rem'
                                 fontSize={['1rem', '1.3rem']}
                             >
                                 Bacharelado em Sistemas de Informação
@@ -64,6 +65,17 @@ function Education() {
                                     fontSize='1rem'
                                 > (2019 - Atual)</Text>
                             </Heading>
+                            <UnorderedList>
+                                <ListItem>
+                                    Bolsista no Programa de Educação Tutorial, PET-SI (Dezembro 2021 - Março 2022);
+                                </ListItem>
+                                <ListItem>
+                                    Bolsista no Núcleo de Inovação e Empreendedorismo, INOVE (Agosto 2019 - Agosto 2021);
+                                </ListItem>
+                                <ListItem>
+                                    Bolsista no Programa de Aprendizagem Cooperativa em Células Estudantis, PACCE (Fevereiro 2019 - Agosto 2019).
+                                </ListItem>
+                            </UnorderedList>
                         </Box>
                     </AccordionPanel>
                 </AccordionItem>
@@ -98,6 +110,7 @@ function Education() {
                         >
                             <Heading
                                 as='span'
+                                mb='1rem'
                                 fontSize={['1rem', '1.3rem']}
                             >
                                 Técnico em Informática
@@ -106,6 +119,12 @@ function Education() {
                                     fontSize='1rem'
                                 > (2013 - 2015)</Text>
                             </Heading>
+                            <Text>
+                                No cumprimento do estágio curricular exigido pelo curso de 
+                                técnico de informática pela Instituição de Ensino EEEP Alfredo 
+                                Nunes de Melo, atuei na secretaria de agricultura de Acopiara/CE 
+                                onde era responsável por realizar as manutenções nos computadores.
+                            </Text>
                         </Box>
                     </AccordionPanel>
                 </AccordionItem>
