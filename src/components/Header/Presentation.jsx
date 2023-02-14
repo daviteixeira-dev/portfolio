@@ -5,7 +5,7 @@ import {
 } from "@chakra-ui/react";
 
 import LinkButton from "../LinkButton/LinkButton";
-import ScrollDown from "../IndicatorScrollDown/scrollDown";
+import ScrollDown from "../IndicatorScrollDown/ScrollDown";
 
 function Presentation(){
     return(
