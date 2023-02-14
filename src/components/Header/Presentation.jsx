@@ -5,14 +5,15 @@ import {
 } from "@chakra-ui/react";
 
 import LinkButton from "../LinkButton/LinkButton";
+import ScrollDown from "../IndicatorScrollDown/scrollDown";
 
 function Presentation(){
     return(
         <Flex
             w="100%"
             h="100vh"
+            justifyContent="end"
             flexDirection="column"
-            justifyContent="center"
         >
             <Flex
                 w="auto"
@@ -65,6 +66,14 @@ function Presentation(){
                 >
                     LinkedIn
                 </LinkButton>
+            </Flex>
+
+            <Flex 
+                justifyContent='center'
+                mt={["1rem", "1rem", "0rem", "0rem"]} 
+                mb={["1rem", "1rem", "2rem", "4rem"]}
+            >
+                <ScrollDown />
             </Flex>
         </Flex>
     );
