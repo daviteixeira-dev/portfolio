@@ -1,20 +1,28 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Hide, Show } from "@chakra-ui/react";
 
-import MainMenu from "./MainMenu";
+import TopMenu from "../Menus/TopMenu";
 import Presentation from "./Presentation";
+import MenuMobile from "../Menus/MenuMobile";
 
-function Header(){
-    return(
+function Header() {
+    return (
         <Flex
             w="100%"
             as="header"
-            style={{                
+            style={{
                 backgroundSize: "cover",
                 backgroundPosition: "10% 30%",
                 backgroundImage: "url(/images/apresentation-banner.jpg)",
             }}
         >
-            <MainMenu />
+            <Hide below='md'>
+                <TopMenu />
+            </Hide>
+
+            <Show below='md'>
+                <MenuMobile />
+            </Show>
+
             <Presentation />
         </Flex>
     );
