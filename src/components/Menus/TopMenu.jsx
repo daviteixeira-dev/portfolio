@@ -1,23 +1,47 @@
 import React from "react";
 
-import { Link, Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 
 import Logo from "../Header/Logo";
 
-// List Items
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
-    return (
-        <li style={{ listStyle: "none"}}>
-            <Link href={to} style={{ textDecoration: 'none' }}>
-                <Text display="block" {...rest} _hover={{ borderBottom: "3px solid #63B3ED"}}>
-                    {children}
-                </Text>
-            </Link>
-        </li>
-    );
-};
+const menuItems = [
+    {
+        id: 1,
+        link: "/",
+        title: "Início"
+    },
+    {
+        id: 2,
+        link: "#sobre",
+        title: "Sobre mim"
+    },
+    {
+        id: 3,
+        link: "#services",
+        title: "Serviços"
+    },
+    {
+        id: 4,
+        link: "#conhecimentos",
+        title: "Conhecimentos"
+    },
+    {
+        id: 5,
+        link: "#projetos",
+        title: "Projetos"
+    },
+    {
+        id: 6,
+        link: "#blog",
+        title: "Blog"
+    },
+    {
+        id: 7,
+        link: "#contato",
+        title: "Contato"
+    }
+];
 
-// UL
 const MenuLinks = () => {
 
     return (
@@ -33,13 +57,13 @@ const MenuLinks = () => {
             direction={["column", "column", "row", "row"]}
             justify={["center", "space-between", "flex-end", "flex-end"]}
         >
-            <MenuItem to="/">Início</MenuItem>
-            <MenuItem to="#sobre">Sobre mim</MenuItem>
-            <MenuItem to="#services">Serviços</MenuItem>
-            <MenuItem to="#conhecimentos">Conhecimentos</MenuItem>
-            <MenuItem to="#projetos">Projetos</MenuItem>
-            <MenuItem to="#blog">Blog</MenuItem>
-            <MenuItem to="#contato">Contato</MenuItem>
+            {
+                menuItems.map(menu => (
+                    <li style={{ listStyle: "none"}}>
+                        <a href={`${menu.link}`}>{menu.title}</a>
+                    </li>
+                ))
+            }
         </Box>
     );
 };
