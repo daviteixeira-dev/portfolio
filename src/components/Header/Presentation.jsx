@@ -1,11 +1,17 @@
 import { 
     Flex, 
-    Text, 
+    Text,
+    Hide,
+    Show,
     Heading 
 } from "@chakra-ui/react";
 
+import ScrollDown from "../IndicatorScroll/ScrollDown";
+import ScrollUp from "../IndicatorScroll/ScrollUp";
+
 import LinkButton from "../LinkButton/LinkButton";
-import ScrollDown from "../IndicatorScrollDown/ScrollDown";
+// import { ScrollUp } from "../IndicatorScroll/ScrollUp";
+// import { ScrollDown } from "../IndicatorScroll/ScrollDown";
 
 function Presentation(){
     return(
@@ -73,7 +79,13 @@ function Presentation(){
                 mt={["1rem", "1rem", "0rem", "0rem"]} 
                 mb={["1rem", "1rem", "2rem", "4rem"]}
             >
-                <ScrollDown />
+                <Hide below='md'>
+                    <ScrollDown />
+                </Hide>
+
+                <Show below='md'>
+                    <ScrollUp />
+                </Show>
             </Flex>
         </Flex>
     );

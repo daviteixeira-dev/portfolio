@@ -1,0 +1,29 @@
+.mouse-btn {
+    width: 40px;
+    height: 80px;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 3px solid #7a7a7c;
+}
+
+.mouse-scroll-down {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    display: block; 
+    border-radius: 50%;
+    background: #737375;
+    animation: scrolling-down 1s linear infinite;
+}
+
+@keyframes scrolling-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
