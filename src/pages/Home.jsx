@@ -1,14 +1,13 @@
 import { Container } from "@chakra-ui/react";
 
-import Blog from "../components/Blog/Blog";
-import Sobre from "../components/Sobre/Sobre";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import AboutMe from "../components/AboutMe/AboutMe";
 import Servicos from "../components/Servicos/Servicos";
 import Projetos from "../components/Projetos/Projetos";
+import BlogSection from "../components/BlogSection/BlogSection";
 import Conhecimentos from "../components/Conhecimentos/Conhecimentos";
 import Apresentation from "../components/Apresentation/Apresentation";
-import AboutMe from "../components/AboutMe/AboutMe";
 
 const Home = () => {
     return (
@@ -19,7 +18,7 @@ const Home = () => {
             <Servicos />
             <Conhecimentos />
             <Projetos />
-            <Blog />
+            <BlogSection />
             <Footer />
         </Container>
     );
