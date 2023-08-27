@@ -24,7 +24,7 @@ const MobileMenu = () => {
     return (
         <Flex position="absolute" as="nav">
             
-            <Button variant="solid" margin="1rem" ref={btnRef} colorScheme="blue" onClick={onOpen}>
+            <Button variant="outline" margin="1rem" ref={btnRef} colorScheme="whiteAlpha" onClick={onOpen}>
                 Menu
             </Button>
 
@@ -34,16 +34,16 @@ const MobileMenu = () => {
                 <DrawerContent>
                     <DrawerCloseButton color="whiteAlpha.900" />
 
-                    <DrawerHeader backgroundColor="gray.800">
+                    <DrawerHeader backgroundColor="black">
                         <DesktopMenuLogo size="100%" />
                     </DrawerHeader>
 
-                    <DrawerBody backgroundColor="gray.700">
+                    <DrawerBody backgroundColor="blackAlpha.900">
                         <MobileMenuList />
                     </DrawerBody>
 
-                    <DrawerFooter backgroundColor="gray.800">
-                        <Button variant='solid' onClick={onClose}>
+                    <DrawerFooter backgroundColor="black">
+                        <Button variant='outline' colorScheme="whiteAlpha" onClick={onClose}>
                             Fechar
                         </Button>
                     </DrawerFooter>

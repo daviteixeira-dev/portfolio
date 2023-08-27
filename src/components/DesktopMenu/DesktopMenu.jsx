@@ -9,9 +9,10 @@ const DesktopMenu = () => {
             width="100%"
             height="7rem"
             position="fixed"
-            padding="0 .5rem"
+            padding="0 2rem"
             alignItems="center"
-            backgroundColor="gray.900"
+            boxShadow="dark-lg"
+            backgroundColor="black"
         >
             <DesktopMenuLogo size="20%" />
             <DesktopMenuList />

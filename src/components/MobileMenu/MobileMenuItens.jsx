@@ -3,11 +3,11 @@ import { ListItem, Link } from "@chakra-ui/react";
 const MobileMenuItens = ( props ) => {
     return (
         <ListItem
-            fontSize="2rem"
+            fontSize="1.5rem"
             padding=".5rem 1rem"
             borderRadius=".3rem"
             color="whiteAlpha.900"
-            backgroundColor="gray.800"
+            backgroundColor="gray.900"
         >
             <Link href={props.path}>
                 {props.value}
