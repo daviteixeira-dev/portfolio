@@ -1,197 +1,60 @@
-import React from "react";
-import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
-import Contato from "../Contato/Contato";
+import { Flex, Heading, Text, Link, SimpleGrid, Avatar } from "@chakra-ui/react";
 
-import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 
-function Footer(){
-    return(
-        <Flex
-            p="2rem"
-            bg="black"
+import FooterLinks from "./FooterLinks";
+
+const myFooterLinks = [
+    {
+        icon: <FaInstagram />,
+        link: "https://www.instagram.com/daviteixeira_dev/",
+    },
+    {
+        icon: <FaLinkedinIn />,
+        link: "https://www.linkedin.com/in/daviteixeira-me/",
+    },
+    {
+        icon: <FaEnvelope />,
+        link: "mailto:daviteixeira.dev@gmail.com",
+    }
+]
+
+const Footer = () => {
+    return (
+        <SimpleGrid 
+            spacing={2} 
             as="footer"
             id="contato"
-            justifyContent="space-between"
-            flexDirection={["column", "column", "row", "row"]}
+            alignItems="center" 
+            columns={["1", "3"]} 
+            backgroundColor="black"
+            padding={["1rem", "1.5rem 2rem"]} 
         >
-            <Flex 
-                flexDirection="column" 
-                w={["100%", "100%", "32%", "32%"]}
+            <Heading 
+                as="h3" 
+                fontSize="1rem"
+                fontWeight="bold" 
+                marginBottom="1rem" 
+                color="whiteAlpha.900" 
             >
-                <Heading
-                    as="h4"
-                    mb="1rem"
-                    color="#f8f8f7"
-                    fontSize="1.3rem"
-                    fontFamily="Inter, sans-serif"
-                >
-                    Davi Teixeira
-                </Heading>
+                Copyright © 2023 <Link href="https://daviteixeira.dev.br/" isExternal color="blue.600">daviteixeira.dev.br</Link>. Todos os direitos reservados.
+            </Heading>
 
-                <Link
-                    mb="1rem"
-                    isExternal
-                    color="#f8f8f7"
-                    fontSize="1.2rem"
-                    fontFamily="Inter, sans-serif"
-                    href="mailto:daviteixeira.dev@gmail.com"
-                >
-                    daviteixeira.dev@gmail.com
-                </Link>
-
-                <Text
-                    mb="5rem"
-                    color="#f8f8f7"
-                    fontSize="1.2rem"
-                    fontFamily="Inter, sans-serif"
-                >
-                    Endereço: Acopiara, Ceará, Brasil
-                </Text>
-
-                <Flex
-                    mb="5rem"
-                    justifyContent="space-evenly"
-                >
-                    <Box
-                        p="1rem"
-                        bg="gray.900"
-                        borderRadius="50%"
-                        _hover={{
-                            background: "gray.600"
-                        }}
-                    >
-                        <Link
-                            isExternal
-                            href="https://www.instagram.com/daviteixeira.dev/"
-                        >
-                            <FaInstagram
-                                fontSize="2rem"
-                                color="#f8f8f7"
-                            />
-                        </Link>
-                    </Box>
-                    <Box
-                        p="1rem"
-                        bg="gray.900"
-                        borderRadius="50%"
-                        _hover={{
-                            background: "gray.600"
-                        }}
-                    >
-                        <Link
-                            isExternal
-                            href="https://www.linkedin.com/in/daviteixeira-me/"
-                        >
-                            <FaLinkedinIn
-                                fontSize="2rem"
-                                color="#f8f8f7"
-                            />
-                        </Link>
-                    </Box>
-                    <Box
-                        p="1rem"
-                        bg="gray.900"
-                        borderRadius="50%"
-                        _hover={{
-                            background: "gray.600"
-                        }}
-                    >
-                        <Link
-                            isExternal 
-                            href="https://www.youtube.com/channel/UCvnJQ79CpJCqDVfveLQE8eA"
-                        >
-                            <FaYoutube
-                                fontSize="2rem"
-                                color="#f8f8f7"
-                            />
-                        </Link>
-                    </Box>
+            <Flex  alignItems="center" flexDirection="column">
+                <Flex marginBottom="1rem" width="100%" justifyContent="space-evenly">
+                    {
+                        myFooterLinks.map((item, index) => (
+                            <FooterLinks key={index} icon={item.icon} link={item.link} />
+                        ))
+                    }
                 </Flex>
-
-                <Text
-                    color="#f8f8f7"
-                    fontSize="1rem"
-                    fontFamily="Inter, sans-serif"
-                >
-                    @daviteixeira.dev 2022
-                </Text>
             </Flex>
 
-            <Flex
-                flexDirection="column"
-                p={[0, 0, "0 1rem", 0]}
-                my={["1rem", "1rem", 0, 0]}
-                w={["100%", "100%", "32%", "32%"]}
-            >
-                <Link
-                    href="#"
-                    mb=".5rem"
-                    color="#f8f8f7"
-                    fontSize="1rem"
-                    fontFamily="Inter, sans-serif"
-                    _hover={{ textDecoration: "none"}}
-                >
-                    Início
-                </Link>
-                <Link
-                    mb=".5rem"
-                    href="#sobre"
-                    color="#f8f8f7"
-                    fontSize="1rem"
-                    fontFamily="Inter, sans-serif"
-                    _hover={{ textDecoration: "none"}}
-                >
-                    Sobre mim
-                </Link>
-                <Link
-                    mb=".5rem"
-                    color="#f8f8f7"
-                    fontSize="1rem"
-                    href="#services"
-                    fontFamily="Inter, sans-serif"
-                    _hover={{ textDecoration: "none"}}
-                >
-                    Serviços
-                </Link>
-                <Link
-                    mb=".5rem"
-                    color="#f8f8f7"
-                    fontSize="1rem"
-                    href="#conhecimentos"
-                    fontFamily="Inter, sans-serif"
-                    _hover={{ textDecoration: "none"}}
-                >
-                    Conhecimentos
-                </Link>
-                <Link
-                    mb=".5rem"
-                    color="#f8f8f7"
-                    fontSize="1rem"
-                    href="#projetos"
-                    fontFamily="Inter, sans-serif"
-                    _hover={{ textDecoration: "none"}}
-                >
-                    Projetos
-                </Link>
-                <Link
-                    mb=".5rem"
-                    href="#blog"
-                    color="#f8f8f7"
-                    fontSize="1rem"
-                    fontFamily="Inter, sans-serif"
-                    _hover={{ textDecoration: "none"}}
-                >
-                    Blog
-                </Link>
+            <Flex alignItems="center" justifyContent="center">
+                <Text color="whiteAlpha.900" fontSize="1.1rem" fontWeight="bold">Powered by </Text>
+                <Avatar src="/images/logo.png" marginLeft="1rem" />
             </Flex>
-
-            <Flex
-                flexDirection="column" 
-                w={["100%", "100%", "32%", "32%"]}
-            >
-                <Contato />
-            </Flex>
-        </Flex>
+        </SimpleGrid>
     );
 };
 
