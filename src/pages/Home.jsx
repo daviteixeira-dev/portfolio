@@ -3,11 +3,11 @@ import { Container } from "@chakra-ui/react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import AboutMe from "../components/AboutMe/AboutMe";
-import Projetos from "../components/Projetos/Projetos";
 import Knowledge from "../components/Knowledge/Knowledge";
 import MyServices from "../components/MyServices/MyServices";
 import BlogSection from "../components/BlogSection/BlogSection";
 import Apresentation from "../components/Apresentation/Apresentation";
+import MyMainProjects from "../components/MyMainProjects/MyMainProjects";
 
 const Home = () => {
     return (
@@ -17,7 +17,7 @@ const Home = () => {
             <AboutMe />
             <MyServices />
             <Knowledge />
-            <Projetos />
+            <MyMainProjects />
             <BlogSection />
             <Footer />
         </Container>
