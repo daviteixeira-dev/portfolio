@@ -1,35 +1,43 @@
 import { UnorderedList } from "@chakra-ui/react";
 
-import { FaInstagram, FaYoutube, FaDev, FaGithub, FaMedium } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaDev, FaMedium } from "react-icons/fa";
+
 import { SiDuolingo } from "react-icons/si";
+
 import AboutMeItens from "./AboutMeItens";
 
 const aboutMeListItens = [
     {
         path: 'https://www.instagram.com/daviteixeira_dev/',
-        value: <FaInstagram />
+        value: <FaInstagram />,
+        tooltip: "Instagram"
     },
     {
         path: 'https://www.youtube.com/@daviteixeira_dev',
-        value: <FaYoutube />
+        value: <FaYoutube />,
+        tooltip: "YouTube"
     },
     {
         path: 'https://dev.to/daviteixeiradev',
-        value: <FaDev />
+        value: <FaDev />,
+        tooltip: "Dev.to"
     },
     {
         path: 'https://duome.eu/daviteixeira.me',
-        value: <SiDuolingo />
+        value: <SiDuolingo />,
+        tooltip: "Duolingo"
     },
     {
         path: 'https://medium.com/@daviteixeira.btm',
-        value: <FaMedium />
+        value: <FaMedium />,
+        tooltip: "Medium"
     },
 ]
 
 const AboutMeList = () => {
     return (
         <UnorderedList
+            margin="0"
             width="100%"
             display="flex"
             alignItems="center"
@@ -38,7 +46,12 @@ const AboutMeList = () => {
         >
             {
                 aboutMeListItens.map((item, index) => (
-                    <AboutMeItens key={index} path={item.path} value={item.value} />
+                    <AboutMeItens 
+                        key={index} 
+                        path={item.path} 
+                        value={item.value}
+                        tooltip={item.tooltip} 
+                    />
                 ))
             }
         </UnorderedList>
