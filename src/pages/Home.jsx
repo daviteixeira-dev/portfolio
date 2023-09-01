@@ -6,14 +6,14 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Knowledge from "../components/Knowledge/Knowledge";
 import MyServices from "../components/MyServices/MyServices";
 import BlogSection from "../components/BlogSection/BlogSection";
-import Apresentation from "../components/Apresentation/Apresentation";
+import Presentation from "../components/Presentation/Presentation";
 import MyMainProjects from "../components/MyMainProjects/MyMainProjects";
 
 const Home = () => {
     return (
         <Container maxW="full" className="App" p="0">
             <Header />
-            <Apresentation />
+            <Presentation />
             <AboutMe />
             <MyServices />
             <Knowledge />
