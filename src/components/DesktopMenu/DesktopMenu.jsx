@@ -1,5 +1,7 @@
 import { Flex } from "@chakra-ui/react";
+
 import DesktopMenuList from "./DesktopMenuList";
+
 import DesktopMenuLogo from "./DesktopMenuLogo";
 
 const DesktopMenu = () => {
@@ -15,7 +17,7 @@ const DesktopMenu = () => {
             boxShadow="dark-lg"
             backgroundColor="black"
         >
-            <DesktopMenuLogo size="20%" />
+            <DesktopMenuLogo size="20%" avatarSize="lg" fontSize="1.5rem" />
             <DesktopMenuList />
         </Flex>
     ); 

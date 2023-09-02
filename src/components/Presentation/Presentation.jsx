@@ -37,8 +37,8 @@ const Apresentation = () => {
                 height={["70%", "auto", "80%", "80%"]}
                 padding={["1rem", "1rem", "2rem", "2rem"]}
                 marginTop={["0rem", "0rem", "4rem", "4rem"]}
-                marginLeft={["1rem", "0rem", "0rem", "2rem"]}
-                marginRight={["1rem", "0rem", "0rem", "2rem"]}
+                marginLeft={["0rem", "0rem", "0rem", "2rem"]}
+                marginRight={["0rem", "0rem", "0rem", "2rem"]}
                 marginBottom={["0rem", "0rem", "0rem", "2rem"]}
             >
                 <Heading
