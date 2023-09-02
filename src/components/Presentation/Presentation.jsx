@@ -25,8 +25,8 @@ const Apresentation = () => {
             as="section" 
             alignItems="center" 
             backgroundColor="black"
-            height={["100%", "100vh"]} 
-            paddingTop={["5rem", "5rem", "10rem", "0rem"]}
+            height={["100%", "100%", "100%", "100vh"]} 
+            paddingTop={["5rem", "5rem", "1rem", "0rem"]}
         >
             <Flex
                 width="100%"
@@ -47,7 +47,7 @@ const Apresentation = () => {
                     fontWeight="bold"
                     textTransform="uppercase"
                     textAlign={["center", "start"]}
-                    fontSize={["1.4rem", "3rem", "2rem", "2rem"]}
+                    fontSize={["1.3rem", "3rem", "2rem", "2rem"]}
                     bgGradient="linear(to-l, gray.300, gray.500)"
                 >
                     Olá, meu nome é Davi, sou
@@ -61,7 +61,7 @@ const Apresentation = () => {
                         fontWeight="bold"
                         textTransform="uppercase"
                         textAlign={["center", "start"]}
-                        fontSize={["1.8rem", "3rem", "5rem", "5rem"]}
+                        fontSize={["2rem", "3rem", "5rem", "5rem"]}
                         bgGradient="linear(to-l, gray.300, gray.500)"
                     >
                         Desenvolvedor
@@ -69,7 +69,7 @@ const Apresentation = () => {
 
                     <Flex 
                         marginTop={[".5rem", "0rem"]}
-                        justifyContent={["space-evenly", "flex-start"]} 
+                        justifyContent={["center", "flex-start"]} 
                     >
                         <Text
                             bgClip="text"
@@ -78,7 +78,7 @@ const Apresentation = () => {
                             textTransform="uppercase"
                             justifyContent={["space-evenly", "start"]}
                             bgGradient="linear(to-l, gray.300, gray.500)"
-                            fontSize={["1.8rem", "3rem", "5rem", "5rem"]}
+                            fontSize={["2rem", "3rem", "5rem", "5rem"]}
                         >
                             Web
                         </Text>
@@ -86,10 +86,10 @@ const Apresentation = () => {
                         <Flex
                             alignItems="center"
                             borderRadius=".5rem"
-                            width={["50%", "20%"]}
                             border="2px solid gray"
                             justifyContent="space-evenly"
-                            marginLeft={["0rem", "2rem"]}
+                            marginLeft={["1rem", "2rem"]}
+                            width={["50%", "50%", "30%", "20%"]}
                         >
                             {
                                 myPresentationLinks.map((item, index) => (
@@ -108,8 +108,9 @@ const Apresentation = () => {
                         bgClip="text"
                         marginTop="1rem" 
                         fontWeight="bold"
-                        width={["100%", "50%"]}
-                        fontSize={["1rem", "1.2rem"]} 
+                        textAlign="start"
+                        fontSize={["1.3rem", "1.2rem"]} 
+                        width={["100%", "100%", "100%", "50%"]}
                         bgGradient="linear(to-l, gray.300, gray.500)"
                     >
                         Colaborando na criação de presença digital impactante e inovadora 
