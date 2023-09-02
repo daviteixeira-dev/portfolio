@@ -35,10 +35,10 @@ const Apresentation = () => {
                 flexDirection="column"
                 justifyContent="center"
                 height={["70%", "auto", "80%", "80%"]}
-                padding={["1rem", "1rem", "1rem", "2rem"]}
+                padding={["1rem", "1rem", "2rem", "2rem"]}
                 marginTop={["0rem", "0rem", "4rem", "4rem"]}
-                marginLeft={["1rem", "0rem", "1rem", "2rem"]}
-                marginRight={["1rem", "0rem", "1rem", "2rem"]}
+                marginLeft={["1rem", "0rem", "0rem", "2rem"]}
+                marginRight={["1rem", "0rem", "0rem", "2rem"]}
                 marginBottom={["0rem", "0rem", "0rem", "2rem"]}
             >
                 <Heading
@@ -61,7 +61,7 @@ const Apresentation = () => {
                         fontWeight="bold"
                         textTransform="uppercase"
                         textAlign={["center", "start"]}
-                        fontSize={["2rem", "3rem", "5rem", "5rem"]}
+                        fontSize={["2rem", "3rem", "4.5rem", "5rem"]}
                         bgGradient="linear(to-l, gray.300, gray.500)"
                     >
                         Desenvolvedor
@@ -78,7 +78,7 @@ const Apresentation = () => {
                             textTransform="uppercase"
                             justifyContent={["space-evenly", "start"]}
                             bgGradient="linear(to-l, gray.300, gray.500)"
-                            fontSize={["2rem", "3rem", "5rem", "5rem"]}
+                            fontSize={["2rem", "3rem", "4.5rem", "5rem"]}
                         >
                             Web
                         </Text>

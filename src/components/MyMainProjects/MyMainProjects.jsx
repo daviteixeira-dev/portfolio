@@ -28,10 +28,13 @@ const MyMainProjects = () => {
         <Flex
             as="section" 
             id="projetos"
-            padding="1rem 2rem" 
+            paddingLeft="2rem"
             alignItems="center"
+            paddingRight="2rem"
+            paddingBottom="2rem"
             flexDirection="column"
             backgroundColor="blackAlpha.100" 
+            paddingTop={["2rem", "2rem", "2rem", "6rem"]}
         >
             <Heading 
                 as="h2"

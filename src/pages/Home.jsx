@@ -11,7 +11,7 @@ import MyMainProjects from "../components/MyMainProjects/MyMainProjects";
 
 const Home = () => {
     return (
-        <Container maxW="full" className="App" p="0">
+        <Container fontFamily="Arial, Helvetica, sans-serif" maxW="full" className="App" p="0">
             <Header />
             <Presentation />
             <AboutMe />

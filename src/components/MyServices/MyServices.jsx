@@ -1,4 +1,4 @@
-import { Flex, Text, Heading } from "@chakra-ui/react";
+import { Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 
 import { FaCode, FaCogs, FaTabletAlt, FaAccessibleIcon } from "react-icons/fa";
 
@@ -30,15 +30,15 @@ const myServiceCardsItems = [
 const MyServices = () => {
     return (
         <Flex
-            p="2rem"
-            h="auto"
-            w="100%"
-            pt="6rem"
             as="section"
+            width="100%"
+            height="auto"
             id="services"
-            bg="blackAlpha.900"
+            padding="2rem"
             flexDirection="column"
             justifyContent="center"
+            backgroundColor="blackAlpha.900"
+            paddingTop={["2rem", "2rem", "2rem", "10rem"]}
         >
             <Heading
                 as="h2"
@@ -51,16 +51,16 @@ const MyServices = () => {
                 Serviços
             </Heading>
             
-            <Flex
-                justifyContent="space-evenly"
-                flexDirection={["column", "row"]}
+            <SimpleGrid
+                spacing={4}
+                columns={["1", "1", "2", "4"]}
             >
                 {
                     myServiceCardsItems.map((item, index) => (
                         <MyServicesCard key={index} icon={item.icon} title={item.title} text={item.text} />
                     ))
                 }
-            </Flex> 
+            </SimpleGrid> 
         </Flex>
     );
 };

@@ -11,22 +11,20 @@ const BlogSection = () => {
             as="section"
             justifyContent="space-between"
             backgroundColor="blackAlpha.900"
-            p={["1rem", "1rem", "2rem", "2rem"]}
+            padding={["1rem", "1rem", "2rem", "2rem"]}
             flexDirection={["column", "column", "row", "row"]}
         >
             <Flex
-                mb="1rem"
-                paddingTop="6rem"
-                paddingLeft="1rem"
-                paddingRight="1rem"
-                paddingBottom="1rem"
+                padding="1rem"
+                marginBottom="1rem"
                 flexDirection="column"
                 width={["100%", "100%", "49%", "49%"]}
+                paddingTop={["1rem", "1rem", "1rem", "6rem"]}
             >
                 <Heading
                     as="h2"
-                    mb="2rem"
                     textAlign="start"
+                    marginBottom="2rem"
                     color="whiteAlpha.900"
                     textTransform="uppercase"
                     fontFamily="Inter, sans-serif"
@@ -38,7 +36,6 @@ const BlogSection = () => {
                 <Text
                     fontWeight="semibold"
                     color="whiteAlpha.900"
-                    fontFamily="Inter, sans-serif"
                     fontSize={["1.4rem", "1.4rem", "1.2rem", "1.2rem"]}
                 >
                     Neste blog, quero trazer conteúdos que possam agregar à sua carreira como
@@ -68,7 +65,7 @@ const BlogSection = () => {
                 
                 <Link
                     href="#"
-                    width="12rem"
+                    width="13rem"
                     marginTop="2rem"
                     padding="1rem 2rem"
                     borderRadius=".5rem"
@@ -87,7 +84,8 @@ const BlogSection = () => {
                 alignItems="center"
                 flexDirection="column"
                 justifyContent="center"
-                w={["100%", "100%", "49%", "49%"]}
+                width={["100%", "100%", "49%", "49%"]}
+                paddingTop={["1rem", "1rem", "1rem", "6rem"]}
             >
                 <BlogCard
                     cardLink="#"

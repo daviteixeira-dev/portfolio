@@ -74,21 +74,21 @@ const Knowledge = () => {
             id="conhecimentos"
             bg="blackAlpha.900"
             alignItems="center"
-            p={["1rem", "2rem"]}
-            flexDirection={["column", "column", "row", "row"]}
+            p={["1rem", "1rem", "1rem", "2rem"]}
+            flexDirection={["column", "column", "column", "row"]}
         >
             <Flex
                 textAlign="center"
                 flexDirection="column"
                 justifyContent="center"
-                width={["100%", "100%", "30%", "50%"]}
+                width={["100%", "100%", "100%", "50%"]}
                 padding={["0rem", "0rem", "1rem", "2rem"]} 
             >
                 <Heading
                     as="h2"
                     textAlign="center"
                     color="whiteAlpha.900"
-                    fontSize={["2rem", "2rem", "1.5rem", "3rem"]}
+                    fontSize={["2rem", "2rem", "3rem", "3rem"]}
                 >
                     Conhecimentos
                 </Heading>
@@ -96,7 +96,7 @@ const Knowledge = () => {
                 <Text
                     marginTop="1rem"
                     color="whiteAlpha.900"
-                    fontSize={["1.3rem", "1.3rem", "1.2rem", "1.5rem"]}
+                    fontSize={["1.3rem", "1.3rem", "1.5rem", "1.5rem"]}
                 >
                     Trabalhalho com as seguintes tecnologias:
                 </Text>
@@ -104,12 +104,13 @@ const Knowledge = () => {
 
             <Flex
                 height="100%"
-                marginTop="1rem"
                 alignItems="center"
-                padding={["1rem", "2rem"]} 
-                width={["100%", "100%", "70%", "50%"]}
+                padding={["1rem", "2rem"]}
+                justifyContent="space-evenly"
+                width={["100%", "100%", "100%", "50%"]}
+                marginTop={["2rem", "2rem", "2rem", "4rem"]}
             >
-                <SimpleGrid columns={["2", "2", "3", "4"]} spacing={4}>
+                <SimpleGrid columns={["2", "2", "4", "4"]} spacing={4}>
                     {
                         myKnowledgeItems.map((item, index) => (
                             <KnowledgeItems

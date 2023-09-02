@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, Text, Heading } from "@chakra-ui/react"
 const MyServicesCard = ( props ) => {
     return (
         <Card 
+            width="100%"
             tabIndex={0}
             marginBottom="1rem" 
             backgroundColor="gray.900" 
-            width={["100%", "100%", "23%", "23%"]} 
         >
             <CardHeader 
                 display="flex"
