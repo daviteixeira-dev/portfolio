@@ -1,4 +1,7 @@
-import { ListItem, Link } from "@chakra-ui/react";
+import { ListItem } from "@chakra-ui/react";
+
+import { Link as ChakraLink } from "@chakra-ui/react";
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 const MobileMenuItens = ( props ) => {
     return (
@@ -9,9 +12,9 @@ const MobileMenuItens = ( props ) => {
             color="whiteAlpha.900"
             backgroundColor="gray.900"
         >
-            <Link href={props.path}>
+            <ChakraLink as={ReactRouterLink} to={props.path}>
                 {props.value}
-            </Link>
+            </ChakraLink>
         </ListItem>
     );
 };

@@ -1,6 +1,9 @@
-import { Flex, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Flex, ListItem, UnorderedList } from "@chakra-ui/react";
 
 import DesktopMenuLogo from "./DesktopMenuLogo";
+
+import { Link as ChakraLink } from "@chakra-ui/react";
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 const DesktopMenuBlog = () => {
     return (
@@ -24,8 +27,9 @@ const DesktopMenuBlog = () => {
 
             <UnorderedList listStyleType="none" display="flex" >
                 <ListItem>
-                    <Link 
-                        href="/" 
+                    <ChakraLink
+                        to="/"
+                        as={ReactRouterLink}
                         padding=".5rem 1rem"
                         borderRadius=".2rem"
                         color="whiteAlpha.900" 
@@ -33,7 +37,7 @@ const DesktopMenuBlog = () => {
                         style={{ textDecoration: "none" }}
                     >
                         Portfólio
-                    </Link>
+                    </ChakraLink>
                 </ListItem>
             </UnorderedList>
         </Flex>

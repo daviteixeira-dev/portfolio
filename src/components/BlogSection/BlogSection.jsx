@@ -1,4 +1,7 @@
-import { Flex, Text, Heading, Link } from "@chakra-ui/react";
+import { Flex, Text, Heading } from "@chakra-ui/react";
+
+import { Link as ChakraLink } from "@chakra-ui/react";
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 import BlogCard from "./BlogCard";
 
@@ -63,11 +66,12 @@ const BlogSection = () => {
                     Não deixe de ler o artigo mais recente!
                 </Text>
                 
-                <Link
-                    href="/blog"
+                <ChakraLink
+                    to="/blog"
                     width="13rem"
                     marginTop="2rem"
                     padding="1rem 2rem"
+                    as={ReactRouterLink}
                     borderRadius=".5rem"
                     fontWeight="semibold"
                     color="whiteAlpha.900"
@@ -75,7 +79,7 @@ const BlogSection = () => {
                     style={{ textDecoration: "none"}}
                 >
                     Veja mais Artigos
-                </Link>
+                </ChakraLink>
                 
             </Flex>
 
