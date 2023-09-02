@@ -64,7 +64,7 @@ const BlogSection = () => {
                 </Text>
                 
                 <Link
-                    href="#"
+                    href="/blog"
                     width="13rem"
                     marginTop="2rem"
                     padding="1rem 2rem"
