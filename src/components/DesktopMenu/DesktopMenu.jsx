@@ -10,7 +10,7 @@ const DesktopMenu = () => {
             as="nav"
             zIndex={2}
             width="100%"
-            height="7rem"
+            height="6rem"
             position="fixed"
             padding="0 2rem"
             alignItems="center"

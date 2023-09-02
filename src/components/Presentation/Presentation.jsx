@@ -108,7 +108,7 @@ const Apresentation = () => {
                         bgClip="text"
                         marginTop="1rem" 
                         fontWeight="bold"
-                        textAlign="start"
+                        textAlign={["center", "start"]}
                         fontSize={["1.3rem", "1.2rem"]} 
                         width={["100%", "100%", "100%", "50%"]}
                         bgGradient="linear(to-l, gray.300, gray.500)"
