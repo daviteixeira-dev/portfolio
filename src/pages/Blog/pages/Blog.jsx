@@ -1,9 +1,9 @@
 import { Flex, Text, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 
-import DesktopMenuBlog from "../components/DesktopMenu/DesktopMenuBlog";
+import DesktopMenuBlog from "../components/DesktopMenuBlog";
 
-import BlogCard from "../components/BlogSection/BlogCard";
-import Footer from "../components/Footer/Footer";
+import BlogCard from "../components/BlogCard";
+import Footer from "../../../components/Footer/Footer";
 
 const myBlogCards = [
     {

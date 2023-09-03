@@ -1,6 +1,6 @@
 import { Flex, ListItem, UnorderedList } from "@chakra-ui/react";
 
-import DesktopMenuLogo from "./DesktopMenuLogo";
+import DesktopMenuLogo from "../../../components/DesktopMenu/DesktopMenuLogo";
 
 import { Link as ChakraLink } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from 'react-router-dom';

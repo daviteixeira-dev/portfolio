@@ -1,8 +1,7 @@
 import { 
     Card, 
     Text,
-    Image,
-    Button, 
+    Image, 
     Avatar, 
     Heading, 
     CardBody, 
