@@ -3,7 +3,7 @@ import { Flex, Text, Heading } from "@chakra-ui/react";
 import { Link as ChakraLink } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from 'react-router-dom';
 
-import BlogCard from "./BlogCard";
+import BlogCard from "../../pages/Blog/components/BlogCard";
 
 import { FaAngleDoubleRight } from "react-icons/fa";
 
@@ -92,7 +92,7 @@ const BlogSection = () => {
                 paddingTop={["1rem", "1rem", "1rem", "6rem"]}
             >
                 <BlogCard
-                    cardLink="#"
+                    cardLink="/blog/page-example"
                     widthCard="25rem"
                     cardTag="#Front-End"
                     cardDate="27/08/2023"
