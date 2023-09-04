@@ -12,7 +12,7 @@ const AboutMeItens = ( props) => {
                         color="whiteAlpha.900"
                         backgroundColor="black"
                         padding={[".5rem", "1rem"]}
-                        _hover={{ color: "whiteAlpha.600" }}
+                        _hover={{ color: "blue.500" }}
                     >
                         {props.value}
                     </Link>

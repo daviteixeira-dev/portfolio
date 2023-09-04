@@ -5,9 +5,9 @@ const PresentationLinks = ( props ) => {
         <Tooltip label={props.tooltip}>
             <Link 
                 isExternal
-                href={props.link}
                 color="gray.400"
-                _hover={{ color: "gray.300" }}
+                href={props.link}
+                _hover={{ color: "blue.500" }}
                 fontSize={["1.8rem", "3rem", "4rem", "4.5rem"]}
             >
                 {props.icon}

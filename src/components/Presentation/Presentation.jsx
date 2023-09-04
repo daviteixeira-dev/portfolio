@@ -110,7 +110,7 @@ const Apresentation = () => {
                         fontWeight="bold"
                         textAlign={["center", "start"]}
                         fontSize={["1.3rem", "1.2rem"]} 
-                        width={["100%", "100%", "100%", "50%"]}
+                        width={["100%", "100%", "100%", "70%"]}
                         bgGradient="linear(to-l, gray.300, gray.500)"
                     >
                         Colaborando na criação de presença digital impactante e inovadora 
