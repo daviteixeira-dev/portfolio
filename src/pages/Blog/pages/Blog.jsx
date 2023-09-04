@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Flex, Text, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 
 import DesktopMenuBlog from "../components/DesktopMenuBlog";
@@ -47,6 +49,11 @@ const myBlogCards = [
 ]
 
 const Blog = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Container fontFamily="Arial, Helvetica, sans-serif" maxW="full" padding="0">
 

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Heading, Text, Flex, Image } from "@chakra-ui/react";
 
 import ReadingBody from "../components/ReadingBody";
@@ -5,6 +7,11 @@ import ReadingBody from "../components/ReadingBody";
 import DesktopMenuBlog from "../components/DesktopMenuBlog";
 
 const PageExample = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Flex 
