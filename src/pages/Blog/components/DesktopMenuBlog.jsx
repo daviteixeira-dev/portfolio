@@ -20,9 +20,8 @@ const DesktopMenuBlog = () => {
             justifyContent="space-between"
         >
             <DesktopMenuLogo 
-                avatarSize="md" 
+                avatarSize="lg" 
                 fontSize={["1.2rem", "1.5rem"]} 
-                size={["100%", "100%", "100%", "20%"]} 
             />
 
             <UnorderedList listStyleType="none" display="flex" >
