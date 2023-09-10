@@ -5,17 +5,21 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 
 const MobileMenuItens = ( props ) => {
     return (
-        <ListItem
-            fontSize="1.5rem"
-            padding=".5rem 1rem"
-            borderRadius=".3rem"
-            color="whiteAlpha.900"
-            backgroundColor="gray.900"
-        >
-            <ChakraLink as={ReactRouterLink} to={props.path}>
+        <ChakraLink as={ReactRouterLink} to={props.path}>
+            <ListItem
+                fontSize="1.2rem"
+                padding=".5rem 1rem"
+                borderRadius=".3rem"
+                fontWeight="semibold"
+                marginBottom="1.5rem"
+                color="whiteAlpha.900"
+                textTransform="uppercase"
+                backgroundColor="blackAlpha.900"
+                borderBottom="3px solid #3182ce"
+            >
                 {props.value}
-            </ChakraLink>
-        </ListItem>
+            </ListItem>
+        </ChakraLink>
     );
 };
 

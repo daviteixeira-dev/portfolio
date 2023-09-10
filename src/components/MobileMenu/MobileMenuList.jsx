@@ -24,7 +24,7 @@ const MobileMenuList = () => {
             display="flex"
             listStyleType="none"
             flexDirection="column"
-            justifyContent="space-evenly"
+            justifyContent="start"
         >
             {
                 mobileMenuItens.map((item, index) => (

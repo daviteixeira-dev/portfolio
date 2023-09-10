@@ -34,7 +34,7 @@ const MobileMenu = () => {
                 <DrawerContent>
                     <DrawerCloseButton color="whiteAlpha.900" />
 
-                    <DrawerHeader backgroundColor="black">
+                    <DrawerHeader backgroundColor="blackAlpha.900">
                         <DesktopMenuLogo size="100%" />
                     </DrawerHeader>
 
@@ -42,7 +42,7 @@ const MobileMenu = () => {
                         <MobileMenuList />
                     </DrawerBody>
 
-                    <DrawerFooter backgroundColor="black">
+                    <DrawerFooter backgroundColor="blackAlpha.900">
                         <Button variant='outline' colorScheme="whiteAlpha" onClick={onClose}>
                             Fechar
                         </Button>
