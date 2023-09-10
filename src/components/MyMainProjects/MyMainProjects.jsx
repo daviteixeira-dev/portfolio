@@ -4,22 +4,25 @@ import ProjectCard from "./ProjectCard";
 
 const myProjectCards = [
     {
+        title: "AccessHub",
+        link: "https://accesshub.vercel.app/",
+        image: "/images/my-projects/site-accesshub.png",
+        text: "AccessHub é um guia sobre funcionalidades de acessibilidade para desenvolvedores Web.",
+        alt: "Esse é um link para o projeto chamado de AccessHub, se trata de um guia sobre funcionalidades de acessibilidade para desenvolvedores Web.",
+    },
+    {
         title: "SaúdeA+",
         link: "https://saude-amais.vercel.app/",
         image: "/images/my-projects/site-saudeamais.png",
-        text: "O studio de Pilates (saúde a+) necessita sistema de gerenciamento das atividades/modalidades do estúdio e o agendamento de aulas.",
-    },
-    {
-        title: "JobFinder",
-        link: "https://daviteixeira-btm.github.io/jobfinder/",
-        image: "/images/my-projects/site-jobfinder.png",
-        text: "Nesse projeto de site fiz uma página para encontrar empregos ou repostar vagas.",
+        text: "O studio de Pilates (saúde a+) necessitou de um design para o sistema de gerenciamento das atividades/modalidades do estúdio e o agendamento de aulas.",
+        alt: "Esse é um link para o projeto chamado de Saúde A+, se trata de um design de sistema de gerenciamento das atividades/modalidades do estúdio e o agendamento de aulas.",
     },
     {
         title: "hDC Agency",
         link: "https://daviteixeira-btm.github.io/hDC-Agency/",
         image: "/images/my-projects/site-hdc-Agency.png",
         text: "Design de site para criar uma página para encontrar empregos ou postar vagas.",
+        alt: "Esse é um link para o projeto chamado de hDC Agency, se trata de um design de site para criar uma página para encontrar empregos ou postar vagas."
     },
 ]
 
@@ -72,6 +75,7 @@ const MyMainProjects = () => {
                     myProjectCards.map((item, index) => (
                         <ProjectCard
                             key={index}
+                            alt={item.alt}
                             text={item.text}
                             link={item.link}
                             title={item.title}
