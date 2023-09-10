@@ -17,7 +17,11 @@ const DesktopMenu = () => {
             boxShadow="dark-lg"
             backgroundColor="black"
         >
-            <DesktopMenuLogo size="40%" avatarSize="lg" fontSize="1.3rem" />
+            <DesktopMenuLogo 
+                avatarSize="lg" 
+                fontSize={["1.2rem", "1.5rem"]} 
+            />
+            
             <DesktopMenuList />
         </Flex>
     ); 

@@ -6,8 +6,8 @@ const DesktopMenuItens = ( props ) => {
             <Link 
                 href={props.path}
                 _focus={{ padding: ".5rem" }}
-                _hover={{ color: "#3182ce" }} 
                 style={{ textDecoration: "none" }}
+                _hover={{ color: "#3182ce", borderBottom: "3px solid #3182ce" }} 
             >
                 {props.value}
             </Link>
