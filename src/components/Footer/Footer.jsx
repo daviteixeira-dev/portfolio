@@ -8,14 +8,17 @@ const myFooterLinks = [
     {
         icon: <FaInstagram />,
         link: "https://www.instagram.com/daviteixeira_dev/",
+        tooltip: "Instagram"
     },
     {
         icon: <FaLinkedinIn />,
         link: "https://www.linkedin.com/in/daviteixeira-me/",
+        tooltip: "LinkedIn"
     },
     {
         icon: <FaEnvelope />,
         link: "mailto:daviteixeira.dev@gmail.com",
+        tooltip: "E-mail"
     }
 ]
 
@@ -28,7 +31,7 @@ const Footer = () => {
             alignItems="center" 
             columns={["1", "3"]} 
             backgroundColor="black"
-            padding={["1rem", "1.5rem 2rem"]} 
+            padding={["1rem", "2.5rem 2rem"]} 
         >
             <Heading 
                 as="h3" 
@@ -44,7 +47,12 @@ const Footer = () => {
                 <Flex marginBottom="1rem" width="100%" justifyContent="space-evenly">
                     {
                         myFooterLinks.map((item, index) => (
-                            <FooterLinks key={index} icon={item.icon} link={item.link} />
+                            <FooterLinks 
+                                key={index} 
+                                icon={item.icon} 
+                                link={item.link} 
+                                tooltip={item.tooltip} 
+                            />
                         ))
                     }
                 </Flex>
