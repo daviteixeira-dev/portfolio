@@ -32,7 +32,7 @@ const AboutMe = () => {
                 >
                     <Image
                         borderRadius=".5rem"
-                        src="images/davi.jpg"
+                        src="images/about-me/davi.jpg"
                         alt="Essa é uma foto minha de perfil."
                         width={["100%", "100%", "auto", "100%"]}
                         height={["100%", "100%", "auto", "100%"]}

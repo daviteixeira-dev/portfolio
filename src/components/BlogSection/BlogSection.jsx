@@ -97,9 +97,9 @@ const BlogSection = () => {
                     cardTag="#Front-End"
                     cardDate="27/08/2023"
                     cardNameAutor="Davi Teixeira"
-                    cardImage="images/froned.jpg"
-                    cardImageAutor="/images/davi.jpg"
                     cardAlt="Imagem de um programador."
+                    cardImageAutor="/images/about-me/davi.jpg"
+                    cardImage="images/blog-images/front-end.jpg"
                     cardTitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
                     cardText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque non
                     corporis illum provident nihil nam nobis, architecto libero tempora
