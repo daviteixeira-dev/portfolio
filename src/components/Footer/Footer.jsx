@@ -60,7 +60,7 @@ const Footer = () => {
 
             <Flex alignItems="center" justifyContent="center">
                 <Text color="whiteAlpha.900" fontSize="1.1rem" fontWeight="bold">Powered by </Text>
-                <Avatar src="/images/logo.png" marginLeft="1rem" />
+                <Avatar name="Davi Teixeira" src="/images/logo.png" marginLeft="1rem" />
             </Flex>
         </SimpleGrid>
     );
