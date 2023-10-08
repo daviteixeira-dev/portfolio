@@ -11,40 +11,16 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const myBlogCards = [
     {
-        cardLink: "#",
+        cardLink: "/blog/o-que-e-react-helmet",
         widthCard: "auto",
         cardTag: "#Front-End",
-        cardDate: "27/08/2023",
+        cardDate: "07/10/2023",
         cardNameAutor: "Davi Teixeira",
         cardAlt: "Imagem de um programador.",
         cardImageAutor: "/images/about-me/davi.jpg",
-        cardImage: "/images/blog-images/front-end.jpg",
-        cardTitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque non corporis illum provident nihil nam nobis, architecto libero tempora excepturi deserunt aliquid quisquam!"
-    },
-    {
-        cardLink: "#",
-        widthCard: "auto",
-        cardTag: "#Front-End",
-        cardDate: "27/08/2023",
-        cardNameAutor: "Davi Teixeira",
-        cardAlt: "Imagem de um programador.",
-        cardImageAutor: "/images/about-me/davi.jpg",
-        cardImage: "/images/blog-images/front-end.jpg",
-        cardTitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque non corporis illum provident nihil nam nobis, architecto libero tempora excepturi deserunt aliquid quisquam!"
-    },
-    {
-        cardLink: "#",
-        widthCard: "auto",
-        cardTag: "#Front-End",
-        cardDate: "27/08/2023",
-        cardNameAutor: "Davi Teixeira",
-        cardAlt: "Imagem de um programador.",
-        cardImageAutor: "/images/about-me/davi.jpg",
-        cardImage: "/images/blog-images/front-end.jpg",
-        cardTitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque non corporis illum provident nihil nam nobis, architecto libero tempora excepturi deserunt aliquid quisquam!"
+        cardImage: "images/blog-images/react-helmet.jpg",
+        cardTitle: "React Helmet: Maximizando o SEO de seus sites com React",
+        cardText: "Se você é um desenvolvedor web que trabalha com React, provavelmente já sabe que a otimização para mecanismos de busca (SEO) e o controle de [...]"
     },
 ]
 

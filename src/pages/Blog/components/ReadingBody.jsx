@@ -29,19 +29,37 @@ const ReadingBody = (props) => {
                 Voltar para a página Inicíal
             </ChakraLink>
 
-            <Flex as="section">
+            <Flex as="section" justifyContent="space-around" width="100%">
+
+                <Hide breakpoint="(max-width: 768px)">
+                    <Flex 
+                        as="aside"
+                        width="20%" 
+                        padding="1rem" 
+                        justifyContent="center" 
+                    >
+                    </Flex>
+                </Hide>
+
                 <Flex
                     as="article"
                     padding="2rem"
                     flexDirection="column"
-                    width={["100%", "100%", "100%", "80%"]}
+                    width={["100%", "100%", "100%", "60%"]}
                 >
                     {props.children}
                 </Flex>
 
                 <Hide breakpoint="(max-width: 768px)">
-                    <Flex width="20%" padding=".5rem" as="aside"></Flex>
+                    <Flex 
+                        as="aside"
+                        width="20%" 
+                        padding="1rem" 
+                        justifyContent="center" 
+                    >
+                    </Flex>
                 </Hide>
+
             </Flex>
 
             <Footer />
